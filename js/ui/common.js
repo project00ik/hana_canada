@@ -1243,28 +1243,28 @@ var hanaUI = {
             }
         }
 
-        function fixed(winTop){
-            if(winTop > (objTop - headerHeight)){
-                $obj.css({
-                    'position' : 'fixed',
-                    'left' : '0',
-                    'top' : headerHeight + 'px',
-                    'width' : '100%',
-                    'background-color' : '#f9f9fb',
-                    'z-index' : '110'
-                })
-                $wrap.addClass('is-active');
-            }else{
-                $obj.css({
-                    'position' : '',
-                    'left' : '',
-                    'top' : '',
-                    'background-color' : '',
-                    'z-index' : ''
-                })
-                $wrap.removeClass('is-active');
-            }
-        }
+        // function fixed(winTop){
+        //     if(winTop > (objTop - headerHeight)){
+        //         $obj.css({
+        //             'position' : 'fixed',
+        //             'left' : '0',
+        //             'top' : headerHeight + 'px',
+        //             'width' : '100%',
+        //             'background-color' : '#f9f9fb',
+        //             'z-index' : '110'
+        //         })
+        //         $wrap.addClass('is-active');
+        //     }else{
+        //         $obj.css({
+        //             'position' : '',
+        //             'left' : '',
+        //             'top' : '',
+        //             'background-color' : '',
+        //             'z-index' : ''
+        //         })
+        //         $wrap.removeClass('is-active');
+        //     }
+        // }
 
         function panelOpen(){
             $open.on('click', function(){
