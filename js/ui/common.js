@@ -1243,28 +1243,28 @@ var hanaUI = {
             }
         }
 
-        // function fixed(winTop){
-        //     if(winTop > (objTop - headerHeight)){
-        //         $obj.css({
-        //             'position' : 'fixed',
-        //             'left' : '0',
-        //             'top' : headerHeight + 'px',
-        //             'width' : '100%',
-        //             'background-color' : '#f9f9fb',
-        //             'z-index' : '110'
-        //         })
-        //         $wrap.addClass('is-active');
-        //     }else{
-        //         $obj.css({
-        //             'position' : '',
-        //             'left' : '',
-        //             'top' : '',
-        //             'background-color' : '',
-        //             'z-index' : ''
-        //         })
-        //         $wrap.removeClass('is-active');
-        //     }
-        // }
+        function fixed(winTop){
+            if(winTop > (objTop - headerHeight)){
+                $obj.css({
+                    'position' : 'fixed',
+                    'left' : '0',
+                    'top' : headerHeight + 'px',
+                    'width' : '100%',
+                    'background-color' : '#f9f9fb',
+                    'z-index' : '110'
+                })
+                $wrap.addClass('is-active');
+            }else{
+                $obj.css({
+                    'position' : '',
+                    'left' : '',
+                    'top' : '',
+                    'background-color' : '',
+                    'z-index' : ''
+                })
+                $wrap.removeClass('is-active');
+            }
+        }
 
         function panelOpen(){
             $open.on('click', function(){
@@ -1338,31 +1338,31 @@ var hanaUI = {
             });
         }
 
-        // function fixed(){
+        function fixed(){
 
-        //     if(winTop > (objTop - headerHeight)){
-        //         objHeight = $obj.outerHeight();
-        //         $obj.css({
-        //                 'position' : 'fixed',
-        //                 'left' : '0',
-        //                 'top' : headerHeight + 'px',
-        //                 'width' : '100%',
-        //                 'z-index' : '110'
-        //             })
-        //             .addClass('is-active')
-        //         $content.removeClass('app-main--offer-off').addClass('app-main--offer-on');
-        //     }else{
-        //         $obj.css({
-        //                 'position' : '',
-        //                 'left' : '',
-        //                 'top' : '',
-        //                 'z-index' : ''
-        //             })
-        //             .removeClass('is-active')
-        //         $content.removeClass('app-main--offer-on').addClass('app-main--offer-off');
-        //     }
+            if(winTop > (objTop - headerHeight)){
+                objHeight = $obj.outerHeight();
+                $obj.css({
+                        'position' : 'fixed',
+                        'left' : '0',
+                        'top' : headerHeight + 'px',
+                        'width' : '100%',
+                        'z-index' : '110'
+                    })
+                    .addClass('is-active')
+                $content.removeClass('app-main--offer-off').addClass('app-main--offer-on');
+            }else{
+                $obj.css({
+                        'position' : '',
+                        'left' : '',
+                        'top' : '',
+                        'z-index' : ''
+                    })
+                    .removeClass('is-active')
+                $content.removeClass('app-main--offer-on').addClass('app-main--offer-off');
+            }
 
-        // }
+        }
 
         init(obj);
         event();
