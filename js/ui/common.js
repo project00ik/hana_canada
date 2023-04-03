@@ -1406,7 +1406,7 @@ var hanaUI = {
             var $obj = null;
 
             function init(){
-                $obj = $('#footer, .button-fixed');
+                $obj = $('.app-footer, .button-fixed');
             }
 
             function event(){
@@ -1422,7 +1422,7 @@ var hanaUI = {
             var $obj = null;
 
             function init(){
-                $obj = $('#footer, .button-fixed');
+                $obj = $('.app-footer, .button-fixed');
             }
 
             function event(){
@@ -1442,7 +1442,7 @@ var hanaUI = {
             var $obj = null;
 
             function init(){
-                $obj = $('#footer, .button-fixed');
+                $obj = $('.app-footer, .button-fixed');
             }
 
             function event(){
@@ -1462,7 +1462,7 @@ var hanaUI = {
             var $obj = null;
 
             function init(){
-                $obj = $('#footer, .button-fixed');
+                $obj = $('.app-footer, .button-fixed');
             }
 
             function event(){
