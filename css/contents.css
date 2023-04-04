@@ -567,13 +567,3 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
     0% { left: 100%; opacity: 0;}
     100% { left: 20px; opacity: 1;}
 } */
-
-.result-wrap {
-  min-height: calc(100vh - 8.8rem);
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-}
-
-html {
-  height: -webkit-fill-available;
-}
