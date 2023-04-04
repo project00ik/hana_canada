@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 공통 meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Interac 자동 입금 등록</title>
+<!-- 공통 css -->
+<link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit"><i class="italic">Interac</i> 자동 입금 등록</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container">
+
+                <div class="con-box">
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="성명" value="Kim" disabled>
+                                <label for="inputText04" class="input__label" aria-hidden="true">성명</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <p class="form-title">등록 메일/번호</p>
+                        <div class="tab-box-wrap" data-element="tab">
+							<ul class="tab-box-list" role="tablist">
+								<li class="tab-box" data-element="tab__list" role="presentation">
+									<a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" role="tab">E-mail 주소</a>
+								</li>                    
+								<li class="tab-box" data-element="tab__list" role="presentation">
+									<a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab">휴대폰 번호</a>
+								</li>  
+							</ul>
+							<div class="tab-con is-active" data-element="tab__panel" role="tabpanel">                                
+                                <div class="form-area mt32">
+                                    <div class="input">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText04" class="input__element" title="E-mail 주소" value="">
+                                            <label for="inputText04" class="input__label" aria-hidden="true">E-mail 주소</label>
+                                            <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                                        </div>
+                                        <!-- 에러 메시지 -->
+                                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="tab-con" data-element="tab__panel" role="tabpanel">
+                                <div class="form-area mt32">
+                                    <div class="input">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText04" class="input__element" title="휴대폰 번호" value="">
+                                            <label for="inputText04" class="input__label" aria-hidden="true">휴대폰 번호</label>
+                                            <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                                        </div>
+                                        <!-- 에러 메시지 -->
+                                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+                    </div>
+                    <div class="form-area">
+                        <div class="select-wrap">
+                            <div class="select">
+                                <div class="select__inner">
+                                    <button type="button" class="button button-select__item" title="입금계좌 선택" data-element="modal__open" data-target="#modalSlide3" aria-controls="#modalSlide3">
+                                        <span>계좌 선택</span>
+                                    </button>
+                                </div>
+                                <div class="select-label">입금계좌</div>
+                            </div>
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="checkbox-wrap box mt48">	<!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                        <input type="checkbox" name="" id="checkbox-box01" title="">
+                        <label for="checkbox-box01">위 등록 메일/번호를 통한 Interac e-Transfer 자동입금에 동의합니다.</label>
+                    </div>
+
+                    
+                </div>
+                <!-- // con-box -->
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->    
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="등록">등록</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+<div id="modalSlide3" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">입금계좌</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio11" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio11">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio12" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio12">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio13" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio13">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio14" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio14">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio15" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio15">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+
+</body>
+</html>

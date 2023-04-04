@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이체 한도</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <p class="page-tit">이체 한도</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">
+                <div class="container">
+                    <div class="con-box">
+                        <p class="tbl-top-text">통화: CAD</p>
+                        <div class="tbl-wrap">
+							<table class="tbl-basic">
+								<caption>이체 한도에 관한 거래 종류, 1일 이체한도</caption>
+								<colgroup>
+									<col style="width: 55%;">
+									<col style="width: 45%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">거래 종류</th>
+										<th scope="col">1일 이체한도</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>내 계좌간 이체</td>
+										<td>제한 없음</td>
+									</tr>
+									<tr>
+										<td>캐나다 하나은행 내 이체</td>
+										<td><strong class="text-point">$5,000</strong>/$10,000</td>
+									</tr>
+									<tr>
+										<td>캐나다 하나은행 →<br>Linked</td>
+										<td><strong class="text-point">$10,000</strong>/$25,000</td>
+									</tr>
+									<tr>
+										<td>Linked →<br>캐나다 하나은행</td>
+										<td><strong class="text-point">$25,000</strong>/$50,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                        <ul class="bar-list sm mt8">
+                            <li>1일 이체한도는 <strong class="text-point">잔여한도</strong>/기본한도로 표시함</li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

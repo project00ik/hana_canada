@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>계좌정보</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+        <p class="page-tit">계좌정보</p>
+        <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">
+                <div class="container">
+                    <div class="top-con-box">
+                        <div class="detail">
+                            <div class="amount-wrap">
+                                <div class="inbox">
+                                    <div class="select-wrap">
+                                        <div class="select-sm">
+                                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide1" title="조회 팝업 열기" aria-controls="#modalSlide1">
+                                                <span>(CAD) 1Q Dream FID 89201000666</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="amount-price-wrap">
+                                        <p class="price">$19,784.00</p>
+                                        <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                    </div>
+                                </div>
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="계좌정보">계좌정보</button></li>
+                                            <li><button type="button" title="계좌해지">계좌해지</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-info-green">
+                                <p class="text">출금가능금액 CAD $ 19,784.00</p>
+                            </div>
+
+                        </div>
+                        <!-- // detail -->
+
+                    </div>
+                    <!-- // con-box -->
+
+                    <div class="con-box parallax--point">
+                        <!-- Tab -->
+                        <div class="tab-box-wrap" data-element="tab">
+                            <ul class="tab-rd-box-list" role="tablist">
+                                <li class="tab-box" data-element="tab__list" >
+                                    <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">가입정보</a>
+                                </li>
+                                <li class="tab-box" data-element="tab__list">
+                                    <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">거래내역</a>
+                                </li> 
+                            </ul>
+                            <div class="tab-con is-active" data-element="tab__panel">
+                                <!-- 가입정보 -->
+                                <dl class="card-layout-area">
+                                    <dt>
+                                        <p class="tit">Let's go to KOR in this winter</p>
+                                        <p class="txt">
+                                            <span class="status ing">진행중</span>
+                                            <!-- <span class="status end">만기 완료</span> -->
+                                            <span class="date">2022.01.01~2022.12.31 (12개월)</span>
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <!-- 배너(success) -->
+                                        <!-- <div class="banner-box ban-success">
+                                            <p class="tit">Success!</p>
+                                            <p class="sub-tit">축하합니다!</p>
+                                            <p>
+                                                목표 금액의 90% 이상을 달성하여 0.10%의<br>
+                                                보너스 금리를 받으실 수 있습니다!<br>
+                                                또 다른 '1Q Dream 자유적금'을 개설해 보세요!
+                                            </p>
+                                        </div> -->
+                                        <!--// 배너(success) -->
+                                        <!-- 배너(Nice Try) -->
+                                        <!-- <div class="banner-box ban-try">
+                                            <p class="tit">Nice Try!</p>
+                                            <p class="sub-tit">죄송합니다.</p>
+                                            <p>
+                                                목표 금액의 90% 이상을 달성하지 못하셨습니다.<br>
+                                                다음 번에는 0.10%의 보너스 금리를<br>
+                                                받으실 수 있길 바랍니다!
+                                            </p>
+                                        </div> -->
+                                        <!--// 배너(Nice Try) -->
+
+                                        <!-- 카드 목록 -->
+                                        <!-- D : 카드에 acitve 효과가 있는 경우 card-wrap card-wrap--active -->
+                                        <div class="card-wrap">
+                                            <!-- 카드 타입4 : 1Q 자유적금 -->
+                                            <!-- D : 컬러 카드 타입 color-type1~7 -->
+                                            <!-- color-type1 목돈만들기 -->
+                                            <div class="card-type4 color-type1">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// color-type1 목돈만들기 -->
+                                            <!-- 해외여행 color-type2 -->
+                                            <div class="card-type4 color-type2">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// 해외여행 color-type2 -->
+                                            <!-- 결혼 color-type3 -->
+                                            <div class="card-type4 color-type3">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// 결혼 color-type3 -->
+                                            <!-- 차 구매 color-type4 -->
+                                            <div class="card-type4 color-type4">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// 차 구매 color-type4 -->
+                                            <!-- 내 집 장만 color-type5 -->
+                                            <div class="card-type4 color-type5">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// 내 집 장만 color-type5 -->
+                                            <!-- 건강 color-type6 -->
+                                            <div class="card-type4 color-type6">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// 건강 color-type6 -->
+                                            <!-- 나만의 목표 color-type7 -->
+                                            <div class="card-type4 color-type7">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-top-area">
+                                                        <div class="left-area">
+                                                            <p class="d-day">D-148</p>
+                                                            <i class="icon-dream"></i>
+                                                        </div>
+                                                        <div class="right-area">
+                                                            <dl>
+                                                                <dt class="label">납입금액</dt>
+                                                                <dd>
+                                                                    <span class="price">$32.00</span>
+                                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chart-wrap">
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 80%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표금액</span>
+                                                                    <span class="price">$10,000</span>
+                                                                </p>
+                                                                <p class="per">80%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                        <!-- 차트 -->
+                                                        <div class="chart-area">
+                                                            <div class="chart" style="width: 25%;"></div>
+                                                            <div class="chart-txt">
+                                                                <p class="chart-label">
+                                                                    <span>목표횟수</span>
+                                                                </p>
+                                                                <p class="per">25%</p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 차트 -->
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// 나만의 목표 color-type7 -->
+                                            
+                                            <!--// 카드 타입4 : 1Q 자유적금 -->
+                                        </div>
+                                        <!--// 카드 목록 -->
+                                    </dd>
+                                    <dd>
+                                        <!-- 세부정보 -->
+                                        <div class="cont-top-wrap">
+                                            <div class="top-left">
+                                                <p class="page-tit">세부정보</p>
+                                            </div>
+                                            <div class="top-right">
+                                                <button type="button" class="btn line gray sm" aria-label="수정">수정</button>
+                                            </div>
+                                        </div>
+                                        <!-- 카드 목록 -->
+                                        <div class="card-wrap">
+                                            <div class="card-type2">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-list1">
+                                                        <dl>
+                                                            <dt>납입 주기 설정</dt>
+                                                            <dd>
+                                                                <span class="txt">2022.01.01~2022.12.31</span>
+                                                                <span class="sub-txt">12개월</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <div class="card-type2">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-list1">
+                                                        <dl>
+                                                            <dt>추천 예금액</dt>
+                                                            <dd>
+                                                                <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                                <span class="txt">$1,000</span>
+                                                                <span class="sub-txt">월</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <div class="card-type2">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-list1">
+                                                        <dl>
+                                                            <dt>Quick Transfer 계좌 이체</dt>
+                                                            <dd>
+                                                                <span class="txt">1Q Chequing</span>
+                                                                <span class="sub-txt">89201165348</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!-- D : 예약 이체 미 설정 시 -->
+                                            <div class="card-type2">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-list1">
+                                                        <dl>
+                                                            <dt>예약 이체</dt>
+                                                            <dd>
+                                                                <span class="txt">예약된 이체가 없습니다.</span>
+                                                                <span class="info-txt">이체 메뉴에서 예약 이체를 설정해 주세요.</span>
+                                                                <!-- 버튼 영역 -->
+                                                                <div class="btn-wrap">
+                                                                    <button type="button" class="btn md line gray" aria-label="이체 메뉴로 이동">이체 메뉴로 이동</button>
+                                                                </div>
+                                                                <!--// 버튼 영역 -->
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// D : 예약 이체 미 설정 시 -->
+                                            <!-- D : 예약 이체 설정 시 -->
+                                            <div class="card-type2">
+                                                <!-- 카드 내용 -->
+                                                <div class="card-cont">
+                                                    <div class="card-list1">
+                                                        <dl>
+                                                            <dt>예약 이체</dt>
+                                                            <dd>
+                                                                <span class="txt">예약 이체가 설정되었습니다.</span>
+                                                                <span class="info-txt">상세 내역 확인 및 수정은 예약 이체 메뉴에서 가능합니다.</span>
+                                                                <!-- 버튼 영역 -->
+                                                                <div class="btn-wrap">
+                                                                    <button type="button" class="btn md line gray" aria-label="예약 이체 메뉴로 이동">예약 이체 메뉴로 이동</button>
+                                                                </div>
+                                                                <!--// 버튼 영역 -->
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <!--// 카드 내용 -->
+                                            </div>
+                                            <!--// D : 예약 이체 설정 시 -->
+                                        </div>
+                                        <!--// 카드 목록 -->
+                                        <!-- 더 많은 정보 보기 -->
+                                        <div class="btn-toggle-wrap">
+                                            <ul class="btn-toggle-list" data-element="accordion" data-options='{ "isInitActive": false }'>
+                                                <li data-element="accordion__item">
+                                                    <div class="top" data-element="accordion__anchor">
+                                                        <button type="button" class="btn line gray" aria-label="더 많은 정보 보기">더 많은 정보 보기</button>
+                                                    </div>
+                                                    <div class="con" data-element="accordion__panel">
+                                                        <div class="lgreen-box-wrap type02">
+                                                            <ul class="dot-list type02">
+                                                                <li>기간 : 2022.01.01~2022.12.31 (12개월)</li>
+                                                                <li>납입 주기 : 매월 (알림 받기)</li>
+                                                                <li>금리 : 2.5% </li>
+                                                                <li>만기에 목표 달성시 보너스 금리제공: 0.25% </li>
+                                                                <li>중도해지 : 가능</li>
+                                                                <li>계좌 중도해지액 : 원금 + $50,000 이하의 1Q  체킹 계좌에 적용된 이율</li>
+                                                                <li>입금 한도 : 월 $1,000이내</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--// 더 많은 정보 보기 -->
+                                        <!--// 세부정보 -->
+                                    </dd>
+                                </dl>
+                                <!--// 가입정보 -->
+                            </div>
+                            <div class="tab-con" data-element="tab__panel">
+                                <!-- 거래내역 -->
+                                <div class="cont-top-wrap mt32">
+                                    <div class="top-right">
+                                        <div class="select-wrap">
+                                            <div class="select-sm">
+                                                <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide2" title="조회 팝업 열기" aria-controls="#modalSlide2">
+                                                    <span>1개월</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-date-wrap">
+                                    <p class="date">2022.10.12</p>
+                                    <div class="card-wrap card-wrap--active">
+                                        <!-- 카드 타입5 : 거래내역 -->
+                                        <div class="card-type5">
+                                            <!-- 카드 내용 -->
+                                            <div class="card-cont">
+                                                <div class="card-list">
+                                                    <p class="txt-date">07:31:50</p>
+                                                    <dl>
+                                                        <dt><span class="tit">New Acct(Current)</span></dt>
+                                                        <dd><span class="price tp-green">2,400.00</span></dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="javascript:void();" class="link-check-view" title="수표보기">cheque</a></dt>
+                                                        <dd>잔액 <span class="sub-price">$19,200.00</span></dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!--// 카드 내용 -->
+                                        </div>
+                                        <div class="card-type5">
+                                            <!-- 카드 내용 -->
+                                            <div class="card-cont">
+                                                <div class="card-list">
+                                                    <p class="txt-date">07:31:50</p>
+                                                    <dl>
+                                                        <dt><span class="tit">New Acct(Current)</span></dt>
+                                                        <dd><span class="price txt-point1">-2,400.00</span></dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>Deposit</dt>
+                                                        <dd>잔액 <span class="sub-price">$19,200.00</span></dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!--// 카드 내용 -->
+                                        </div>
+                                        <!--// 카드 타입5 : 거래내역 -->
+                                    </div>
+                                </div>
+                                <!-- // card-date-wrap -->
+                                
+                                <div class="card-date-wrap">
+                                    <p class="date">2022.10.12</p>
+                                    <div class="card-wrap card-wrap--active">
+                                        <!-- 카드 타입5 : 거래내역 -->
+                                        <div class="card-type5">
+                                            <!-- 카드 내용 -->
+                                            <div class="card-cont">
+                                                <div class="card-list">
+                                                    <p class="txt-date">07:31:50</p>
+                                                    <dl>
+                                                        <dt><span class="tit">New Acct(Current)</span></dt>
+                                                        <dd><span class="price tp-green">2,400.00</span></dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>Deposit</dt>
+                                                        <dd>잔액 <span class="sub-price">$19,200.00</span></dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!--// 카드 내용 -->
+                                        </div>
+                                        <div class="card-type5">
+                                            <!-- 카드 내용 -->
+                                            <div class="card-cont">
+                                                <div class="card-list">
+                                                    <p class="txt-date">07:31:50</p>
+                                                    <dl>
+                                                        <dt><span class="tit">New Acct(Current)</span></dt>
+                                                        <dd><span class="price txt-point1">-2,400.00</span></dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>Deposit</dt>
+                                                        <dd>잔액 <span class="sub-price">$19,200.00</span></dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!--// 카드 내용 -->
+                                        </div>
+                                        <!--// 카드 타입5 : 거래내역 -->
+                                    </div>
+                                </div>
+                                <!-- // card-date-wrap -->
+
+                                <div class="btn-wrap more mt16">
+                                    <button type="button" class="btn md line gray" aria-label="더보기">더보기</button>
+                                </div>
+                                <!--// 거래내역 -->
+                            </div>
+                        </div> 
+                        <!-- // Tab -->	
+                        
+
+                    </div>
+                    <!-- // con-box -->
+                </div>
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="빠른 이체" aria-label="빠른 이체 팝업 열기" data-element="modal__open" data-target="#modalSetting">빠른 이체</button>
+            </div>
+        </div>
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">계좌선택</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <div class="con-box">
+                    <div class="card-wrap card-wrap--active">
+                        <!-- 카드 : 짧은 타이틀 + 금액 예시(비활성 뱃지) -->
+                        <div class="card-type1" onclick="modalClose(this);">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                <span class="badge type-disabled">휴면계좌</span>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit tit-type2">(CAD) 1Q Chequing</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">890123456</p>
+                                            </dd>
+                                        </dl>
+                                        <p class="txt-right">
+                                            <span class="price">$2,400.00</span>                                           
+                                            <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!--// 카드 : 짧은 타이틀 + 금액 예시(비활성 뱃지) -->
+                        
+                        <!-- 카드 : 짧은 타이틀 + 금액 예시(비활성 뱃지) -->
+                        <div class="card-type1" onclick="modalClose(this);">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit tit-type2">(CAD) 1Q Chequing</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">890123456</p>
+                                            </dd>
+                                        </dl>
+                                        <p class="txt-right">
+                                            <span class="price">$2,400.00</span>                                           
+                                            <i class="icon-country" style="background-image: url(../../images/country/flag-usa.png);"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!--// 카드 : 짧은 타이틀 + 금액 예시(비활성 뱃지) -->
+                        
+                        <!-- 카드 : 짧은 타이틀 + 금액 예시(비활성 뱃지) -->
+                        <div class="card-type1" onclick="modalClose(this);">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit tit-type2">(CAD) 1Q Chequing</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">890123456</p>
+                                            </dd>
+                                        </dl>
+                                        <p class="txt-right">
+                                            <span class="price">$2,400.00</span>
+                                            <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!--// 카드 : 짧은 타이틀 + 금액 예시(비활성 뱃지) -->
+
+
+                    </div>
+                </div>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    
+    <div id="modalSlide2" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">조회 조건</h1>
+            </div>
+            <div class="modal__contents">
+                <div class="con-box">
+                    <div class="form-area">
+                        <p class="form-title">조회기간</p>
+                        <!-- Tab -->
+                        <div class="tab-box-wrap" data-element="tab">
+                            <ul class="tab-box-list" role="tablist">
+                                <li class="tab-box" data-element="tab__list" >
+                                    <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">기간 선택</a>
+                                </li>                    
+                                <li class="tab-box" data-element="tab__list">
+                                    <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">직접 선택</a>
+                                </li>  
+                            </ul>
+                            <div class="tab-con is-active" data-element="tab__panel">
+                                <!-- 탭 내용 -->
+                                <ul class="form-list type-half">
+                                    <li>
+                                        <div class="radio-wrap">
+                                            <input type="radio" name="modal_radio" id="modal_radio01" title="" checked="checked">
+                                            <label for="modal_radio01">지난 1개월</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio-wrap">
+                                            <input type="radio" name="modal_radio" id="modal_radio02" title="">
+                                            <label for="modal_radio02">지난 3개월</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio-wrap">
+                                            <input type="radio" name="modal_radio" id="modal_radio03" title="">
+                                            <label for="modal_radio03">지난 6개월</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--// 탭 내용 -->
+                            </div>
+                            <div class="tab-con" data-element="tab__panel">
+                                <!-- 탭 내용 -->
+                                <div class="form-area">
+                                    <div class="input-wrap">
+                                        <div class="input input--on">
+                                            <div class="input__inner">
+                                                <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="" placeholder="YYYY.MM.DD" disabled="disabled">
+                                                <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                                <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                                            </div>
+                                        </div>
+                                        <div class="input input--on">
+                                            <div class="input__inner">
+                                                <input type="text" id="inputText07" class="input__element input-date" title="종료일" value="" placeholder="YYYY.MM.DD" disabled="disabled">
+                                                <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                                <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 탭 내용 -->
+                            </div>
+                        </div>                     
+                        <!-- // Tab -->		
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="btn" data-element="modal__close" aria-label="확인">확인</button>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+
+    <div id="modalSetting" class="modal popup-wrap full-layer-wrap" data-element="modal__element">
+        <div class="modal__container" data-element="modal__element-container">
+            <div class="modal__contents">
+                <div class="quick-transfer-wrap">
+                    <div class="quick-transfer">
+                        <p class="quick-tit">빠른 이체</p>
+                        <div class="price-area">
+                            <div class="quick-info">
+                                <p class="tit">한달</p>
+                                <p class="txt">추천 예금액</p>
+                            </div>
+                            <p class="price">$1,000</p>
+                        </div>
+                        <p class="quick-sub-txt">아래 버튼을 클릭하여 빠르게 이체할 수 있습니다.</p>
+                        <div class="transfer-btn-wrap btn-wrap--active">
+                            <button type="button" class="transfer-btn" aria-label=" 이체">
+                                <i class="quick-icont"></i>
+                                <span class="price">$500</span>
+                            </button>
+                            <button type="button" class="transfer-btn" aria-label=" 이체">
+                                <i class="quick-icont"></i>
+                                <span class="price">$1,000</span>
+                            </button>
+                            <button type="button" class="transfer-btn active" aria-label=" 이체">
+                                <i class="quick-icont"></i>
+                                <span class="price">$2,000</span>
+                            </button>
+                        </div>
+                        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- //모달레이어 영역 -->
+
+</body>
+</html>

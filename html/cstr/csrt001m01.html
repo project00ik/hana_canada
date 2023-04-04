@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>송금</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <!-- 삭제요청 <button class="btn-back" title="이전 화면"></button> -->
+      <p class="page-tit">송금</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box">
+                    <p class="page-tit">최근 송금 내역</p>
+                    
+                    <div class="card-wrap card-wrap--active">
+                        <div class="card-type1">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="date">2022.12.15</p>
+                                                <p class="tit">Judy Lee</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">5636-ITT-011111111</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="date">2022.12.15</p>
+                                                <p class="tit">Judy Lee</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">5636-ITT-011111111</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="date">2022.12.15</p>
+                                                <p class="tit">Judy Lee</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">5636-ITT-011111111</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="date">2022.12.15</p>
+                                                <p class="tit">Judy Lee</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">5636-ITT-011111111</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="date">2022.12.15</p>
+                                                <p class="tit">Judy Lee</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">5636-ITT-011111111</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                    </div>
+                    <!-- 컨텐츠 하단버튼 -->
+                    <div class="bottom-btn-wrap">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn md line gray" aria-label="">전체 목록</button>
+                        </div>
+                    </div>
+                    <!--// 컨텐츠 하단버튼 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음">신규 송금</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">계좌 선택</h1>
+            </div>
+            <div class="modal__contents">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio01" title="">
+                            <label for="madal1_radio01">123456789012</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio02" title="">
+                            <label for="madal1_radi02">123456789012</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="btn md" data-element="modal__close" aria-label="확인">확인</button>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <div id="modalSlide2" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">통화 선택</h1>
+            </div>
+            <div class="modal__contents">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio01" id="madal2_radio01" title="">
+                            <label for="madal2_radio01">CAD$</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio02" title="">
+                            <label for="madal2_radio02">CAD$</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="btn md" data-element="modal__close" aria-label="확인">확인</button>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+
+    <div id="modalSlide3" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">송금국가</h1>
+			</div>
+			<div class="modal__contents">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal3_radio" id="madal3_radio01" title="" checked="checked">
+							<label for="madal3_radio01">
+								<i class="icon-country-korea"></i>
+								radio-list
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal3_radio" id="madal3_radio02" title="">
+							<label for="madal3_radio02">
+								<i class="icon-country-usa"></i>
+								radio-list
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal3_radio" id="madal3_radio03" title="">
+							<label for="madal3_radio03">
+								<i class="icon-country-canada"></i>
+								radio-list
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-wrap">
+				<button type="button" class="btn md" data-element="modal__close" aria-label="확인">확인</button>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+    <div id="modalSlide4" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">송금국가</h1>
+            </div>
+            <div class="modal__contents">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal4_radio" id="madal4_radio01" title="" checked="checked">
+                            <label for="madal4_radio01">
+                                <i class="icon-country-korea"></i>
+                                radio-list
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal4_radio" id="madal4_radio02" title="">
+                            <label for="madal4_radio02">
+                                <i class="icon-country-usa"></i>
+                                radio-list
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal4_radio" id="madal4_radio03" title="">
+                            <label for="madal4_radio03">
+                                <i class="icon-country-canada"></i>
+                                radio-list
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="btn md" data-element="modal__close" aria-label="확인">확인</button>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

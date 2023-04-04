@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연락처 변경</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">        
+      <button class="btn-back" title="이전 화면"></button>
+      <p class="page-tit">연락처 변경</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box"> 
+                    <p class="page-tit">연락처</p>
+
+                    <!-- input 오른쪽 버튼 고정형 -->
+                    <div class="form-area">
+                        <div class="input-wrap">
+                            <div class="input input--on">
+                                <div class="input__inner">
+                                    <input type="text" id="inputText10" class="input__element input__no-label" title="휴대폰번호 입력" placeholder="" value="123-1234-1234">
+                                    <label for="inputText01" class="input__label" aria-hidden="true">휴대폰번호</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                    <button type="button" class="btn line sm" aria-label="인증번호 발송">인증번호 발송</button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// input 오른쪽 텍스트 고정형 -->
+                    
+                    <div class="form-area">
+                        <div class="input-wrap">
+                            <div class="input input--on">
+                                <div class="input__inner">
+                                    <input type="text" id="inputText10" class="input__element input__no-label" title="집 전화번호 입력" placeholder="" value="123-1234-1234">
+                                    <label for="inputText01" class="input__label" aria-hidden="true">집 전화번호</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-area">
+                        <div class="input-wrap">
+                            <div class="input input--on">
+                                <div class="input__inner">
+                                    <input type="text" id="inputText10" class="input__element input__no-label" title="직장 전화번호 입력" placeholder="" value="123-1234-1234">
+                                    <label for="inputText01" class="input__label" aria-hidden="true">직장 전화번호</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- input 오른쪽 버튼 고정형 -->
+                    <div class="form-area">
+                        <div class="input-wrap">
+                            <div class="input input--on">
+                                <div class="input__inner">
+                                    <input type="text" id="inputText10" class="input__element input__no-label" title="이메일 주소 입력" placeholder="" value="asdf@gmail.com">
+                                    <label for="inputText01" class="input__label" aria-hidden="true">이메일 주소</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                    <button type="button" class="btn line sm" aria-label="인증번호 발송">인증번호 발송</button>                                    
+                                    <!-- <button type="button" class="btn line sm" aria-label="확인완료" disabled>확인완료</button> -->
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// input 오른쪽 텍스트 고정형 -->
+                    
+                </div>
+
+                <div class="con-box">
+                    <p class="page-tit">집주소</p>
+                    <div class="form-area">
+                        <!-- 
+                            * 오류시 class="search-btn-wrap search--active input--error"
+                            * 비활성화시 class="search-btn-wrap search--active search--disabled"
+                            * 데이터가 초기에 자동으로 입력되어 있을때 class="search-btn-wrap search--active"
+                         -->
+                         <div class="search-btn-wrap">
+                            <div class="input-search-btn">
+                                <div class="input-search__inner">
+                                    <button type="button" class="button button-search__btn" title="우편번호(Postal Code) 열기">
+                                        우편번호(Postal Code)
+                                    </button>
+                                    <div class="search-label">우편번호(Postal Code)</div>
+                                    <button type="submit" class="btn-search" aria-label="검색">검색</button>
+                                </div>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText02" class="input__element input--on" title="주소 입력폼" value="4000 YONGE ST" disabled>
+                                <label for="inputText02" class="input__label" aria-hidden="true">주소</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="상세주소(선택) 입력폼" placeholder="">
+                                <label for="inputText01" class="input__label" aria-hidden="true">상세주소(선택)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText02" class="input__element input--on" title="도시(City) 입력폼" value="TORONTO" disabled>
+                                <label for="inputText02" class="input__label" aria-hidden="true">도시(City)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText03" class="input__element input--on" title="주(Province) 입력폼" value="Alberta" disabled>
+                                <label for="inputText03" class="input__label" aria-hidden="true">주(Province)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                        <!-- 가이드 메세지 -->
+                        <div class="input__guide-text input__guide-text--left">
+                            ※ 퀘벡주에는 1Q banking이 지원되지 않습니다.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // con-box -->
+
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="변경">변경</button>
+        </div>
+    </div>
+<!-- //footer -->
+
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+
+</body>
+</html>

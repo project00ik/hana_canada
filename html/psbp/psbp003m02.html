@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>납부기관 수정</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">납부기관 수정</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">
+                <div class="container">
+                    <div class="con-box">
+                        <div class="form-area">
+                            <div class="input-wrap">
+                                <div class="input input--on input--disabled">
+                                    <div class="input__inner">
+                                        <input type="text" id="inputText01" class="input__element" title="납부기관명 입력폼" value="AIR LIQUIDE CANADA INC." disabled>
+                                        <label for="inputText01" class="input__label" aria-hidden="true">납부기관명</label>
+                                        <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                    </div>
+                                    <!-- 에러 메시지 -->
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-area">
+                            <div class="input-wrap">
+                                <div class="input input--on">
+                                    <div class="input__inner">
+                                        <input type="text" id="inputText02" class="input__element" title="고지서 납부번호 입력폼" value="89201000078">
+                                        <label for="inputText02" class="input__label" aria-hidden="true">고지서 납부번호</label>
+                                        <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                    </div>
+                                    <!-- 에러 메시지 -->
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 컨텐츠 하단버튼 영역 -->
+                        <div class="bottom-btn-wrap">
+                            <div class="btn-wrap">
+                                <button type="button" class="btn md line gray" aria-label="삭제"><span class="icon-trashcan">삭제</span></button>
+                            </div>
+                        </div>
+                        <!--// 컨텐츠 하단버튼 영역 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="수정">수정</button>
+            </div>
+        </div>
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

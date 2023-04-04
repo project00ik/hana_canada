@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>계좌조회</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body class="bg-black">
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-close-cheque" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="con-box mt8">
+                  
+                <div class="cheque-view-wrap">
+                    <div class="slider slider-for">
+                        <img src="../../images/png/check_front.png" alt="수표앞면">
+                        <img src="../../images/png/check_back.png" alt="수표뒷면">
+                    </div>
+                    <div class="slider slider-nav">
+                        <div class="img-box-sm">
+                            <img src="../../images/png/check_front.png" alt="수표앞면">
+                        </div>
+                        <div class="img-box-sm">
+                            <img src="../../images/png/check_back.png" alt="수표뒷면">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- // con-box -->
+        </div>
+    </div>
+    <!-- //Content -->
+
+</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+<script>
+    $(function(){
+        $('.slider-for').slick({
+            slidersToShow: 1,
+            slideToScroll: 1,
+            dots: false,
+            fade: true, 
+            arrows: false,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            // slidersToShow: 2,
+            // slideToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            //centerMode: true,
+            focusOnSelect: true
+        });
+    });
+</script>
+
+
+</body>
+</html>

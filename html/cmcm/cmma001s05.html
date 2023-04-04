@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>로그인</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap">
+    
+	</div>
+	<!-- 공통 script -->
+  <script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+   
+			
+     
+  <!-- 모달레이어 - alert - only title -->
+  <div id="modalAlertTitle" class="modal popup-wrap alert only-title" data-element="modal__element">
+    <div class="modal__container" data-element="modal__element-container">
+        <div class="modal__contents">
+            <div class="con-title">
+              <div class="pop-login-extend">
+                <p class="title">곧 로그아웃 됩니다.</p>
+                <span class="time">56초</span>
+                <p class="text">고객님의 안전한 금융거래를 위하여 10분 동안 거래가 없을 경우 자동으로 로그아웃 됩니다.</p>
+              </div>
+
+            </div>
+        </div>
+        <div class="btn-group-wrap">
+          <button type="button" class="btn md gray btn-cancle" data-element="modal__close" aria-label="로그아웃">로그아웃</button>
+          <button type="button" class="btn md" data-element="modal__close" aria-label="로그인 연장">로그인 연장</button>
+        </div>
+    </div>
+  </div>
+  <!-- //모달레이어 - alert - only title -->
+
+	<script>
+    /* 모달 열기(alert/슬라이드 팝업 구분없이 사용) : modalOpen('해당레이어팝업 ID값'); */
+    modalOpen('modalAlertTitle');
+  </script>
+</body>
+</html>

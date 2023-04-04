@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>가입하기</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">가입하기</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">    
+                <div class="container">
+
+                    <div class="con-box">                
+                            
+                        <div class="progress-bar-wrap">
+							<span class="bar first"></span>
+							<span class="bar"></span>
+						</div>
+
+                        <p class="page-tit">SIN 확인</p>
+                        <div class="form-area">
+                            <div class="input input--disabled">
+                                <!--
+                                    * 오류시 class="input input--error"
+                                    * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                                    * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                                -->
+                                <div class="input__inner">
+                                    <input type="text" id="inputText01" class="input__element" title="사회보장번호(SIN) 입력" value="121422342" disabled="disabled">
+                                    <label for="inputText01" class="input__label" aria-hidden="true">사회보장번호(SIN)</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                                    <!-- input Tooltip -->
+                                    <div class="input-tooltip-wrap">
+                                        <div class="tooltip-wrap">
+                                            <p class="tooltip-title">도움말</p>
+                                            <div class="tooltip" data-tooltip="paragraph">
+                                                <button type="button" class="btn-open" data-tooltip-button="open" aria-label="툴팁 열기"></button>
+                                                <div class="tooltip-con" data-tooltip-panel="false" >
+                                                    <div class="tooltip__column">
+                                                        <div class="tooltip__description" data-tooltip="focus">
+                                                        <!-- tooltip 컨텐츠 영역 -->
+                                                        <div class="inbox">
+                                                            <p class="text">SIN: Social Insurance Number</p>
+                                                        </div>
+                                                        <!-- // tooltip 컨텐츠 영역 -->
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn-close" data-tooltip-button="close" aria-label="툴팁 닫기" type="button"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- // input Tooltip -->
+                                    </div>
+                                </div>
+                                <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // container -->
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="다음" disabled="disabled">다음</button><!-- 활성화 시 : disabled 삭제 -->
+            </div>
+        </div>
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+</body>
+</html>

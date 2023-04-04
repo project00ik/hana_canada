@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이체 요청 취소</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit">이체 요청 취소</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                
+                <div class="con-box">
+                    <p class="page-tit">이체 요청 정보</p>
+                    <div class="form-area">
+                        <div class="textarea">  <!-- error시 class 추가 : input--error -->
+                            <label for="textArea01" class="form__label">메시지(선택)</label>
+                            <textarea class="textarea__element" name="" id="textArea01" cols="30" rows="10" placeholder=""></textarea>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메시지</p>
+                        </div>
+                        <!-- 가이드 메세지 -->
+                        <div class="input__guide-text input__guide-text--left">
+                            상대방에게 전달할 메시지를 입력해 주세요. (최대 400자)
+                        </div>
+                    </div>     
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="수령인" value="kim"  disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">수령인</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>                           
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="연락처" value="hana.kim@gmail.com"  disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">연락처</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>                              
+                    <div class="form-area">
+                        <div class="input-wrap input--disabled">
+                            <div class="input">
+                                <div class="input__inner">
+                                    <div class="input-item-left">$CAD</div>
+                                    <input type="text" id="inputText03" class="input__element input-price" title="요청금액" placeholder="0.00" value="50.00" disabled="disabled">
+                                    <label for="inputText03" class="input__label" aria-hidden="true">요청금액</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="입금계좌" value="0000000000000000" disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">입금계좌</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>                           
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="입금 요청 기한" value="2022.12.08" disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">입금 요청 기한</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>                     
+                </div>                                 
+                
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음">다음</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+
+</body>
+</html>

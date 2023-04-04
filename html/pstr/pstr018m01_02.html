@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 공통 meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Interac 자동 입금 관리</title>
+<!-- 공통 css -->
+<link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit"><i class="italic">Interac</i> 자동 입금 관리</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container">
+
+                <div class="con-box">
+                    <div class="card-wrap">
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <span class="badge type-value1">등록 완료</span>
+                                <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                <!-- <span class="badge type-disabled">비활성</span>
+                                <span class="badge type-value1">등록 완료</span>
+                                <span class="badge type-value2">인증 대기</span>
+                                <span class="badge type-value3">value3</span>
+                                <span class="badge type-value4">등록 실패</span> 
+                                <span class="badge type-value4">등록 취소</span> -->    
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="수정">수정</button></li>
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">                                
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">gildong1@gmail.com</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">0000000000000000_CAD</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!-- //card-type1 -->
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <span class="badge type-value2">인증 대기</span>
+                                <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                <!-- <span class="badge type-disabled">비활성</span>
+                                <span class="badge type-value1">등록 완료</span>
+                                <span class="badge type-value2">인증 대기</span>
+                                <span class="badge type-value3">value3</span>
+                                <span class="badge type-value4">등록 실패</span> 
+                                <span class="badge type-value4">등록 취소</span> -->    
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="수정">수정</button></li>
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">                                
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">gildong1@gmail.com</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">0000000000000000_CAD</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!-- //card-type1 -->
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <span class="badge type-value4">등록 실패</span> 
+                                <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                <!-- <span class="badge type-disabled">비활성</span>
+                                <span class="badge type-value1">등록 완료</span>
+                                <span class="badge type-value2">인증 대기</span>
+                                <span class="badge type-value3">value3</span>
+                                <span class="badge type-value4">등록 실패</span> 
+                                <span class="badge type-value4">등록 취소</span> -->    
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">                                
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">gildong1@gmail.com</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">0000000000000000_CAD</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!-- //card-type1 -->
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <span class="badge type-value4">등록 취소</span> 
+                                <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                <!-- <span class="badge type-disabled">비활성</span>
+                                <span class="badge type-value1">등록 완료</span>
+                                <span class="badge type-value2">인증 대기</span>
+                                <span class="badge type-value3">value3</span>
+                                <span class="badge type-value4">등록 실패</span> 
+                                <span class="badge type-value4">등록 취소</span> -->    
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">                                
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">gildong1@gmail.com</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">0000000000000000_CAD</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                        </div>
+                        <!-- //card-type1 -->
+                    </div>
+                    <div class="info-box-wrap mt32">
+                        <p class="title">안내사항</p>
+                        <ul class="bullet-wrap">
+                            <li><i class="italic">Interac</i> 자동 입금 등록은 최대 5개까지 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // con-box -->
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->    
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="등록">등록</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>지점/ATM 안내</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit">지점/ATM 안내</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container branch-info-wrap">
+                <div class="map-wrap full">
+                    <!-- 지도 영역 -->
+                    <div class="map-area" style="background: #ddd;">
+                        지도 영역
+                    </div>
+                    <!--// 지도 영역 -->
+                    <!-- 마커디자인 예시 -->
+                    <button type="button" class="map-icon-branch" data-element="modal__open" data-target="#modalBranch">
+                        현재 내위치 표시
+                    </button>
+                    <!-- <button type="button" class="map-icon-atm" data-element="modal__open" data-target="#modalBranch">
+                        atm 표시
+                    </button> -->
+                    <!-- <button type="button" data-element="modal__open" data-target="#modalBranch" style="width: 6rem; height: 7.2rem; font-size: 0; background: url(../../images/icon/branch.svg) 50% 50% no-repeat; background-position: 100% auto;">
+                        현재 내위치 표시
+                    </button>
+                    <button type="button" data-element="modal__open" data-target="#modalBranch" style="width: 5rem; height: 5.6rem; font-size: 0; background: url(../../images/icon/atm.svg) 50% 50% no-repeat; background-position: 100% auto;">
+                        atm 표시
+                    </button> -->
+                    <!--// 마커디자인 예시 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+</div>
+
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+<!-- 지점안내 모달 -->
+<div id="modalBranch" class="modal popup-wrap branch-layer-wrap" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__contents">
+
+            <div class="branch-info-detail-wrap">                
+                <div class="cont-top-wrap">
+                    <div class="top-left">
+                        <span class="tag-branch">ON(Ontario)</span>
+                    </div>
+                </div>
+                <div class="branch-cont">
+                    <p class="tit">Main Branch</p>
+                    <p class="txt">Suite 1101, Madison Centre 4950 Yonge Street Toronto, Ontario M2N6K1, Canada</p>
+                </div>
+    
+                <ul class="detail-info-list">
+                    <li><i class="icon-tel"></i>Tel. 416-222-6500</li>
+                    <li><i class="icon-fax"></i>Fax. 416-222-5855</li>
+                    <li><i class="icon-time"></i>월요일~금요일 9:30-16:00</li>
+                </ul>
+            </div>
+            
+        </div>
+        <button type="button" class="modal__btn-bar modal__btn--close" data-element="modal__close" title="닫기"></button>
+        <button type="button" class="modal__btn-bar modal__btn--open" data-element="modal__open" data-target="#modalBranch"title="열기"></button>
+    </div>
+</div>
+<!--// 지점안내 모달 -->
+
+<script>
+    $(function(){
+        atmInfoTab(); // 안내 팝업 열기
+    });
+</script>
+
+</body>
+</html>

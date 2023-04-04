@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75.255" height="75.255" viewBox="0 0 75.255 75.255">
+    <defs>
+        <filter id="xdqxwo31ha" x="0" y="0" width="75.255" height="75.255" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="사각형 11043" style="opacity:.004" d="M0 0h50v56H0z" transform="translate(13.373 6.343)"/>
+    <g data-name="그룹 16479">
+        <g style="filter:url(#xdqxwo31ha)">
+            <g data-name="사각형 11027" style="fill:#fff;stroke:#30bfba">
+                <path d="M16 0a16 16 0 0 1 16 16 16 16 0 0 1-16 16H0V16A16 16 0 0 1 16 0z" style="stroke:none" transform="rotate(-45 46.888 -1.792)"/>
+                <path d="M16 .5A15.5 15.5 0 0 1 31.5 16 15.5 15.5 0 0 1 16 31.5H.5V16A15.5 15.5 0 0 1 16 .5z" style="fill:none" transform="rotate(-45 46.888 -1.792)"/>
+            </g>
+        </g>
+        <text data-name="$" transform="translate(33.941 37.627)" style="fill:#30bfba;font-size:12px;font-family:Pretendard-Bold,Pretendard;font-weight:700"><tspan x="0" y="0">$</tspan></text>
+    </g>
+</svg>

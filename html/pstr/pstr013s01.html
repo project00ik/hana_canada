@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interac e-Transfer® 입금</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit"><i class="italic">Interac</i> e-Transfer® 입금</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                
+                <div class="con-box">
+                    <p class="page-tit form-area">송금인이 작성한 보안질문에 대한 답을 입력해 주세요.</p>
+                        
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="보안질문" value="What is the name of your first pet?" disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">보안질문</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>                    
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element" title="답" value="">
+                                <label for="inputText04" class="input__label" aria-hidden="true">답</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+
+                    <div class="form-area">
+                        <div class="info-box-wrap">
+                            <p class="title">안내사항</p>
+                            <ul class="bullet-wrap">
+                                <li>보안질문에 대한 답이 확실하지 않은 경우 송금인에게 다시 확인해 주세요.</li>
+                                <li>보안질문에 대한 정확한 답을 제출한 후에 입금 또는 거절을 할 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음">다음</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+<!-- 모달레이어 - 슬라이드 [출금계좌 선택] -->
+<div id="modalSlide3" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">출금계좌</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio11" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio11">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio12" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio12">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio13" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio13">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio14" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio14">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio15" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio15">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+<!-- //모달레이어 - 슬라이드 [출금계좌 선택] -->
+
+</body>
+</html>

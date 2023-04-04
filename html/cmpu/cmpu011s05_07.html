@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가입하기</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">가입하기</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">    
+                <div class="container">
+                    <div class="con-box">
+                        <div class="progress-bar-wrap">
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar on"></span>
+                        </div>
+                        
+                        <div class="con-line mt32">
+                            <p class="page-tit">계좌 세부 사항</p>
+                            <div class="form-area">
+                                <div class="input-wrap input--on">
+                                    <div class="input">
+                                        <div class="input__inner">
+                                            <div class="input-item-left">$CAD</div>
+                                            <input type="text" id="inputText08" class="input__element input-price" title="신규 금액 입력" placeholder="최소 가입금액 $1,000">
+                                            <label for="inputText08" class="input__label" aria-hidden="true">신규 금액</label>
+                                            <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                        </div>
+                                        <!-- 에러 메시지 -->
+                                        <p class="input__error" aria-live="assertive">오류메시지</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-area">
+                                <div class="select-wrap">
+                                    <div class="select">
+                                        <div class="select__inner">
+                                            <button type="button" class="button button-select__item" title="출금계좌 선택" data-element="modal__open" data-target="#modalSlide1" aria-controls="#modalSlide1">
+                                                <span>0000000000000000_CAD_$100.00</span>
+                                            </button>
+                                        </div>
+                                        <div class="select-label">출금계좌</div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                </div>
+                            </div>
+                            <div class="form-area">
+                                <p class="form-title">기간 선택</p>
+                                <div class="tab-box-wrap" data-element="tab">
+                                    <ul class="tab-box-list" role="tablist">
+                                        <li class="tab-box" data-element="tab__list" role="presentation">
+                                            <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" role="tab">예치 기간</a>
+                                        </li>                    
+                                        <li class="tab-box" data-element="tab__list" role="presentation">
+                                            <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab">만기 일자</a>
+                                        </li>  
+                                    </ul>
+                                    <div class="tab-con is-active" data-element="tab__panel" role="tabpanel">
+                                        <div class="form-area">
+                                            <div class="select-wrap">
+                                                <div class="select">
+                                                    <div class="select__inner">
+                                                        <button type="button" class="button button-select__item" title="예치 기간 선택" data-element="modal__open" data-target="#modalSlideTerm" aria-controls="#modalSlideTerm">
+                                                            <span>180일</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="select-label">예치 기간</div>
+                                                </div>
+                                                <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-con" data-element="tab__panel" role="tabpanel">
+                                        <div class="form-area">
+                                            <div class="input input--on">
+                                                <div class="input__inner">
+                                                    <input type="text" id="inputText05" class="input__element input-date" title="만기 일자" placeholder="YYYY.MM.DD" disabled="disabled">
+                                                    <label for="inputText05" class="input__label" aria-hidden="true">만기 일자</label>
+                                                    <button type="button" class="input__calendar-button" aria-label="만기 일자 선택"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="button btn-info" title="1Q TFSA 정기예금 이자율(연) 열기">1Q TFSA 정기예금 이자율(연)</button>
+                            </div>
+                            <div class="form-area">
+                                <p class="form-title">만기시 옵션</p>
+                                <div class="tab-box-wrap" data-element="tab">
+                                    <ul class="tab-box-list" role="tablist">
+                                        <li class="tab-box" data-element="tab__list" role="presentation">
+                                            <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" role="tab">자동으로 갱신</a>
+                                        </li>                    
+                                        <li class="tab-box" data-element="tab__list" role="presentation">
+                                            <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab">지정계좌로 이체</a>
+                                        </li>  
+                                    </ul>
+                                    <div class="tab-con is-active" data-element="tab__panel" role="tabpanel">
+                                        <div class="input__guide-text input__guide-text--left">
+                                            동일 기간으로 자동갱신됩니다.
+                                        </div>
+                                    </div>
+                                    <div class="tab-con" data-element="tab__panel" role="tabpanel">
+                                        <!-- D: TFSA 세이빙 보유 고객 -->
+                                        <div class="input__guide-text input__guide-text--left">
+                                            지정계좌로 만기해지 원리금이 이체됩니다.
+                                        </div>
+                                        <div class="form-area">
+                                            <div class="select-wrap">
+                                                <div class="select">
+                                                    <div class="select__inner">
+                                                        <button type="button" class="button button-select__item" title="지정계좌로 만기해지 원리금 이체 선택" data-element="modal__open" data-target="#modalSlide2" aria-controls="#modalSlide2">
+                                                            <span>0000000000000000_CAD_$100.00</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="select-label">지정계좌</div>
+                                                </div>
+                                                <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <!--// D: TFSA 세이빙 보유 고객 -->
+                                        <!-- D: TFSA 세이빙 미보유 고객 -->
+                                        <div class="mt24">
+                                            <div class="lgreen-box-wrap">
+                                                <p class="info-text">함께 개설되는 1Q TFSA 세이빙</p>
+                                            </div>
+                                        </div>
+                                        <!--// D: TFSA 세이빙 미보유 고객 -->
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="con-line">
+                            <p class="page-tit">TFSA 계좌 개설 전 주의 사항</p>
+                            <p class="page-txt mt8">
+                                TFSA 불입 가능 한도 정보는 예금주 본인이 CRA 등을 통해 확인 후 개설하셔야 하며, TFSA 초과 불입 발생 등으로 인한 불이익에 대해 은행은 책임지지 않습니다. 
+                                해당 계좌에 대한 수익자(Beneficiary) 또는 승계자(Successor Holder) 정보 등록은 개설 후 별도 절차를 통해 등록 가능합니다. 
+                                위 내용을 이해하셨고 본인의 불입 한도 내에서 계좌 개설 신청함을 확인하셨으면 아래 ‘확인함’ 버튼을 클릭해 주세요.
+                            </p>
+                            <div class="confirm-area">
+                                <!-- D : '확인함' 버튼 클릭 시 checked + disabled - 관련js 페이지 하단에 'confirmBox(this);'  -->
+                                <div class="checkbox-wrap box bold"><!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                                    <input type="checkbox" name="" id="checkbox-box01" title="확인함" onclick="confirmBox(this);">
+                                    <label for="checkbox-box01">확인함</label>
+                                </div>
+                                <p class="checkbox-error" aria-live="assertive">고객님에게 적절한 상품인지 확인해 주세요.</p>
+                            
+                                <!-- D : '확인함' 버튼 클릭 안했을 때 error 예시 -->
+                                <div class="checkbox-wrap box bold error"><!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                                    <input type="checkbox" name="" id="checkbox-box03" title="확인함" onclick="confirmBox(this);">
+                                    <label for="checkbox-box03">확인함</label>
+                                </div>
+                                <p class="checkbox-error" aria-live="assertive">고객님에게 적절한 상품인지 확인해 주세요.</p>
+                                <!--// D : '확인함' 버튼 클릭 안했을 때 error 예시 -->
+                            </div>
+                        </div>
+                        <!-- D: TFSA 세이빙 미보유 고객일 경우 -->
+                        <div class="con-line">
+                            <p class="page-tit">1Q TFSA 세이빙 개설 동의</p>
+                            <p class="page-txt mt8">
+                                1Q TFSA 정기예금 최초 개설시 1Q TFSA 세이빙이 함께 개설되어야 합니다. ‘예’ 를 선택하시는 경우  1Q TFSA 세이빙 개설에 동의하는 것으로 간주됩니다.
+                            </p>
+                            <div class="mt20">
+                                <div class="tab-radio-wrap">
+                                    <div class="tab-radio">
+                                        <input type="radio" name="radio02" id="radio02_1" title="CAD">
+                                        <label for="radio02_1">예</label>
+                                    </div>
+                                    <div class="tab-radio">
+                                        <input type="radio" name="radio02" id="radio02_2" title="USD">
+                                        <label for="radio02_2">아니요</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// D: TFSA 세이빙 미보유 고객일 경우 -->
+                        <div class="con-line">
+                            <p class="page-tit">계좌 이용 약관</p>
+                            <p class="page-txt mt8">“예”를 선택하시는 경우, <button type="button" class="txt_underline-b">1Q 정기예금</button>에 동의하는 것으로 간주됩니다.</p>
+                            <div class="mt20">
+                                <div class="tab-radio-wrap">
+                                    <div class="tab-radio">
+                                        <input type="radio" name="radio03" id="radio03_1" title="CAD">
+                                        <label for="radio03_1">예</label>
+                                    </div>
+                                    <div class="tab-radio">
+                                        <input type="radio" name="radio03" id="radio03_2" title="USD">
+                                        <label for="radio03_2">아니요</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // container -->
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="다음" disabled="disabled ">다음</button><!-- 활성화 시 : disabled 삭제 -->
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- 공통 script -->
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+    <script>
+        // 가입하기 확인함
+        function confirmBox(obj){
+            var confirmBox = $(obj);
+            confirmBox.prop('checked', true).prop('disabled', true);
+            confirmBox.next().text('확인완료');
+        }
+    </script>
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">출금계좌</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio1" onclick="modalClose(this);">
+                            <label for="madal1_radio1">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio02" onclick="modalClose(this);">
+                            <label for="madal1_radio02">0000000000000000_CAD_$60.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio03" onclick="modalClose(this);">
+                            <label for="madal1_radio03">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <div id="modalSlide2" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">지정계좌</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio01" onclick="modalClose(this);">
+                            <label for="madal2_radio01">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio02" onclick="modalClose(this);">
+                            <label for="madal2_radio02">0000000000000000_CAD_$60.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio03" onclick="modalClose(this);">
+                            <label for="madal2_radio03">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <div id="modalSlideDate" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">일자 선택</h1>
+            </div>
+            <div class="modal__contents btn-none">                        
+                <div class="modal-date-wrap">
+                    <ul class="date-list">
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="1">1</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="2">2</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="3">3</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="4">4</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="5">5</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="6">6</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="7">7</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="8">8</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="9">9</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="10">10</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="11">11</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="12">12</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="13">13</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="14">14</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="15">15</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="16">16</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="17">17</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="18">18</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="19">19</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="20">20</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="21">21</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="22">22</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="23">23</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="24">24</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="25">25</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="26">26</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="27">27</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="28">28</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="29">29</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="30">30</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="31">31</button></li>
+                    </ul>
+                </div>
+
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+
+    <div id="modalSlideTerm" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">기간 선택</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <div class="modal-term-wrap">
+                    <ul class="date-list">
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="31일">31일</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="90일">90일</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="180일">180일</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="1년">1년</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="2년">2년</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="3년">3년</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="4년">4년</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="5년">5년</button></li>
+                    </ul>
+                </div>
+
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <!--// 모달레이어 영역 -->
+
+</body>
+</html>

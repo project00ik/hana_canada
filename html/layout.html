@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout - [스뱅] 캐나다 법인 확산</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <button class="btn-back" title="이전 화면"></button>
+      <p class="page-tit">타이틀</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <!-- D: footer 관련 class 설명 (관련 JS : common-ui.js 'hanaUI.footer('.app-footer');' 에 있음)
+        * footer(하단 버튼 영역)이 없는경우 : app-main footer-none
+        * footer 하단 버튼이 기본(1개)일 때 : app-main
+        * footer 하단 버튼이 서브+기본(2개)일 때 : app-main footer-sub-btn
+    -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <!-- 컨텐츠 구분 영역 -->
+                <div class="con-box">
+                    <!-- 컨텐츠 상단 영역 -->
+                    <div class="cont-top-wrap">
+                        <!-- <div class="top-left">
+                            왼쪽 영역
+                        </div> -->
+                        <div class="top-right">
+                            <div class="select-wrap">
+                                <div class="select-sm">
+                                    <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide1" title="조회 팝업 열기" aria-controls="#modalSlide1">
+                                        <span>1개월</span> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 컨텐츠 상단 영역 -->
+                    <p>컨텐츠 영역</p>
+                </div>
+                <!--// 컨텐츠 구분 영역 -->
+                <!-- 컨텐츠 구분 영역 -->
+                <div class="con-box">
+                    <p>컨텐츠 영역</p>
+                    <!-- 컨텐츠 하단버튼 -->
+                    <div class="bottom-btn-wrap">
+                        <p>컨텐츠 하단버튼 간격 : margin-top 3.2rem</p>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn md line gray" aria-label="전체 목록">전체 목록</button>
+                        </div>
+                    </div>
+                    <!--// 컨텐츠 하단버튼 -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <!-- D: footer 버튼 관련 JS : common-ui.js 'hanaUI.footer('.app-footer');' -->
+        <div class="btn-group-sub-wrap">
+            <button type="button" class="btn rd" aria-label=""><span class="icon_plus">납부기관 등록</span></button>
+        </div>
+        <div class="btn-group-wrap">
+            <button type="button" class="btn gray btn-cancle" aria-label="">취소</button>
+            <button type="button" class="btn" aria-label="">확인</button>
+        </div>
+        <!-- 아이콘 + 버튼형 -->
+        <!-- <div class="btn-group-wrap">
+            <button type="button" class="btn gray btn-icon" aria-label="">
+                <span class="icon_upload"></span>
+            </button>
+            <button type="button" class="btn" aria-label="">Default</button>
+        </div> -->
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/touch-dnd.js"></script>
+    <script src="../js/pualugin.js"></script>
+    <script src="../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">슬라이드 팝업 제목</h1>
+        </div>
+        <div class="modal__contents">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="radio" id="radio01" title="">
+                        <label for="radio01">radio-list</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="radio" id="radio02" title="">
+                        <label for="radio02">radio-list</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="radio" id="radio03" title="">
+                        <label for="radio03">radio-list</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-wrap">
+            <button type="button" class="btn md" data-element="modal__close" aria-label="확인">확인</button>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+    </div>
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>로그인</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">One-Time Security 코드</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container ly-full">
+
+              <div class="con-box">
+                <div class="btn-floating-wrap">
+
+                  <div class="security-code-wrap">
+                    <p class="security-title">Security code 입력</p>
+                    <!-- input-code-wrap -->
+                    <div class="input-code-wrap">	<!-- error 시 class="error" 추가 -->
+                      <div class="input-code-box">
+                        <input type="number" name="" id="" title="Security code 1번째" class="input-code">
+                      </div>
+                      <div class="input-code-box">
+                        <input type="number" name="" id="" title="Security code 2번째" class="input-code">
+                      </div>
+                      <div class="input-code-box">
+                        <input type="number" name="" id="" title="Security code 3번째" class="input-code">
+                      </div>
+                      <div class="input-code-box">
+                        <input type="number" name="" id="" title="Security code 4번째" class="input-code">
+                      </div>
+                      <div class="input-code-box">
+                        <input type="number" name="" id="" title="Security code 5번째" class="input-code">
+                      </div>
+                      <div class="input-code-box">
+                        <input type="number" name="" id="" title="Security code 6번째" class="input-code">
+                      </div>
+                    </div>
+                    <!-- // input-code-wrap -->
+
+                    <!-- input-code-wrap에 error class 생성 시 block -->
+                    <p class="txt-code-error">인증번호가 일치하지 않습니다.</p>
+                    <div class=" btn-floating">
+                      <div class="security-time-wrap">
+                        <p class="security-time">남은 시간 04:59</p>
+                        <div class="btn-reload">
+                          <button type="button" class="btn rd" aria-label="재발송"><span class="icon_reload">재발송</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- // btn-floating-wrap -->
+
+                  </div>
+                  <!-- // security-code-wrap -->
+
+                </div>
+                <!-- // btn-floating-wrap -->
+              </div>
+              <!-- // con-box -->
+              
+            </div>
+            <!-- //container -->
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="확인">확인</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+</body>
+</html>

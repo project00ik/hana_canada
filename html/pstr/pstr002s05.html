@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>캐나다 하나은행 내 이체</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit">캐나다 하나은행 내 이체</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container">
+
+              <div class="con-box my-accounts-wrap">
+                
+                <div class="progress-bar-wrap">
+                    <span class="bar active"></span>
+                    <span class="bar active"></span>
+                    <span class="bar on"></span>
+                    <span class="bar"></span>
+                </div>
+
+
+                <p class="page-tit">이체일</p>                
+
+                <!-- Tab -->
+                <div class="tab-box-wrap" data-element="tab">
+
+                  <ul class="tab-box-list" role="tablist">
+                    <li class="tab-box" data-element="tab__list" >
+                      <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">즉시</a>
+                    </li>                    
+                    <li class="tab-box" data-element="tab__list">
+                      <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">예약</a>
+                    </li>                   
+                    <li class="tab-box" data-element="tab__list">
+                      <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">정기</a>
+                    </li>  
+                  </ul>
+                  <!-- // tab-box-list -->
+
+                  <div class="tab-con is-active" data-element="tab__panel">
+                  </div>
+                  <!-- // tab-con -->
+
+                  <div class="tab-con" data-element="tab__panel">
+                    
+                    <!-- input 달력 -->
+                    <div class="form-area">
+                      <div class="input input--on">
+                        <div class="input__inner">
+                          <input type="text" id="inputText05" class="input__element input-date" title="예약일" value="" disabled placeholder="YYYY.MM.DD">                    
+                          <button type="button" class="input__calendar-button" aria-label="예약일 선택"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--// input 달력 -->
+        
+
+                  </div>
+                  <!-- // tab-con -->
+
+                  <div class="tab-con" data-element="tab__panel">
+
+                    <!-- input 달력 : 시작일 - 종료일 -->
+                    <div class="form-area">
+                      <div class="input-wrap">
+                          <div class="input input--on">
+                              <div class="input__inner">
+                                  <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" disabled="disabled" placeholder="YYYY.MM.DD">
+                                  <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                  <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                              </div>
+                          </div>
+                          <div class="input input--on">
+                              <div class="input__inner">
+                                  <input type="text" id="inputText07" class="input__element input-date" title="종료일" value="" disabled="disabled" placeholder="YYYY.MM.DD">
+                                  <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                  <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
+                    <div class="form-area">
+                      <div class="input-wrap">
+                          <div class="input input--on">
+                              <div class="input__inner">
+                                  <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" disabled="disabled" placeholder="YYYY.MM.DD">
+                                  <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                  <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                              </div>
+                          </div>
+                          <div class="input input--disabled">
+                              <div class="input__inner">
+                                  <input type="text" id="inputText07" class="input__element input-date" title="종료일" disabled="disabled" value="YYYY.MM.DD">
+                                  <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                  <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!--// D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
+                    <!-- input 달력 : 시작일 - 종료일 -->
+
+                    <!-- select -->
+                    <div class="form-area">
+                      <div class="select-wrap">
+                        <div class="select">
+                          <div class="select__inner">
+                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide1" title="주기 선택">
+                              <span>주기 선택</span> 
+                            </button>
+                          </div>
+                          <div class="select-label">주기 선택</div>
+                        </div>
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                      </div>
+                    </div>
+                    <!--// select -->
+                    
+
+                    <!-- select -->
+                    <div class="form-area">
+                      <div class="select-wrap">
+                        <div class="select">
+                          <div class="select__inner">
+                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide2" title="요일 선택">
+                              <span>요일 선택</span> 
+                            </button>
+                          </div>
+                          <div class="select-label">요일 선택</div>
+                        </div>
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                      </div>
+                    </div>
+                    <!--// select -->
+
+                    <!-- select -->
+                    <div class="form-area">
+                      <div class="select-wrap">
+                        <div class="select">
+                          <div class="select__inner">
+                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideDate" title="일자 선택">
+                              <span>일자 선택</span> 
+                            </button>
+                          </div>
+                          <div class="select-label">일자 선택</div>
+                        </div>
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                      </div>
+                    </div>
+                    <!--// select -->
+
+                    <div class="checkbox-wrap box">
+                      <input type="checkbox" name="" id="checkbox-box01" title="계속 이체 시 종료일 입력 안함 선택">
+                      <label for="checkbox-box01">계속해서 이체하고자 하는 경우, 종료일은 입력하지 않아도 됩니다.</label>
+                    </div>
+
+                  </div>
+                  <!-- // tab-con -->
+
+                </div>                     
+                <!-- // Tab -->		
+                
+              </div>
+
+            </div>
+            <!-- // container -->
+            
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+      <div class="btn-group-wrap">
+          <button type="button" class="btn" aria-label="다음">다음</button>
+      </div>
+    </div>
+    <!-- //footer -->
+</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+
+ 
+	<!-- 모달레이어 - 슬라이드 [주기 선택]-->
+	<div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">주기 선택</h1>
+			</div>
+			<div class="modal__contents btn-none">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio01" title="매일" onclick="modalClose(this);">
+							<label for="madal1_radio01">매일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio02" title="매주" onclick="modalClose(this);">
+							<label for="madal1_radio02">매주</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio03" title="격주" onclick="modalClose(this);">
+							<label for="madal1_radio03">격주</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio04" title="매달" onclick="modalClose(this);">
+							<label for="madal1_radio04">매달</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+	<!-- //모달레이어 - 슬라이드 [주기 선택] -->
+
+  
+	<!-- 모달레이어 - 슬라이드 [요일 선택] -->
+	<div id="modalSlide2" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">요일 선택</h1>
+			</div>
+			<div class="modal__contents btn-none">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal2_radio" id="madal2_radio11" title="월요일" onclick="modalClose(this);">
+							<label for="madal2_radio11">월요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal2_radio" id="madal2_radio12" title="화요일" onclick="modalClose(this);">
+							<label for="madal2_radio12">화요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal2_radio" id="madal2_radio13" title="수요일" onclick="modalClose(this);">
+							<label for="madal2_radio13">수요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal2_radio" id="madal2_radio14" title="목요일" onclick="modalClose(this);">
+							<label for="madal2_radio14">목요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal2_radio" id="madal2_radio15" title="금요일" onclick="modalClose(this);">
+							<label for="madal2_radio15">금요일</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+	<!-- //모달레이어 - 슬라이드 [요일 선택] -->
+
+  <div id="modalSlideDate" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">일자 선택</h1>
+        </div>
+        <div class="modal__contents btn-none">                        
+            <div class="modal-date-wrap">
+                <ul class="date-list">
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="1">1</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="2">2</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="3">3</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="4">4</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="5">5</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="6">6</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="7">7</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="8">8</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="9">9</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="10">10</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="11">11</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="12">12</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="13">13</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="14">14</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="15">15</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="16">16</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="17">17</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="18">18</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="19">19</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="20">20</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="21">21</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="22">22</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="23">23</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="24">24</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="25">25</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="26">26</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="27">27</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="28">28</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="29">29</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="30">30</button></li>
+                    <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="31">31</button></li>
+                </ul>
+            </div>
+
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

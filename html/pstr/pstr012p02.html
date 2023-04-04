@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>수취인 수정</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">수취인 수정</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">
+                <div class="container">
+                    <div class="con-box">
+                        <p>E-mail 주소와 휴대폰 번호 둘 중 하나는 필수 입력 사항입니다.</p>
+                        <div class="form-area">
+							<div class="input input--on">
+								<div class="input__inner">
+									<input type="text" id="inputText02" class="input__element" title="수취인명 입력" value="Hana Kim" placeholder="">
+									<label for="inputText02" class="input__label" aria-hidden="true">수취인명</label>
+									<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+								</div>
+								<!-- 에러 메시지 -->
+								<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+							</div>
+						</div>
+                        <div class="form-area">
+							<div class="input input--on">
+								<div class="input__inner">
+									<input type="text" id="inputText02" class="input__element" title="E-mail 주소 입력" value="hana.kim@gmail.com" placeholder="">
+									<label for="inputText02" class="input__label" aria-hidden="true">E-mail 주소</label>
+									<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+								</div>
+								<!-- 에러 메시지 -->
+								<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+							</div>
+						</div>
+                        <div class="form-area">
+							<div class="input input--on">
+								<div class="input__inner">
+									<input type="text" id="inputText02" class="input__element" title="휴대폰 번호 입력" value="89401000031" placeholder="">
+									<label for="inputText02" class="input__label" aria-hidden="true">휴대폰 번호</label>
+									<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+								</div>
+								<!-- 에러 메시지 -->
+								<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+							</div>
+						</div>
+                        <div class="form-area">
+							<p class="form-title">이체 방법</p>
+                            <div class="tab-radio-wrap">
+                                <div class="tab-radio">
+                                    <input type="radio" name="radio04" id="radio04_1" title="E-mail 선택" checked="checked">
+                                    <label for="radio04_1">E-mail</label>
+                                </div>
+                                <div class="tab-radio">
+                                    <input type="radio" name="radio04" id="radio04_2" title="문자 선택">
+                                    <label for="radio04_2">문자</label>
+                                </div>
+                            </div>
+						</div>
+                        <div class="form-area">
+							<div class="input input--on">
+								<div class="input__inner">
+									<input type="text" id="inputText02" class="input__element" title="보안질문 입력" value="What is the name of your first pet?" placeholder="">
+									<label for="inputText02" class="input__label" aria-hidden="true">보안질문</label>
+									<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+								</div>
+								<!-- 에러 메시지 -->
+								<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+							</div>
+						</div>
+                        <div class="form-area">
+							<div class="input input--on">
+								<div class="input__inner">
+									<input type="text" id="inputText02" class="input__element" title="보안질문 답 입력" value="COCO" placeholder="">
+									<label for="inputText02" class="input__label" aria-hidden="true">답</label>
+									<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+								</div>
+								<!-- 에러 메시지 -->
+								<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+							</div>
+                            <div class="input__guide-text input__guide-text--left">
+								보안질문에 대한 답은 문장이 아닌 하나의 단어로 입력하셔야 합니다. (예: hana)
+							</div>
+						</div>
+                        <div class="form-area">
+                            <div class="btn-wrap">
+                                <button type="button" class="btn line" aria-label="삭제"><span class="icon-delete-green">삭제</span></button>
+                            </div>
+                        </div>
+
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="수정">수정</button>
+            </div>
+        </div>
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

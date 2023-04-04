@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>가입하기</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">가입하기</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">    
+                <div class="container">
+
+                    <div class="con-box">                
+                            
+                        <div class="progress-bar-wrap">
+                            <span class="bar first"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+
+                        <p class="page-tit">연락처 입력</p>
+                        <!-- 휴대폰 번호 입력 -->
+                        <div class="form-area">
+							<div class="input-wrap">
+								<div class="input ">
+									<div class="input__inner">
+										<input type="text" id="inputText01" class="input__element" title="휴대폰 번호 입력" placeholder="">
+                                        <label for="inputText01" class="input__label" aria-hidden="true">휴대폰 번호</label>
+										<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+										<button type="button" class="btn line sm" aria-label="인증번호 발송" disabled="disabled">인증번호 발송</button><!-- 활성화 시 : disabled 삭제 -->
+									</div>
+									<!-- 에러 메시지 -->
+									<p class="input__error" aria-live="assertive">오류메시지</p>
+								</div>
+							</div>
+						</div>
+                        <!--// 휴대폰 번호 입력 -->
+                        <!-- 휴대폰 번호 입력 후 -->
+                        <div class="form-area">
+							<div class="input-wrap">
+								<div class="input input--on">
+									<div class="input__inner">
+										<input type="text" id="inputText01_01" class="input__element" title="휴대폰 번호 입력" placeholder="" value="01012345678">
+                                        <label for="inputText01_01" class="input__label" aria-hidden="true">휴대폰 번호</label>
+										<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+										<button type="button" class="btn line sm" aria-label="인증번호 발송">인증번호 발송</button><!-- 활성화 시 : disabled 삭제 -->
+									</div>
+									<!-- 에러 메시지 -->
+									<p class="input__error" aria-live="assertive">오류메시지</p>
+								</div>
+							</div>
+						</div>
+                        <!--// 휴대폰 번호 입력 후 -->
+                        <!-- 휴대폰 번호 확인 완료 -->
+                        <div class="form-area">
+							<div class="input-wrap">
+								<div class="input input--on input--disabled">
+									<div class="input__inner">
+										<input type="text" id="inputText01_02" class="input__element" title="휴대폰 번호 입력" placeholder="" value="01012345678"  disabled="disabled">
+                                        <label for="inputText01_02" class="input__label" aria-hidden="true">휴대폰 번호</label>
+										<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+										<button type="button" class="btn line sm" aria-label="확인완료" disabled="disabled">확인완료</button><!-- 활성화 시 : disabled 삭제 -->
+									</div>
+									<!-- 에러 메시지 -->
+									<p class="input__error" aria-live="assertive">오류메시지</p>
+								</div>
+							</div>
+						</div>
+                        <!--// 휴대폰 번호 확인 완료 -->
+                        <!-- 이메일 주소 입력 -->
+                        <div class="form-area">
+							<div class="input-wrap">
+								<div class="input">
+									<div class="input__inner">
+										<input type="text" id="inputText02" class="input__element" title="E-mail 주소 입력" placeholder="">
+                                        <label for="inputText02" class="input__label" aria-hidden="true">E-mail 주소</label>
+										<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+										<button type="button" class="btn line sm" aria-label="확인" disabled="disabled">인증번호 발송</button><!-- 활성화 시 : disabled 삭제 -->
+									</div>
+									<!-- 에러 메시지 -->
+									<p class="input__error" aria-live="assertive">오류메시지</p>
+								</div>
+							</div>
+						</div>
+                        <!--// 이메일 주소 입력 -->
+                        <!-- 이메일 주소 입력 후 -->
+                        <div class="form-area">
+							<div class="input-wrap">
+								<div class="input input--on">
+									<div class="input__inner">
+										<input type="text" id="inputText02_01" class="input__element" title="E-mail 주소 입력" placeholder="" value="hana1q@hana.co.kr">
+                                        <label for="inputText02_01" class="input__label" aria-hidden="true">E-mail 주소</label>
+										<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+										<button type="button" class="btn line sm" aria-label="확인">인증번호 발송</button><!-- 활성화 시 : disabled 삭제 -->
+									</div>
+									<!-- 에러 메시지 -->
+									<p class="input__error" aria-live="assertive">오류메시지</p>
+								</div>
+							</div>
+						</div>
+                        <!--// 이메일 주소 입력 후 -->
+                        <!-- 이메일 주소 확인 완료 -->
+                        <div class="form-area">
+							<div class="input-wrap">
+								<div class="input input--on input--disabled">
+									<div class="input__inner">
+										<input type="text" id="inputText02_02" class="input__element" title="E-mail 주소 입력" placeholder="" value="hana1q@hana.co.kr">
+                                        <label for="inputText02_02" class="input__label" aria-hidden="true">E-mail 주소</label>
+										<button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+										<button type="button" class="btn line sm" aria-label="확인" disabled="disabled">확인완료</button><!-- 활성화 시 : disabled 삭제 -->
+									</div>
+									<!-- 에러 메시지 -->
+									<p class="input__error" aria-live="assertive">오류메시지</p>
+								</div>
+							</div>
+						</div>
+                        <!--// 이메일 주소 확인 완료 -->
+                    </div>
+                </div>
+                <!-- // container -->
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="다음" disabled="disabled">다음</button><!-- 활성화 시 : disabled 삭제 -->
+            </div>
+        </div>
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+</body>
+</html>

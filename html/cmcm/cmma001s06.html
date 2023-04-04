@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>로그인</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap">
+    
+	</div>
+	<!-- 공통 script -->
+  <script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+   
+			
+     
+  <!-- 모달레이어 - alert - only title -->
+  <div id="modalAlertTitle" class="modal popup-wrap alert only-title" data-element="modal__element">
+    <div class="modal__container" data-element="modal__element-container">
+        <div class="modal__contents">
+            <p class="con-title">
+              자동 로그아웃 되었습니다.
+            </p>
+        </div>
+        <div class="btn-group-wrap">
+          <button type="button" class="btn md" data-element="modal__close" aria-label="확인">확인</button>
+        </div>
+    </div>
+  </div>
+  <!-- //모달레이어 - alert - only title -->
+
+	<script>
+    /* 모달 열기(alert/슬라이드 팝업 구분없이 사용) : modalOpen('해당레이어팝업 ID값'); */
+    modalOpen('modalAlertTitle');   
+  </script>
+
+</body>
+</html>

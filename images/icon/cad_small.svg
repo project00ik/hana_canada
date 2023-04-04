@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="bkuv955mha">
+            <rect data-name="사각형 10843" width="16" height="16" rx="8" transform="translate(0 -3)" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="mknm03qa8b">
+            <rect data-name="사각형 10842" width="21.333" height="16" rx="2" style="fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g data-name="Ico / flag / cad_small" transform="translate(0 3)" style="clip-path:url(#bkuv955mha)">
+        <g data-name="그룹 15920" transform="translate(-2.667 -3)" style="clip-path:url(#mknm03qa8b)">
+            <rect data-name="사각형 10839" width="21.333" height="15.515" rx="2" style="fill:#fff"/>
+            <path data-name="패스 4265" d="M11.235 12h-.471l.118-1.73c-.007-.091-.054-.115-.235-.108l-1.882.216s.353-.432.353-.649A13.827 13.827 0 0 0 7 8.108a2.1 2.1 0 0 0 .588-.216c.118-.108-.471-1.3-.471-1.3s1.2.432 1.294.324a2.387 2.387 0 0 0 .235-.541s.941.973 1.176.973-.471-2.378-.471-2.378a2.584 2.584 0 0 0 .824.432C10.412 5.405 11 4 11 4a7.854 7.854 0 0 0 .706 1.405 7.25 7.25 0 0 0 .941-.432 14.376 14.376 0 0 0-.471 2.378c.118.108 1.176-.973 1.176-.973a1.742 1.742 0 0 0 .235.541c.118.108 1.294-.324 1.294-.324s-.588 1.189-.471 1.3a2.1 2.1 0 0 0 .59.213 13.827 13.827 0 0 0-2.118 1.622 2.063 2.063 0 0 0 .235.649l-1.765-.216c-.142-.037-.191-.009-.235.108z" transform="translate(-.333)" style="fill:#f93939"/>
+            <path data-name="사각형 10840" transform="translate(15.685)" style="fill:#f93939" d="M0 0h4.848v16H0z"/>
+            <path data-name="사각형 10841" transform="translate(.8)" style="fill:#f93939" d="M0 0h4.848v16H0z"/>
+        </g>
+    </g>
+</svg>

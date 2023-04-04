@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <linearGradient id="7zvwa4wimb" x1=".159" y1=".117" x2=".921" y2=".892" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#48d9e5"/>
+            <stop offset="1" stop-color="#48a3e5"/>
+        </linearGradient>
+        <linearGradient id="shdw3jtr9d" x1=".796" y1=".082" x2=".192" y2="1.065" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity=".404"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <clipPath id="ieq1d6yd7a">
+            <path data-name="사각형 10788" transform="translate(23 173)" style="stroke:#707070;fill:#fff" d="M0 0h20v20H0z"/>
+        </clipPath>
+        <clipPath id="mw4jgunlnc">
+            <circle data-name="타원 163" cx="8.125" cy="8.125" r="8.125" style="fill:#c1dceb"/>
+        </clipPath>
+    </defs>
+    <g data-name="ico / 28pt / help" transform="translate(-23 -173)" style="clip-path:url(#ieq1d6yd7a)">
+        <path data-name="사각형 10647" transform="translate(23.538 174.25)" style="fill:none" d="M0 0h18.773v18.773H0z"/>
+        <g data-name="그룹 15658" transform="translate(15.817 173.625)">
+            <circle data-name="타원 74" cx="7.5" cy="7.5" r="7.5" transform="translate(12.183)" style="opacity:.8;fill:url(#7zvwa4wimb)"/>
+            <g data-name="그룹 15655" transform="translate(7.183 2.5)">
+                <circle data-name="타원 73" cx="8.125" cy="8.125" r="8.125" style="fill:#c1dceb"/>
+                <g data-name="마스크 그룹 45" style="clip-path:url(#mw4jgunlnc)">
+                    <path data-name="패스 4176" d="M.627 13.381a.622.622 0 0 1-.145-1.228c2.906-.7 4.161-1.7 4.286-2.161a1.511 1.511 0 0 0-.476-1.285L4.287 8.7a2.221 2.221 0 0 1-.615-1.589A3.959 3.959 0 0 1 5.2 4.346a2.48 2.48 0 0 0 .97-1.714 4.668 4.668 0 0 0-.6-1.711L6.424 0a5.4 5.4 0 0 1 1 2.607 3.626 3.626 0 0 1-1.375 2.65 2.909 2.909 0 0 0-1.117 1.837 1.028 1.028 0 0 0 .237.714 2.719 2.719 0 0 1 .818 2.492 2.958 2.958 0 0 1-1.319 1.65 15 15 0 0 1-3.892 1.413.639.639 0 0 1-.149.018z" transform="rotate(12.04 10.533 9.314)" style="fill:url(#shdw3jtr9d)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

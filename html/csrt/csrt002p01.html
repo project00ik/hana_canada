@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>받는분 정보 목록</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <!-- 삭제요청 <button class="btn-back" title="이전 화면"></button> -->
+      <p class="page-tit">받는분 정보 목록</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box">
+                    <p class="page-txt">받는분 이름을 선택하면 자동으로 입력됩니다.</p>
+                    <!-- 카드 목록 -->
+                    <div class="card-wrap card-wrap--active">
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <!-- D : btn-star on 활성화 -->
+                                <button type="button" class="btn-star on" title="즐겨찾기">즐겨찾기</button>
+                                
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">Hana Kim</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">89401000031</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                            <!-- 하단 정보 영역 -->
+                            <div class="bottom-area">
+                                <p class="txt">Main street west chare Avenue-123 NY, USA.</p>
+                                <p class="txt">Cell : 010-3456-1234</p>
+                                <p class="txt">Office : 009832</p>
+                            </div>
+                            <!--// 하단 정보 영역 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <!-- D : btn-star on 활성화 -->
+                                <button type="button" class="btn-star on" title="즐겨찾기">즐겨찾기</button>
+                                
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">Aron Kim</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">89401000031</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                            <!-- 하단 정보 영역 -->
+                            <div class="bottom-area">
+                                <p class="txt">Main street west chare Avenue-123 NY, USA.</p>
+                                <p class="txt">Office : 009832</p>
+                            </div>
+                            <!--// 하단 정보 영역 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <!-- D : btn-star on 활성화 -->
+                                <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">Adrian Raul</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">89401000031</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                            <!-- 하단 정보 영역 -->
+                            <div class="bottom-area">
+                                <p class="txt">Main street west chare Avenue-123 NY, USA.</p>
+                                <p class="txt">Cell : 010-3456-1234</p>
+                            </div>
+                            <!--// 하단 정보 영역 -->
+                        </div>
+                        <div class="card-type1">
+                            <!-- 카드 상단 영역 -->
+                            <div class="top-right-area">
+                                <!-- D : btn-star on 활성화 -->
+                                <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                
+                                <div class="set-area tg--area">
+                                    <button type="button" class="set tg--btn" title="설정" aria-label="열기" onclick="toggleLayer(this);">설정</button>
+                                    <div class="set-layer tg--layer">
+                                        <ul class="set-list">
+                                            <li><button type="button" title="삭제">삭제</button></li>
+                                        </ul>
+                                        <button type="button" class="btn-close" title="닫기" onclick="toggleLayerClose();">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 상단 영역 -->
+                            <!-- 카드 내용 -->
+                            <div class="card-cont">
+                                <div class="card-box">
+                                    <div class="card">
+                                        <dl>
+                                            <dt>
+                                                <p class="tit">Brian</p>
+                                            </dt>
+                                            <dd>
+                                                <p class="txt">89401000031</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 카드 내용 -->
+                            <!-- 하단 정보 영역 -->
+                            <div class="bottom-area">
+                                <p class="txt">Main street west chare Avenue-123 NY, USA.</p>
+                            </div>
+                            <!--// 하단 정보 영역 -->
+                        </div>    
+                    </div>
+                    <!--// 카드 목록 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-sub-wrap">
+            <button type="button" class="btn rd" aria-label="받는분 정보 추가"><span class="icon_plus">받는분 정보 추가</span></button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

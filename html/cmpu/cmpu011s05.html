@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>가입하기</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">가입하기</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">    
+                <div class="container">
+
+                    <div class="con-box">
+                            
+                        <div class="progress-bar-wrap">
+							<span class="bar active"></span>
+							<span class="bar active"></span>
+							<span class="bar on"></span>
+						</div>
+                        <div class="con-line mt32">
+                            <p class="page-tit">계좌 정보</p>
+                            <p class="page-txt"><span class="tp-green">'$계좌명$'</span> 가입을 위해 다음 페이지를 작성해 주세요.</p>
+                        </div>
+                        <div class="con-line">
+                            <p class="page-tit">법률사항 안내</p>
+                            <div class="qna-list-wrap">
+                                <dl class="qna-list">
+                                    <dt>제3자가 이 계좌를 사용하거나 해당 계좌를 통해 이익을 얻게 되나요?</dt>
+                                    <dd>
+                                        <div class="tab-radio-wrap">
+                                            <div class="tab-radio">
+                                                <input type="radio" name="radio01" id="radio01_1" title="예">
+                                                <label for="radio01_1">예</label>
+                                            </div>
+                                            <div class="tab-radio">
+                                                <input type="radio" name="radio01" id="radio01_2" title="아니요">
+                                                <label for="radio01_2">아니요</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-area">
+                                            <div class="select-wrap">
+                                                <div class="select">
+                                                    <div class="select__inner">
+                                                        <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide1" title="000 선택" aria-controls="#modalSlide1">
+                                                            <span>Daily Banking</span> 
+                                                        </button>
+                                                    </div>
+                                                    <div class="select-label">계좌 사용용도</div>
+                                                </div>
+                                                <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="qna-list">
+                                    <dt>고객님에게 <span class="tpb-green">'$계좌명$'</span>이/가 적절한 상품인가요?</dt>
+                                    <dd>
+                                        <p class="txt">제공되는 상품 또는 서비스가 나의 재정적 필요 및 상황에 적절합니다. 상품페이지에서 확인한 주요 이점 및 리스크를 기반으로 재정적 필요, 상황 및 목표를 고려하여 적합하게 선택했습니다.</p>
+                                        <div class="confirm-area">
+                                            <!-- D : '확인함' 버튼 클릭 시 checked + disabled - 관련js 페이지 하단에 'confirmBox(this);'  -->
+                                            <div class="checkbox-wrap box bold"><!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                                                <input type="checkbox" name="" id="checkbox-box01" title="확인함" onclick="confirmBox(this);">
+                                                <label for="checkbox-box01">확인함</label>
+                                            </div>
+                                            <p class="checkbox-error" aria-live="assertive">고객님에게 적절한 상품인지 확인해 주세요.</p>
+                                        
+                                            <!-- D : '확인함' 버튼 클릭 안했을 때 error 예시 -->
+                                            <div class="checkbox-wrap box bold error"><!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                                                <input type="checkbox" name="" id="checkbox-box03" title="확인함" onclick="confirmBox(this);">
+                                                <label for="checkbox-box03">확인함</label>
+                                            </div>
+                                            <p class="checkbox-error" aria-live="assertive">고객님에게 적절한 상품인지 확인해 주세요.</p>
+                                            <!--// D : '확인함' 버튼 클릭 안했을 때 error 예시 -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // container -->
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="다음">다음</button><!-- 활성화 시 : disabled 삭제 -->
+            </div>
+        </div>
+        <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <script>
+        // 가입하기 확인함
+        function confirmBox(obj){
+            var confirmBox = $(obj);
+            confirmBox.prop('checked', true).prop('disabled', true);
+            confirmBox.next().text('확인완료');
+        }
+    </script>
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">계좌 사용용도</h1>
+            </div>
+            <div class="modal__contents btn-none">                        
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="modal_radio" id="modal_radio01" title="" onclick="modalClose(this);">
+                            <label for="modal_radio01">Daily Banking</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="modal_radio" id="modal_radio02" title="" onclick="modalClose(this);">
+                            <label for="modal_radio02">Savings/Investment</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="modal_radio" id="modal_radio03" title="" onclick="modalClose(this);">
+                            <label for="modal_radio03">Leisure/Recreation</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <!--// 모달레이어 영역 -->
+</body>
+</html>

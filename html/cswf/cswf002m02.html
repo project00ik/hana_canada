@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>승인 진행 상태 조회</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+        <p class="page-tit">승인 진행 상태 조회</p>
+        <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">
+                <div class="container approval-check-wrap">
+                    <div class="con-box">
+
+                        <!-- Tab -->
+                        <div class="tab-list-wrap" data-element="tab">
+                            <ul class="tab-list" role="tablist">
+                                <li class="tab" data-element="tab__list">
+                                    <a href="javascript:void();" class="text" aria-selected="true" data-element="tab__anchor"><span>사용자 승인</span></a>
+                                </li>                    
+                                <li class="tab" data-element="tab__list">
+                                    <a href="javascript:void();" class="text is-active" aria-selected="false" data-element="tab__anchor"><span>결재라인 승인</span></a>
+                                </li>  
+                            </ul>
+
+                            <!-- tab-con -->
+                            <div class="tab-con" data-element="tab__panel">  
+
+                            </div>
+                            <!-- // tab-con -->
+
+                            <!-- tab-con -->
+                            <div class="tab-con is-active" data-element="tab__panel"> 
+
+                                <div class="con-line">
+                                    <p class="page-tit">결재라인 상세정보</p>
+                                    <div class="card-wrap">
+                                        <!-- card-type2 -->
+                                        <div class="card-type2">
+                                            <div class="card-cont">
+                                                <div class="card-list1">
+                                                    <dl>
+                                                        <dt>결재라인명</dt>
+                                                        <dd>
+                                                            <span class="txt">MATRIX1</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- // card-type2 -->
+                                        <div class="card-type2">
+                                            <div class="card-cont">
+                                                <div class="card-list1">
+                                                    <dl>
+                                                        <dt>등록자선택</dt>
+                                                        <dd>
+                                                            <span class="txt">TEST123</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-type2">
+                                            <div class="card-cont">
+                                                <div class="card-list1">
+                                                    <dl>
+                                                        <dt>결재자선택</dt>
+                                                        <dd>
+                                                            <span class="txt">1단계 TEST02(Lee Soon Sin)</span>
+                                                        </dd>
+                                                        <dd>
+                                                            <span class="txt">2단계 TEST03(Lee Soon Sin)</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-type2">
+                                            <div class="card-cont">
+                                                <div class="card-list1">
+                                                    <dl>
+                                                        <dt>승인자선택</dt>
+                                                        <dd>
+                                                            <span class="txt">TEST04(Lee Soon Sin)</span>
+                                                            <span class="txt">TEST04(Lee Soon Sin)</span>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <!-- // card-wrap -->
+                                </div>
+                                
+                            </div>
+                            <!-- // tab-con -->
+
+                        </div>                     
+                        <!-- // Tab -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Content -->
+        
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn gray" aria-label="목록">목록</button>
+            </div>
+            <div class="btn-group-wrap">
+                <button type="button" class="btn gray btn-cancle" aria-label="반려">반려</button>
+                <button type="button" class="btn" aria-label="승인">승인</button>
+            </div>
+        </div>
+        <!-- //footer -->
+
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+
+</body>
+</html>

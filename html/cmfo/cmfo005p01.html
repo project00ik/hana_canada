@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>우편번호(Postal Code)</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">우편번호(Postal Code)</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <!-- 컨텐츠 구분 영역 -->
+                <div class="search-con-box">
+                    <!-- input : 검색 -->
+                    <div class="search-area">
+                        <div class="input input-search">
+                            <!--
+                                * 오류시 class="input input--error"
+                                * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                                * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                            -->
+                            <div class="input__inner">
+                                <input type="text" id="searchInput" class="input__element input--search" title="입력폼" placeholder="우편번호 검색">
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                                <button type="submit" class="btn-search" aria-label="검색">검색</button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                        <div class="search-layer">
+                            <!-- <button class="search-layer-close" onclick="searchLayerInit(this)">닫기</button> -->
+                            <!-- 검색 결과 없음 (no data) -->
+                            <!-- <div class="no-data">
+                                <i class="icon-alarm"></i>
+                                <p class="txt">검색어 결과가 없습니다.</p>
+                            </div> -->
+                            <!--// 검색 결과 없음 (no data) -->
+                            <!-- 검색 결과 있을 때 목록 -->
+                            <ul class="search-list search-list--active">
+                                <li class="active"><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                            </ul>
+                            <!--// 검색 결과 있을 때 목록 -->
+                        </div>
+                    </div>
+                </div>
+                <!--// 컨텐츠 구분 영역 -->
+                <!-- 컨텐츠 구분 영역 -->
+                <div class="con-box">
+                    <div class="form-area mgt-none">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText00" class="input__element" title="우편번호(Postal Code) 입력폼" placeholder="" value="M2N6K1" disabled="disabled">
+                                <label for="inputText00" class="input__label" aria-hidden="true">우편번호(Postal Code)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="주소 입력폼" placeholder="" value="4000 YONGE ST" disabled="disabled">
+                                <label for="inputText01" class="input__label" aria-hidden="true">주소</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="상세주소(선택) 입력폼" placeholder="">
+                                <label for="inputText01" class="input__label" aria-hidden="true">상세주소(선택)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText02" class="input__element input--on" title="도시(City) 입력폼" value="TORONTO" disabled="disabled">
+                                <label for="inputText02" class="input__label" aria-hidden="true">도시(City)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                </div>
+                <!--// 컨텐츠 구분 영역 -->
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="확인" disabled="disabled">확인</button><!-- 활성화 시 : disabled 삭제 -->
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+</body>
+</html>

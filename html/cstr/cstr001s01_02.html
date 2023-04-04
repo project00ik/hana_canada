@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>캐나다 하나은행 내 이체</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">캐나다 하나은행 내 이체</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box">
+                    <p class="page-tit">이체방법</p>
+                    <div class="form-area">
+                        <p class="form-title">유형</p>
+                        <div class="tab-box-wrap" data-element="tab">
+							<ul class="tab-box-list" role="tablist">
+                                <li class="tab-box" data-element="tab__list" role="presentation">
+                                    <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" role="tab">즉시</a>
+                                </li>
+                                <li class="tab-box" data-element="tab__list" role="presentation">
+                                    <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab">예약</a>
+                                </li>
+                                <li class="tab-box" data-element="tab__list" role="presentation">
+                                    <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab">정기</a>
+                                </li>
+							</ul>
+							<div class="tab-con is-active" data-element="tab__panel" role="tabpanel"></div>
+							<div class="tab-con" data-element="tab__panel" role="tabpanel">
+                                <!-- 예약 -->
+                                <div class="form-area">
+                                    <div class="input input--on">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText05" class="input__element input-date" title="예약일" placeholder="YYYY.MM.DD" disabled="disabled">
+                                            <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 예약 -->
+                            </div>
+							<div class="tab-con" data-element="tab__panel" role="tabpanel">
+                                <!-- 정기 -->
+                                <div class="form-area">
+                                    <div class="input-wrap">
+                                        <div class="input input--on">
+                                            <div class="input__inner">
+                                                <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" disabled="disabled" placeholder="YYYY.MM.DD">
+                                                <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                                <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                                            </div>
+                                        </div>
+                                        <div class="input input--on">
+                                            <div class="input__inner">
+                                                <input type="text" id="inputText07" class="input__element input-date" title="종료일" value="" disabled="disabled" placeholder="YYYY.MM.DD">
+                                                <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                                <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
+                                <div class="form-area">
+                                    <div class="input-wrap">
+                                        <div class="input input--on">
+                                            <div class="input__inner">
+                                                <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" disabled="disabled" placeholder="YYYY.MM.DD">
+                                                <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                                <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                                            </div>
+                                        </div>
+                                        <div class="input input--disabled">
+                                            <div class="input__inner">
+                                                <input type="text" id="inputText07" class="input__element input-date" title="종료일" disabled="disabled" value="YYYY.MM.DD">
+                                                <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                                <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
+                                <!-- select -->
+                                <div class="form-area">
+                                    <div class="select-wrap">
+                                    <div class="select">
+                                        <div class="select__inner">
+                                        <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideTab1" title="주기 선택">
+                                            <span>주기 선택</span> 
+                                        </button>
+                                        </div>
+                                        <div class="select-label">주기 선택</div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                    </div>
+                                </div>
+                                <!--// select -->
+                                
+                                <!-- select -->
+                                <div class="form-area">
+                                    <div class="select-wrap">
+                                    <div class="select">
+                                        <div class="select__inner">
+                                        <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideTab3" title="요일 선택">
+                                            <span>요일 선택</span> 
+                                        </button>
+                                        </div>
+                                        <div class="select-label">요일 선택</div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                    </div>
+                                </div>
+                                <!--// select -->
+            
+                                <!-- select -->
+                                <div class="form-area">
+                                    <div class="select-wrap">
+                                    <div class="select">
+                                        <div class="select__inner">
+                                        <!-- datepicker -->
+                                        <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideDate" title="일자 선택">
+                                            <span>일자 선택</span> 
+                                        </button>
+                                        </div>
+                                        <div class="select-label">일자 선택</div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                    </div>
+                                </div>
+                                <!--// select -->
+
+                                <!-- select -->
+                                <div class="form-area">
+                                    <div class="select-wrap">
+                                    <div class="select">
+                                        <div class="select__inner">
+                                        <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideTab2" title="휴일 시 처리방법 선택">
+                                            <span>휴일 시 처리방법 선택</span> 
+                                        </button>
+                                        </div>
+                                        <div class="select-label">휴일 시 처리방법 선택</div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                    </div>
+                                </div>
+                                <!--// select -->
+
+                                <!--// 정기 -->
+                            </div>
+						</div>
+                    </div>
+                </div>
+                <div class="con-box">
+                    <p class="page-tit">보내는 분</p>
+                    <div class="form-area">
+                        <div class="select-wrap select--active">
+                            <div class="select">
+                                <div class="select__inner">
+                                    <button type="button"  class="button button-select__item" title="출금계좌 선택" data-element="modal__open" data-target="#modalSlide1" aria-controls="#modalSlide1">
+                                        <span>CAD Account Name 89201000037</span>
+                                    </button>
+                                </div>
+                                <div class="select-label">출금계좌</div>
+                            </div>
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <button type="button" class="input-info-green mt16" title="이체한도 팝업 열기">
+                        <span class="text"><span class="arrow">1일 잔여 이체한도 CAD $10,000</span></span>
+                    </button>
+                    <div class="form-area">
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="출금통장표시 입력폼" placeholder="최대 50자" value="Aron Kim">
+                                <label for="inputText01" class="input__label" aria-hidden="true">출금통장표시(선택)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-box">
+                    <p class="page-tit">받는 분</p>
+
+                    <div class="form-area">
+                        <div class="select-wrap select--active">
+                            <div class="select">
+                                <div class="select__inner">
+                                    <button type="button"  class="button button-select__item" title="입금계좌 선택" data-element="modal__open" data-target="#modalSlide3" aria-controls="#modalSlide1">
+                                        <span>8920103237</span>
+                                    </button>
+                                </div>
+                                <div class="select-label">입금계좌</div>
+                            </div>
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01_02" class="input__element" title="받는분 이름 입력폼" placeholder="최대 50자" value="Aron Kim">
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <!-- D : Case 1. 동종통화 일 경우 -->
+                    <div class="form-area">
+                        <div class="form-flex-wrap">
+                            <p class="form-label">이체금액</p>
+                            <div class="select-wrap select--no-label select--active"><!-- D: 라벨이 없는 경우 select-wrap select--no-label -->
+                                <div class="select" style="width: 10.9rem;">
+                                    <div class="select__inner">
+                                        <button type="button" class="button button-select__item" title="통화 선택" data-element="modal__open" data-target="#modalSlide2" aria-controls="#modalSlide2">
+                                            <span>CAD $</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- <p class="input__error" aria-live="assertive">오류메세지 노출</p> -->
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input input--on">
+                                    <div class="input__inner">
+                                        <input type="text" id="inputText03" class="input__element input-price" title="송금액 입력" placeholder="0.00" value="100.00">
+                                        <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                    </div>
+                                    <!-- 에러 메시지 -->
+                                    <p class="input__error" aria-live="assertive">오류메시지</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// D : Case 1. 동종통화 일 경우 -->
+
+                    <div class="form-area">
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element" title="입금통장표시 입력폼" placeholder="최대 50자" value="Tom Cruise">
+                                <label for="inputText04" class="input__label" aria-hidden="true">입금통장표시(선택)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-area">
+                        <!-- 안내사항 -->
+                        <div class="info-box-wrap">
+                            <p class="title">안내사항</p>
+                            <ul class="bullet-wrap">
+                                <li>안전한 인터넷뱅킹 이용을 위하여 비밀번호 등 금융거래 관련 고객정보가 노출되지 않도록 유의해주세요.</li>
+                                <li>출금 계좌는 인터넷뱅킹 이용신청 시 등록된 출금 계좌만 가능하며, 입금 계좌를 지정하신 경우는 지정된 계좌로만 입금 가능합니다. </li>
+                                <li>이종 통화간 자금 이체 시 이체 금액을 출금 계좌 또는 입금 계좌 기준을 자유롭게 선택할 수 있습니다. </li>
+                                <li>타행으로 자금 이체는 이체 거래를 이용해주세요.</li>
+                            </ul>
+                        </div>
+                        <!--// 안내사항 -->
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음">다음</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlideTab1" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">주기 선택</h1>
+			</div>
+			<div class="modal__contents btn-none">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab1_radio" id="madalTab1_radio01" title="매일" onclick="modalClose(this);">
+							<label for="madalTab1_radio01">매일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab1_radio" id="madalTab1_radio02" title="매주" onclick="modalClose(this);">
+							<label for="madalTab1_radio02">매주</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab1_radio" id="madalTab1_radio03" title="격주" onclick="modalClose(this);">
+							<label for="madalTab1_radio03">격주</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab1_radio" id="madalTab1_radio04" title="매달" onclick="modalClose(this);">
+							<label for="madalTab1_radio04">매달</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+
+    <div id="modalSlideTab2" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">휴일 시 처리방법 선택</h1>
+			</div>
+			<div class="modal__contents btn-none">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab2_radio" id="madalTab2_radio01" title="매일" onclick="modalClose(this);">
+							<label for="madalTab2_radio01">익 영업일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab2_radio" id="madalTab2_radio02" title="매주" onclick="modalClose(this);">
+							<label for="madalTab2_radio02">전 영업일</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+
+    <div id="modalSlideTab3" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">요일 선택</h1>
+			</div>
+			<div class="modal__contents btn-none">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab3_radio" id="madalTab3_radio11" title="월요일" onclick="modalClose(this);">
+							<label for="madalTab3_radio11">월요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab3_radio" id="madalTab3_radio12" title="화요일" onclick="modalClose(this);">
+							<label for="madalTab3_radio12">화요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab3_radio" id="madalTab3_radio13" title="수요일" onclick="modalClose(this);">
+							<label for="madalTab3_radio13">수요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab3_radio" id="madalTab3_radio14" title="목요일" onclick="modalClose(this);">
+							<label for="madalTab3_radio14">목요일</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madalTab3_radio" id="madalTab3_radio15" title="금요일" onclick="modalClose(this);">
+							<label for="madalTab3_radio15">금요일</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">출금 계좌</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio01" onclick="modalClose(this);">
+                            <label for="madal1_radio01">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio02" onclick="modalClose(this);">
+                            <label for="madal1_radio02">0000000000000000_CAD_$60.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal1_radio" id="madal1_radio03" onclick="modalClose(this);">
+                            <label for="madal1_radio03">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <div id="modalSlide2" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">통화 선택</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio01" id="madal2_radio00" title="" onclick="modalClose(this);" checked="checked">
+                            <label for="madal2_radio00">통화 선택</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio01" id="madal2_radio01" title="" onclick="modalClose(this);">
+                            <label for="madal2_radio01">CAD $</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio01" id="madal2_radio02" title="" onclick="modalClose(this);">
+                            <label for="madal2_radio02">CAD $</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+
+    <div id="modalSlide3" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">입금계좌</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <div class="tab-list-wrap" data-element="tab">
+                    <ul class="tab-list" role="tablist">
+                        <li class="tab" data-element="tab__list" role="presentation">
+                            <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" role="tab"><span>최근입금계좌</span></a>
+                        </li>                    
+                        <li class="tab" data-element="tab__list" role="presentation">
+                            <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab"><span>자주쓰는계좌</span></a>
+                        </li>                   
+                        <li class="tab" data-element="tab__list" role="presentation">
+                            <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab"><span>직접입력</span></a>
+                        </li>
+                    </ul>
+                    <!-- tab : 최근입금계좌 -->
+                    <div class="tab-con is-active" data-element="tab__panel" role="tabpanel">
+                        <div class="pop-tab-wrap">
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star on" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Hong Gil Dong</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201000666</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star on" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201200787</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Park Jay</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201220560</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Aron Kim</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201220560</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Adrian Raul</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201000666</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// tab : 최근입금계좌 -->
+                    <!-- tab : 자주쓰는계좌 -->
+                    <div class="tab-con" data-element="tab__panel" role="tabpanel">
+                        <!-- D: 버튼이 있는경우 class="pop-tab-wrap is-btn" -->
+                        <div class="pop-tab-wrap is-btn">
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star on" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Hong Gil Dong</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201000666</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star on" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201200787</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Park Jay</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201220560</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Aron Kim</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201220560</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <!-- 카드 상단 영역 -->
+                                    <div class="top-right-area">
+                                        <!-- D : btn-star on 활성화 -->
+                                        <button type="button" class="btn-star" title="즐겨찾기">즐겨찾기</button>
+                                    </div>
+                                    <!--// 카드 상단 영역 -->
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="tit">Adrian Raul</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">
+                                                            <span>USD Savings Deposit</span>
+                                                            <span>89201000666</span>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                            </div>
+                            
+                            <div class="pop-tab-btn">
+                                <button type="button" class="btn line gray" data-element="modal__close" aria-label="자주쓰는 계좌 관리"><span class="icon-set">자주쓰는 계좌 관리</span></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--// tab : 자주쓰는계좌 -->
+                    <!-- tab : 직접입력 -->
+                    <div class="tab-con" data-element="tab__panel" role="tabpanel">
+                        <div class="form-area">
+                            <div class="input">
+                                <div class="input__inner">
+                                    <input type="text" id="inputTextPop01" class="input__element" title="입금계좌 입력폼" placeholder="계좌 입력">
+                                    <label for="inputTextPop01" class="input__label" aria-hidden="true">입금계좌</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                            </div>
+                        </div>
+                        <div class="form-area">
+                            <div class="input">
+                                <div class="input__inner">
+                                    <input type="text" id="inputTextPop02" class="input__element" title="수취인 명 입력폼" placeholder="수취인 명 영문입력">
+                                    <label for="inputTextPop02" class="input__label" aria-hidden="true">수취인 명</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                            </div>
+                        </div>
+                        <div class="mt48">
+                            <div class="button-wrap">
+                                <button type="button" class="btn" data-element="modal__close" aria-label="확인">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// tab : 직접입력 -->
+                </div>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+
+    <div id="modalSlideDate" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">일자 선택</h1>
+            </div>
+            <div class="modal__contents btn-none">                        
+                <div class="modal-date-wrap">
+                    <ul class="date-list">
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="1">1</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="2">2</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="3">3</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="4">4</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="5">5</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="6">6</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="7">7</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="8">8</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="9">9</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="10">10</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="11">11</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="12">12</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="13">13</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="14">14</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="15">15</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="16">16</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="17">17</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="18">18</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="19">19</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="20">20</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="21">21</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="22">22</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="23">23</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="24">24</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="25">25</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="26">26</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="27">27</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="28">28</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="29">29</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="30">30</button></li>
+                        <li><button type="button" class="btn-date" onclick="modalClose(this);" aria-label="31">31</button></li>
+                    </ul>
+                </div>
+
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+
+        <div id="modalSlideDate" class="modal popup-wrap modal--slide" data-element="modal__element">
+            <div class="modal__container" data-element="modal__element-container">
+                <div class="modal__header">
+                    <h1 class="title">입금계좌</h1>
+                </div>
+                <div class="modal__contents btn-none">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>아이디 찾기</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <button class="btn-back" title="이전 화면"></button>
+      <p class="page-tit">아이디 찾기</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container idpw-wrap">
+              
+              <div class="con-box">
+
+                  <!-- input -->
+                  <div class="form-area">
+                    <div class="input">
+                        <!--
+                            * 오류시 class="input input--error"
+                            * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                            * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                        -->
+                        <div class="input__inner">
+                            <input type="text" id="inputText01" class="input__element" title="이름 입력">
+                            <label for="inputText01" class="input__label" aria-hidden="true">이름</label>
+                            <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                        </div>
+                        <!-- 에러 메시지 -->
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                    </div>
+                  </div>
+                  <!--// input -->
+                  <!-- input -->
+                  <div class="form-area">
+                    <div class="input">
+                        <!--
+                            * 오류시 class="input input--error"
+                            * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                            * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                        -->
+                        <div class="input__inner">
+                            <input type="text" id="inputText01" class="input__element" title="성 입력">
+                            <label for="inputText01" class="input__label" aria-hidden="true">성</label>
+                            <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                        </div>
+                        <!-- 에러 메시지 -->
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                    </div>
+                  </div>
+                  <!--// input -->
+                  <!-- input -->
+                  <div class="form-area">
+                    <div class="input">
+                        <!--
+                            * 오류시 class="input input--error"
+                            * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                            * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                        -->
+                        <div class="input__inner">
+                            <input type="text" id="inputText01" class="input__element" title="이메일 주소 입력">
+                            <label for="inputText01" class="input__label" aria-hidden="true">이메일 주소</label>
+                            <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                        </div>
+                        <!-- 에러 메시지 -->
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                    </div>
+                  </div>
+                  <!--// input -->
+
+                  <div class="info-box-wrap">
+                    <p class="title">안내사항</p>
+                    <ul class="bullet-wrap">
+                      <li>등록하신 이름, 성, 이메일 주소를 입력하시기 바랍니다.</li>
+                    </ul>
+                  </div>
+                  <!-- // info-box-wrap -->
+
+              </div>
+              <!-- // con-box -->
+
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음" disabled>다음</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 공통 meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>환율조회</title>
+<!-- 공통 css -->
+<link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <p class="page-tit">환율조회</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container pdt-none">
+
+                <div class="exchange-rate-wrap">
+
+                    <div class="top">
+                        <div class="box">
+                            <div class="inbox">                              
+                                <div class="ly-l">
+                                    <p class="title">From</p>
+                                    <!-- select(텍스트형) select-sm -->
+                                    <div class="select-wrap">
+                                        <div class="select-sm type02">
+                                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideSelectSm02" title="조회 팝업 열기" aria-controls="#modalSlideSelectSm02">
+                                                <i class="icon-country-korea"></i><span>CAD</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--// select(텍스트형) select-sm -->
+                                </div>
+                                <div class="ly-r price">
+                                    <div class="form-flex-wrap">
+                                        <div class="input-wrap">
+                                            <div class="input">
+                                                <div class="input__inner">
+                                                    <input type="text" id="inputText03" class="input__element input-price" title="송금액 입력" placeholder="0.00">
+                                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                                </div>
+                                                <!-- 에러 메시지 -->
+                                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inbox">                              
+                                <div class="ly-l">
+                                    <p class="title">To</p>
+                                    <!-- select(텍스트형) select-sm -->
+                                    <div class="select-wrap">
+                                        <div class="select-sm type02">
+                                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideSelectSm02" title="조회 팝업 열기" aria-controls="#modalSlideSelectSm02">
+                                                <i class="icon-country-korea"></i><span>KRW</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--// select(텍스트형) select-sm -->
+                                </div>
+                                <div class="ly-r price">
+                                    <div class="form-flex-wrap">
+                                        <div class="input-wrap">
+                                            <div class="input">
+                                                <div class="input__inner">
+                                                    <input type="text" id="inputText03" class="input__element input-price" title="송금액 입력" placeholder="0.00">
+                                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                                </div>
+                                                <!-- 에러 메시지 -->
+                                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- select(텍스트형) select-sm -->
+                            <div class="select-wrap btn-type">
+                                <div class="select-sm type02">
+                                    <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideSelectSm03" title="송금 보낼때 팝업 열기" aria-controls="#modalSlideSelectSm03">
+                                        <span>송금 보낼때</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--// select(텍스트형) select-sm -->
+                            
+                        </div>
+                        <!-- // box -->
+                    </div>
+                    <!-- // top -->
+
+                    <div class="con-box">
+                        <!-- Tab -->
+						<div class="tab-box-wrap mt40" data-element="tab">
+							<ul class="tab-rd-box-list" role="tablist">
+								<li class="tab-box" data-element="tab__list" >
+									<a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">CAD/KRW</a>
+								</li>                    
+								<li class="tab-box" data-element="tab__list">
+									<a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">USD/CAD</a>
+								</li> 
+							</ul>
+							<div class="tab-con is-active" data-element="tab__panel">
+                                <div class="cont-top-wrap">
+                                    <p class="top-right">2022.12.22</p>
+                                </div>
+                                <div class="card-wrap">
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>송금 보낼 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->                                    
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>송금 받을 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->   
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>현금 살 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>현금 팔 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->             
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>매매기준율</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->                
+                                </div>
+                            </div>
+                            <!-- // tab-con -->
+							<div class="tab-con" data-element="tab__panel">
+                                <div class="cont-top-wrap">
+                                    <p class="top-right">2022.12.22</p>
+                                </div>
+                                <div class="card-wrap">
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>송금 보낼 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->                                    
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>송금 받을 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->   
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>현금 살 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->
+    
+                                    <!-- card-type2 -->
+                                    <div class="card-type2">                    
+                                        <!-- 카드 내용 -->
+                                        <div class="card-cont">
+                                            <div class="card-list1">
+                                            <dl>
+                                                <dt>현금 팔 때</dt>
+                                                <dd>
+                                                    <span class="txt">KRW 1.3293</span>
+                                                </dd>
+                                            </dl>
+                                            </div>
+                                        </div>
+                                        <!--// 카드 내용 -->
+                                    </div>
+                                    <!-- // card-type2 -->             
+                                </div>
+
+                            </div>
+                            <!-- // tab-con -->
+						</div>                     
+						<!-- // Tab -->	
+
+                        <!-- 안내사항 -->
+                        <div class="info-box-wrap mt32">
+                            <p class="title">안내사항</p>
+                            <ul class="bullet-wrap">
+                                <li>본 환율은 참고용입니다. 실제 적용되는 환율은 거래 시점에서 확정됩니다.</li>
+                            </ul>
+                        </div>
+                        <!--// 안내사항 -->
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="환율추이">환율추이</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+<!-- 모달레이어 - 슬라이드 -->
+<div id="modalSlideSelectSm" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">통화</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio01" title="CAD" onclick="modalClose(this);">
+                        <label for="madal1_radio01"><i class="icon-country-canada"></i>CAD</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio02" title="KRW" onclick="modalClose(this);">
+                        <label for="madal1_radio02"><i class="icon-country-korea"></i>KRW</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio03" title="USD" onclick="modalClose(this);">
+                        <label for="madal1_radio03"><i class="icon-country-usa"></i>USD</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+<!-- //모달레이어 - 슬라이드 -->
+
+<!-- 모달레이어 - 슬라이드 -->
+<div id="modalSlideSelectSm02" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">통화</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio02" id="madal1_radio01_01" title="CAD" onclick="modalClose(this);">
+                        <label for="madal1_radio01_01"><i class="icon-country-canada"></i>CAD</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio02" id="madal1_radio01_02" title="KRW" onclick="modalClose(this);">
+                        <label for="madal1_radio01_02"><i class="icon-country-korea"></i>KRW</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio02" id="madal1_radio01_03" title="USD" onclick="modalClose(this);">
+                        <label for="madal1_radio01_03"><i class="icon-country-usa"></i>USD</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+<!-- //모달레이어 - 슬라이드 -->
+
+<!-- 모달레이어 - 슬라이드 -->
+<div id="modalSlideSelectSm03" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">조회기준</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_01" title="송금 보낼 때" onclick="modalClose(this);">
+                        <label for="madal1_radio03_01">송금 보낼 때</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_02" title="송금 받을 때" onclick="modalClose(this);">
+                        <label for="madal1_radio03_02">송금 받을 때</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_03" title="현금 살 때" onclick="modalClose(this);">
+                        <label for="madal1_radio03_03">현금 살 때</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_04" title="현금 팔 때" onclick="modalClose(this);">
+                        <label for="madal1_radio03_04">현금 팔 때</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_05" title="수표 살 때" onclick="modalClose(this);">
+                        <label for="madal1_radio03_05">수표 살 때</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_06" title="현금 팔 때" onclick="modalClose(this);">
+                        <label for="madal1_radio03_06">수표 팔 때</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio03" id="madal1_radio03_07" title="매매기준율" onclick="modalClose(this);">
+                        <label for="madal1_radio03_07">매매기준율</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+<!-- //모달레이어 - 슬라이드 -->
+
+
+</body>
+</html>

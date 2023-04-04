@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 공통 meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Interac 프로필 관리</title>
+<!-- 공통 css -->
+<link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit"><i class="italic">Interac</i> 프로필 관리</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container">
+
+                <div class="con-box">
+                    <p class="page-tit"><i class="italic">Interac</i> 프로필 정보</p>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="성명" value="hong" disabled>
+                                <label for="inputText04" class="input__label" aria-hidden="true">성명</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input">
+                            <!--
+                                * 오류시 class="input input--error"
+                                * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                                * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                            -->
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="닉네임 입력">
+                                <label for="inputText01" class="input__label" aria-hidden="true">닉네임</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                <!-- input Tooltip -->
+                                <div class="input-tooltip-wrap">
+                                    <div class="tooltip-wrap">
+                                        <p class="tooltip-title">도움말</p>
+                                        <div class="tooltip" data-tooltip="paragraph">
+                                            <button type="button" class="btn-open" data-tooltip-button="open" aria-label="툴팁 열기"></button>
+                                            <div class="tooltip-con" data-tooltip-panel="false">
+                                                <div class="tooltip__column">
+                                                    <div class="tooltip__description" data-tooltip="focus">
+                                                    <!-- tooltip 컨텐츠 영역 -->
+                                                        <div class="inbox">
+                                                            <p class="text">닉네임은 <i class="italic">Interac</i>에서 발송하는 이메일에 표시되는 정보입니다.</p>
+                                                        </div>
+                                                    <!-- // tooltip 컨텐츠 영역 -->
+                                                    </div>
+                                                </div>
+                                                <button class="btn-close" data-tooltip-button="close" aria-label="툴팁 닫기" type="button"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // input Tooltip -->
+                                </div>
+                            </div>
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="E-mail 주소" value="gildong@gmail.com" disabled>
+                                <label for="inputText04" class="input__label" aria-hidden="true">E-mail 주소</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="휴대폰 번호" value="1234567890" disabled>
+                                <label for="inputText04" class="input__label" aria-hidden="true">휴대폰 번호</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input__inner">
+                            <p class="form-title">알림 방식</p>
+                            <!-- input Tooltip -->
+                            <div class="input-tooltip-wrap">
+                                <div class="tooltip-wrap">
+                                    <p class="tooltip-title">도움말</p>
+                                    <div class="tooltip" data-tooltip="paragraph">
+                                        <button type="button" class="btn-open" data-tooltip-button="open" aria-label="툴팁 열기"></button>
+                                        <div class="tooltip-con" data-tooltip-panel="false">
+                                            <div class="tooltip__column">
+                                                <div class="tooltip__description" data-tooltip="focus">
+                                                <!-- tooltip 컨텐츠 영역 -->
+                                                    <div class="inbox">
+                                                        <p class="text"><i class="italic">Interac</i> e-Transfer® 거래 상태와 관련된 이메일 또는 문자가 발송됩니다.</p>
+                                                    </div>
+                                                <!-- // tooltip 컨텐츠 영역 -->
+                                                </div>
+                                            </div>
+                                            <button class="btn-close" data-tooltip-button="close" aria-label="툴팁 닫기" type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // input Tooltip -->
+                            </div>
+                        </div>
+                        <div class="tab-radio-wrap">
+							<div class="tab-radio">
+								<input type="radio" name="radio04" id="radio04_1" title="E-mail 선택" checked="">
+								<label for="radio04_1">E-mail</label>
+							</div>
+							<div class="tab-radio">
+								<input type="radio" name="radio04" id="radio04_2" title="문자 선택">
+								<label for="radio04_2">문자</label>
+							</div>
+						</div>
+                    </div>        
+                </div>
+                <!-- // con-box -->
+                <div class="con-box">
+                    <p class="page-tit">약관동의</p>
+                    <button type="button" class="txt_underline-b mt16"><i class="italic">Interac</i> e-Transfer® Terms and Conditions</button>
+                    <div class="checkbox-wrap box mt24">	<!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                        <input type="checkbox" name="" id="checkbox-box01" title="">
+                        <label for="checkbox-box01"><i class="italic">Interac</i> e-Transfer 서비스 약관에 동의합니다.</label>
+                    </div>
+                </div>
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->    
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="등록">등록</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+</body>
+</html>

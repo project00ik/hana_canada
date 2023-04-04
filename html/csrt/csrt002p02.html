@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>받는분 정보 추가</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <button class="btn-back" title="이전 화면"></button>
+      <p class="page-tit">받는분 정보 추가</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box">
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="입금계좌 입력폼" placeholder="">
+                                <label for="inputText01" class="input__label" aria-hidden="true">입금계좌</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText02" class="input__element" title="받는 분 이름 입력폼" placeholder="">
+                                <label for="inputText02" class="input__label" aria-hidden="true">받는 분 이름</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText03_01" class="input__element" title="영문 주소 입력폼">
+                                <label for="inputText03_01" class="input__label" aria-hidden="true">영문 주소</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                <button type="button" class="btn-plus" aria-label="추가"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText03_02" class="input__element input__no-label" title="영문 주소 입력폼" placeholder="영문 주소">
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                <button type="button" class="btn-minus" aria-label="삭제"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+
+                    <div class="form-area">
+                        <div class="input">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04_01" class="input__element" title="추가정보 입력폼">
+                                <label for="inputText04_01" class="input__label" aria-hidden="true">추가정보</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                <button type="button" class="btn-plus" aria-label="추가"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04_02" class="input__element input__no-label" title="추가정보 입력폼" placeholder="추가정보">
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                <button type="button" class="btn-minus" aria-label="삭제"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="추가">추가</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    
+    <!-- //모달레이어 영역 -->
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자주쓰는계좌 관리</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">자주쓰는계좌 관리</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box">
+                    <div class="form-area">
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText01" class="input__element" title="계좌번호 입력폼" placeholder="계좌번호 입력" value="0000000000000000">
+                                <label for="inputText01" class="input__label" aria-hidden="true">계좌번호</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="mt16">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn md line" aria-label="계좌 확인">계좌 확인</button>
+                        </div>
+                    </div>
+
+                    <div class="form-area mt32">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText02" class="input__element input--on" title="은행 입력폼" value="Hana Bank Canada" disabled>
+                                <label for="inputText02" class="input__label" aria-hidden="true">은행</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText02" class="input__element input--on" title="이름 (Full Name) 입력폼" value="Hana Kim" disabled>
+                                <label for="inputText02" class="input__label" aria-hidden="true">이름 (Full Name)</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+
+                    <div class="form-area">
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText03" class="input__element input--on" title="메모" value="하나 주계좌">
+                                <label for="inputText03" class="input__label" aria-hidden="true">메모</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+
+                    <div class="form-area">
+                        <!-- 안내사항 -->
+                        <div class="info-box-wrap">
+                            <p class="title">안내사항</p>
+                            <ul class="bullet-wrap">
+                                <li>수취인 계좌번호는 다음 조건에 맞아야 합니다.
+                                    <ul class="bullet-bar-wrap">
+										<li>캐나다 하나은행에 개설된 계좌</li>
+										<li>개인 또는 비즈니스 계좌</li>
+										<li>체킹 또는 세이빙 계좌</li>
+									</ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--// 안내사항 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="추가">추가</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+
+    <!-- 모달레이어 영역 -->
+    
+    <!-- //모달레이어 영역 -->
+
+</body>
+</html>

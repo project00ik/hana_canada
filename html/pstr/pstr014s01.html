@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이체 요청</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <button class="btn-back" title="이전 화면"></button>
+        <p class="page-tit">이체 요청</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box"> 
+                    <p class="page-tit">이체 요청 정보</p>                    
+                    <div class="form-area">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn line" aria-label="요청 대상 선택 및 관리"><span class="icon_plus">요청 대상 선택 및 관리</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-area mt24">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="요청 대상 고객" value="kim" disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">요청 대상 고객</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--disabled">
+                            <div class="input__inner">
+                                <input type="text" id="inputText04" class="input__element input--on" title="연락처" value="hana.kim@gmail.com" disabled="disabled">
+                                <label for="inputText04" class="input__label" aria-hidden="true">연락처</label>
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: inline-block;"></button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="input-wrap input--on">
+                            <div class="input">
+                                <div class="input__inner">
+                                    <div class="input-item-left">$CAD</div>
+                                    <input type="text" id="inputText03" class="input__element input-price" title="요청금액 입력" placeholder="0.00" value="">
+                                    <label for="inputText03" class="input__label" aria-hidden="true">요청금액</label>
+                                    <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                </div>
+                                <!-- 에러 메시지 -->
+                                <p class="input__error" aria-live="assertive">오류메시지</p>
+                            </div>
+                        </div>
+                        <button type="button" class="input-info-green mt16" aria-label="1회 이체요청가능한도 CAD $3,000">
+							<span class="text"><span class="arrow">1회 이체요청가능한도 CAD $3,000</span></span>
+						</button>
+                    </div>
+                    <div class="form-area">
+                        <div class="select-wrap">
+                            <div class="select">
+                                <div class="select__inner">
+                                    <button type="button" class="button button-select__item" title="입금계좌 선택" data-element="modal__open" data-target="#modalSlide3" aria-controls="#modalSlide3">
+                                        <span>입금계좌 선택</span>
+                                    </button>
+                                </div>
+                                <div class="select-label">입금계좌</div>
+                            </div>
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>                        
+                    </div>
+                    <div class="form-area">
+                        <div class="input input--on">
+                            <div class="input__inner">
+                                <input type="text" id="inputText05" class="input__element input-date" title="입금 요청 기한(선택) 선택" placeholder="YYYY.MM.DD" disabled="disabled">
+                                <label for="inputText05" class="input__label" aria-hidden="true">입금 요청 기한(선택)</label>
+                                <button type="button" class="input__calendar-button" aria-label="입금 요청 기한(선택) 선택"></button>
+                            </div>
+                        </div>
+                    </div>               
+                    <div class="form-area">
+                        <div class="textarea">  <!-- error시 class 추가 : input--error -->
+                            <label for="textArea01" class="form__label">메시지(선택)</label>
+                            <textarea class="textarea__element" name="" id="textArea01" cols="30" rows="10" placeholder=""></textarea>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메시지</p>
+                        </div>
+                        <!-- 가이드 메세지 -->
+                        <div class="input__guide-text input__guide-text--left">
+                            상대방에게 전달할 메시지를 입력해 주세요. (최대 400자)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음">다음</button>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+<!-- 모달레이어 - 슬라이드 [입금계좌 선택] -->
+<div id="modalSlide3" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">입금계좌</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio11" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio11">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio12" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio12">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio13" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio13">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio14" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio14">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio15" title="0000000000000000_CAD_$100.00" onclick="modalClose(this);">
+                        <label for="madal3_radio15">0000000000000000_CAD_$100.00</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+<!-- //모달레이어 - 슬라이드 [입금계좌 선택] -->
+
+</body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>예약이체관리</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">예약이체관리</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <div class="con-box">
+                    <div class="tab-list-wrap" data-element="tab">
+                        <ul class="tab-list type02" role="tablist">
+                            <li class="tab" data-element="tab__list" role="presentation">
+                                <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" role="tab"><span>이체거래</span></a>
+                            </li>                    
+                            <li class="tab" data-element="tab__list" role="presentation">
+                                <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" role="tab"><span><i class="italic">Interac</i> e-Transfer®</span></a>
+                            </li>    
+                        </ul>
+                        <div class="tab-con is-active" data-element="tab__panel" role="tabpanel">
+                            <div class="form-area">
+                                <!-- select(박스형) -->
+                                <div class="select-wrap select--active">
+                                    <div class="select select-box">
+                                        <div class="select__inner">
+                                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide1" aria-controls="#modalSlide1" title="내 계좌 선택">
+                                                <!-- <i class="icon-country-canada"></i> -->
+                                                <span>12345678 CAD  SAVINGS DEPOSIT</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                </div>
+                                <!--// select(박스형) -->
+                            </div>
+                        
+                            <!-- 컨텐츠 상단 영역 -->
+                            <div class="cont-top-wrap mt24">
+                                <div class="top-right">
+                                    <div class="select-wrap">
+                                        <div class="select-sm">
+                                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide2" title="조회 팝업 열기" aria-controls="#modalSlide2">
+                                                <span class="item">예약이체</span> 
+                                                <span class="item">등록일</span> 
+                                                <span class="item">전체</span> 
+                                                <span class="item">1개월</span> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 컨텐츠 상단 영역 -->
+        
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type1">
+                                    <div class="top-right-area">
+                                        <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                        <span class="badge type-value2">등록</span>
+                                        <!-- <span class="badge type-value2">value2</span>
+                                        <span class="badge type-value3">value3</span>
+                                        <span class="badge type-value4">value4</span> -->    
+                                    </div>
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">2022.12.15</p>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">84000152167</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$2,400.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <div class="top-right-area">
+                                        <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                        <span class="badge type-value1">진행중</span>
+                                        <!-- <span class="badge type-value2">value2</span>
+                                        <span class="badge type-value3">value3</span>
+                                        <span class="badge type-value4">value4</span> -->    
+                                    </div>
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">2022.11.30~2023.04.30 (매주 수요일)</p>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">84000152167</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$2,400.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <div class="top-right-area">
+                                        <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                        <span class="badge type-value4">취소</span>
+                                        <!-- <span class="badge type-value2">value2</span>
+                                        <span class="badge type-value3">value3</span>
+                                        <span class="badge type-value4">value4</span> -->    
+                                    </div>
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">2022.12.15</p>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">84000152167</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$2,400.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <div class="top-right-area">
+                                        <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                        <span class="badge type-value4">실패</span>
+                                        <!-- <span class="badge type-value2">value2</span>
+                                        <span class="badge type-value3">value3</span>
+                                        <span class="badge type-value4">value4</span> -->    
+                                    </div>
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">2022.12.15</p>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">84000152167</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$2,400.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">
+                                    <div class="top-right-area">
+                                        <!-- D : badge type 5가지 : type-disabled, type-value1~4 -->
+                                        <span class="badge type-value3">거래완료</span>
+                                        <!-- <span class="badge type-value2">value2</span>
+                                        <span class="badge type-value3">value3</span>
+                                        <span class="badge type-value4">value4</span> -->    
+                                    </div>
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">2022.12.15</p>
+                                                        <p class="tit">Tom Cruise</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">84000152167</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$32.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                            </div>
+        
+                            <!-- <div class="bottom-btn-wrap">
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn md line gray" aria-label="더보기">더보기</button>
+                                </div>
+                            </div> -->
+        
+                            <!-- 결과 없음 -->
+                            <div class="no-data-wrap">
+                                <div class="no-data">
+                                    <i class="icon-alarm"></i>
+                                    <p class="txt">대기중인 이체내역이 없습니다. </p>
+                                </div>
+                            </div>
+        
+                            <div class="no-data-wrap">
+                                <div class="no-data">
+                                    <i class="icon-alarm"></i>
+                                    <p class="txt">조회 결과가 없습니다.</p>
+                                    <p class="txt-sub">조회 조건 변경 후 재조회해 주세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-con" data-element="tab__panel" role="tabpanel">
+                            <div class="cont-top-wrap mt24">
+                                <div class="top-right">
+                                    <div class="select-wrap">
+                                        <div class="select-sm">
+                                            <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlideSelectSm02" title="조회 팝업 열기" aria-controls="#modalSlideSelectSm02">
+                                                <span>1개월</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- D: 카드목록에 acitve 효과가 있는 경우 : card-wrap--active -->
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type1">                            
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">Once/2022.12.10</p>
+                                                        <p class="tit tit-type2"><span class="italic">Interac</span> e-Transfer</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">89201165350_CAD</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$10.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">                            
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">Once/2022.12.10</p>
+                                                        <p class="tit tit-type2"><span class="italic">Interac</span> e-Transfer</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">89201165350_CAD</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$10.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type1">                            
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card-box">
+                                            <div class="card">
+                                                <dl>
+                                                    <dt>
+                                                        <p class="date">Once/2022.12.10</p>
+                                                        <p class="tit tit-type2"><span class="italic">Interac</span> e-Transfer</p>
+                                                    </dt>
+                                                    <dd>
+                                                        <p class="txt">89201165350_CAD</p>
+                                                    </dd>
+                                                </dl>
+                                                <p class="txt-right">
+                                                    <span class="price">$10.00</span>
+                                                    <!-- 국가별 아이콘 : icon-country-canada, icon-country-usa, icon-country-korea -->
+                                                    <i class="icon-country" style="background-image: url(../../images/country/flag-canada.png);"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>                                
+                            </div>
+                            
+                            <!-- 결과 없음 -->
+                            <div class="no-data-wrap">
+                                <div class="no-data">
+                                    <i class="icon-alarm"></i>
+                                    <p class="txt">대기중인 거래 내역이 없습니다.</p>
+                                </div>
+                            </div>
+                            <!--// 결과 없음 -->
+                            <!-- 결과 없음 -->
+                            <div class="no-data-wrap">
+                                <div class="no-data">
+                                    <i class="icon-alarm"></i>
+                                    <p class="txt">조회 결과가 없습니다.</p>
+                                    <p class="txt-sub">조회 조건 변경 후 재조회해 주세요.</p>
+                                </div>
+                            </div>
+                            <!--// 결과 없음 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+</div>
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+
+<!-- 모달레이어 영역 -->
+<div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">계좌 종류</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio01" title="12345678 CAD  SAVINGS DEPOSIT" onclick="modalClose(this);" checked>
+                        <label for="madal1_radio01">12345678 CAD  SAVINGS DEPOSIT</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio02" title="12345678 CAD  SAVINGS DEPOSIT" onclick="modalClose(this);">
+                        <label for="madal1_radio02">12345678 CAD  SAVINGS DEPOSIT</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio03" title="12345678 CAD  SAVINGS DEPOSIT" onclick="modalClose(this);">
+                        <label for="madal1_radio03">12345678 CAD  SAVINGS DEPOSIT</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio04" title="12345678 CAD  SAVINGS DEPOSIT" onclick="modalClose(this);">
+                        <label for="madal1_radio04">12345678 CAD  SAVINGS DEPOSIT</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal1_radio" id="madal1_radio05" title="12345678 CAD  SAVINGS DEPOSIT" onclick="modalClose(this);">
+                        <label for="madal1_radio05">12345678 CAD  SAVINGS DEPOSIT</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+
+<div id="modalSlide2" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">조회 조건</h1>
+        </div>
+        <div class="modal__contents">
+            <div class="con-box">
+                <div class="form-area">
+                    <p class="form-title">이체 방법</p>
+                    <div class="tab-radio-wrap">
+                        <div class="tab-radio">
+                            <input type="radio" name="radio010" id="radio010_1" title="예약 이체 선택" checked="">
+                            <label for="radio010_1">예약 이체</label>
+                        </div>
+                        <div class="tab-radio">
+                            <input type="radio" name="radio010" id="radio010_2" title="정기 이체 선택">
+                            <label for="radio010_2">정기 이체</label>
+                        </div>							
+                    </div>
+                </div>
+                <div class="form-area">
+                    <p class="form-title">기준일</p>
+                    <div class="tab-radio-wrap">
+                        <div class="tab-radio">
+                            <input type="radio" name="radio011" id="radio011_1" title="등록일 선택" checked="">
+                            <label for="radio011_1">등록일</label>
+                        </div>
+                        <div class="tab-radio">
+                            <input type="radio" name="radio011" id="radio011_2" title="이체(예정)일 선택">
+                            <label for="radio011_2">이체(예정)일 이체</label>
+                        </div>							
+                    </div>
+                </div>
+                <div class="form-area">
+                    <div class="select-wrap">
+                        <div class="select">
+                            <div class="select__inner">
+                                <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide3" title="처리상태 선택" aria-controls="#modalSlide3">
+                                    <!-- <i class="icon-country-canada"></i> -->
+                                    <span>선택하세요.</span> 
+                                </button>
+                            </div>
+                            <div class="select-label">처리상태</div>
+                        </div>
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                    </div>
+                </div>
+                <div class="form-area">
+                    <p class="form-title">조회기간</p>
+                    <!-- Tab -->
+                    <div class="tab-box-wrap" data-element="tab">
+                        <ul class="tab-box-list" role="tablist">
+                            <li class="tab-box" data-element="tab__list" >
+                                <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">기간 선택</a>
+                            </li>                    
+                            <li class="tab-box" data-element="tab__list">
+                                <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">직접 선택</a>
+                            </li>  
+                        </ul>
+                        <div class="tab-con is-active" data-element="tab__panel">
+                            <!-- 탭 내용 -->
+                            <ul class="form-list type-half">
+                                <li>
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="modal_radio" id="modal_radio01" title="" checked="checked">
+                                        <label for="modal_radio01">지난 1개월</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="modal_radio" id="modal_radio02" title="">
+                                        <label for="modal_radio02">지난 3개월</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="modal_radio" id="modal_radio03" title="">
+                                        <label for="modal_radio03">지난 6개월</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--// 탭 내용 -->
+                        </div>
+                        <div class="tab-con" data-element="tab__panel">
+                            <!-- 탭 내용 -->
+                            <div class="form-area">
+                                <div class="input-wrap">
+                                    <div class="input input--on">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="" placeholder="YYYY.MM.DD" disabled="disabled">
+                                            <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                            <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                                        </div>
+                                    </div>
+                                    <div class="input input--on">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText07" class="input__element input-date" title="종료일" value="" placeholder="YYYY.MM.DD" disabled="disabled">
+                                            <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                            <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 탭 내용 -->
+                        </div>
+                    </div>                     
+                    <!-- // Tab -->		
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <button type="button" class="btn" data-element="modal__close" aria-label="확인">확인</button>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+
+<div id="modalSlide3" class="modal popup-wrap modal--slide" data-element="modal__element" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">처리상태</h1>
+        </div>
+        <div class="modal__contents btn-none">
+            <ul>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio01" title="전체" onclick="modalClose(this);">
+                        <label for="madal3_radio01">전체</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio02" title="등록" onclick="modalClose(this);">
+                        <label for="madal3_radio02">등록</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio03" title="취소" onclick="modalClose(this);">
+                        <label for="madal3_radio03">취소</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio05" title="진행중" onclick="modalClose(this);">
+                        <label for="madal3_radio05">진행중</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio04" title="거래완료" onclick="modalClose(this);">
+                        <label for="madal3_radio04">거래완료</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio-list-wrap">
+                        <input type="radio" name="madal3_radio" id="madal3_radio05" title="실패" onclick="modalClose(this);">
+                        <label for="madal3_radio05">실패</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+
+<div id="modalSlideSelectSm02" class="modal popup-wrap modal--slide" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__header">
+            <h1 class="title">조회 조건</h1>
+        </div>
+        <div class="modal__contents">
+            <div class="con-box">                
+                <div class="form-area mgt-none">
+                    <p class="form-title">조회기간</p>
+                    <!-- Tab -->
+                    <div class="tab-box-wrap" data-element="tab">
+                        <ul class="tab-box-list" role="tablist">
+                            <li class="tab-box" data-element="tab__list" >
+                                <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">기간 선택</a>
+                            </li>                    
+                            <li class="tab-box" data-element="tab__list">
+                                <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">직접 선택</a>
+                            </li>  
+                        </ul>
+                        <div class="tab-con is-active" data-element="tab__panel">
+                            <!-- 탭 내용 -->
+                            <ul class="form-list type-half">
+                                <li>
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="modal_radio_01" id="modal_radio01_01" title="" checked="checked">
+                                        <label for="modal_radio01_01">지난 1개월</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="modal_radio_01" id="modal_radio02_01" title="">
+                                        <label for="modal_radio02_01">지난 3개월</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="modal_radio_01" id="modal_radio03_01" title="">
+                                        <label for="modal_radio03_01">지난 6개월</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--// 탭 내용 -->
+                        </div>
+                        <div class="tab-con" data-element="tab__panel">
+                            <!-- 탭 내용 -->
+                            <div class="form-area">
+                                <div class="input-wrap">
+                                    <div class="input input--on">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText06" class="input__element input-date" title="시작일" value="" placeholder="YYYY.MM.DD" disabled="disabled">
+                                            <label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+                                            <button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+                                        </div>
+                                    </div>
+                                    <div class="input input--on">
+                                        <div class="input__inner">
+                                            <input type="text" id="inputText07" class="input__element input-date" title="종료일" value="" placeholder="YYYY.MM.DD" disabled="disabled">
+                                            <label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+                                            <button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 탭 내용 -->
+                        </div>
+                    </div>                     
+                    <!-- // Tab -->		
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <button type="button" class="btn" data-element="modal__close" aria-label="확인">확인</button>
+        </div>
+        <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+    </div>
+</div>
+
+
+<!-- //모달레이어 영역 -->
+
+</body>
+</html>

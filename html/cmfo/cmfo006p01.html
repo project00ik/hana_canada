@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>로그인</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">One-Time Security 코드</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container ly-full">
+
+              <div class="con-box">
+                <div class="security-code-wrap">
+                  <p class="security-title">Security code가 필요합니다.</p>
+                  <!-- Tab -->
+                  <div class="tab-box-wrap" data-element="tab">
+                    <ul class="tab-box-list" role="tablist">
+                      <li class="tab-box" data-element="tab__list" >
+                        <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">SMS</a>
+                      </li>
+                      <li class="tab-box" data-element="tab__list">
+                        <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor">E-mail</a>
+                      </li>
+                    </ul>
+                    <div class="tab-con is-active" data-element="tab__panel">
+                      <div class="lgreen-box-wrap">
+                        <span class="text">415)5856-5865</span>
+                      </div>
+                    </div>
+                    <div class="tab-con" data-element="tab__panel">
+                      <div class="lgreen-box-wrap">
+                        <span class="text">ID@gmail.com</span>
+                      </div>
+                      <div class="email-none">
+                        <p class="title">등록된 이메일 주소가 없습니다.</p>
+                        <p class="text">기업 손님인 경우 관리자에게 요청하시기 바랍니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // Tab -->
+                </div>
+                <!-- // security-code-wrap -->
+              </div>
+              <!-- // con-box -->
+
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="Security Code 발송">Security Code 발송</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+</body>
+</html>

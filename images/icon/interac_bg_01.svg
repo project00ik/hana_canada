@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="72" viewBox="0 0 32 72">
+    <g transform="translate(-288 -480)">
+        <path data-name="사각형 10943" d="M0 0h32v20a16 16 0 0 1-16 16A16 16 0 0 1 0 20V0z" transform="translate(288 480)" style="fill:#4d5980"/>
+        <rect data-name="사각형 10944" width="32" height="32" rx="16" transform="translate(288 520)" style="fill:#fff"/>
+    </g>
+</svg>

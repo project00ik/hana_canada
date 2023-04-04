@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+    <defs>
+        <clipPath id="xfb8et7u3a">
+            <rect data-name="사각형 10838" width="24" height="18" rx="4" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="5dgjyuu7sb">
+            <rect data-name="사각형 10837" width="24.75" height="18" rx="2" style="fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g data-name="Ico / flag / usa_large" style="clip-path:url(#xfb8et7u3a)">
+        <g data-name="그룹 15919" style="clip-path:url(#5dgjyuu7sb)">
+            <rect data-name="사각형 10836" width="24.75" height="18" rx="2" style="fill:#fff"/>
+            <path data-name="패스 4262" d="M0 0h10.607v8.4H0z" style="fill-rule:evenodd;fill:#1a47b8"/>
+            <path data-name="패스 4263" d="M10.607 0v1.2H24.75V0zm0 2.4v1.2H24.75V2.4zm0 2.4V6H24.75V4.8zm0 2.4v1.2H24.75V7.2zM0 9.6v1.2h24.75V9.6zM0 12v1.2h24.75V12zm0 2.4v1.2h24.75v-1.2zm0 2.4V18h24.75v-1.2z" style="fill:#f93939;fill-rule:evenodd"/>
+            <path data-name="패스 4264" d="M1.048 1.067v1.2h1.178v-1.2zm2.357 0v1.2h1.178v-1.2zm2.357 0v1.2H6.94v-1.2zm2.357 0v1.2H9.3v-1.2zm-1.179 1.2v1.2h1.179v-1.2zm-2.357 0v1.2h1.179v-1.2zm-2.357 0v1.2H3.4v-1.2zm-1.179 1.2v1.2h1.179v-1.2zm2.357 0v1.2h1.179v-1.2zm2.357 0v1.2H6.94v-1.2zm2.357 0v1.2H9.3v-1.2zm-7.071 2.4v1.2h1.179v-1.2zm2.357 0v1.2h1.179v-1.2zm2.357 0v1.2H6.94v-1.2zm2.357 0v1.2H9.3v-1.2zm-1.178-1.2v1.2h1.179v-1.2zm-2.357 0v1.2h1.179v-1.2zm-2.357 0v1.2H3.4v-1.2z" transform="translate(.131 .133)" style="fill-rule:evenodd;fill:#fff"/>
+        </g>
+    </g>
+</svg>

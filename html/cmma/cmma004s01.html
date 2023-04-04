@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>아이디 찾기</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <button class="btn-back" title="이전 화면"></button>
+      <p class="page-tit">아이디 찾기</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">    
+            <div class="container idpw-wrap">
+              
+              <div class="con-box">
+
+                <!-- select -->
+                <div class="form-area">
+                  <div class="select-wrap">
+                    <div class="select">
+                      <div class="select__inner">
+                        <button type="button" class="button button-select__item" data-element="modal__open" data-target="#modalSlide1" title="관리 지점 선택">
+                          <!-- <i class="icon-country-canada"></i> -->
+                          <span>영업점 선택</span> 
+                        </button>
+                      </div>
+                      <div class="select-label">관리 지점</div>
+                    </div>
+                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                  </div>
+                </div>
+                <!--// select -->
+
+
+                  <!-- input -->
+                  <div class="form-area">
+                    <div class="input">
+                        <!--
+                            * 오류시 class="input input--error"
+                            * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                            * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                        -->
+                        <div class="input__inner">
+                            <input type="number" id="inputText01" class="input__element" title="법인등록번호 입력">
+                            <label for="inputText01" class="input__label" aria-hidden="true">법인등록번호</label>
+                            <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                        </div>
+                        <!-- 에러 메시지 -->
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                    </div>
+                  </div>
+                  <!--// input -->
+                  <!-- input -->
+                  <div class="form-area">
+                    <div class="input">
+                        <!--
+                            * 오류시 class="input input--error"
+                            * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                            * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                        -->
+                        <div class="input__inner">
+                            <input type="number" id="inputText01" class="input__element" title="계좌번호 입력">
+                            <label for="inputText01" class="input__label" aria-hidden="true">계좌번호</label>
+                            <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                        </div>
+                        <!-- 에러 메시지 -->
+                        <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                    </div>
+                  </div>
+                  <!--// input -->
+
+                  <div class="info-box-wrap">
+                    <p class="title">안내사항</p>
+                    <ul class="bullet-wrap">
+                      <li>등록하신 이름, 성, 이메일 주소를 입력하시기 바랍니다.</li>
+                    </ul>
+                  </div>
+                  <!-- // info-box-wrap -->
+
+              </div>
+              <!-- // con-box -->
+
+            </div>
+            <!-- // container -->
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn" aria-label="다음" disabled>다음</button>
+        </div>
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+  <script src="../../js/slick.js"></script>
+  <script src="../../js/touch-dnd.js"></script>
+  <script src="../../js/pualugin.js"></script>
+  <script src="../../js/common-ui.js"></script>
+
+
+
+	<!-- 모달레이어 - 슬라이드 [관리 지점 - 영업점 선택] -->
+	<div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+		<div class="modal__container modal__container--interval" data-element="modal__element-container">
+			<div class="modal__header">
+				<h1 class="title">영업점 선택</h1>
+			</div>
+			<div class="modal__contents btn-none">
+				<ul>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio01" title="">
+							<label for="madal1_radio01">Main Branch</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio02" title="">
+							<label for="madal1_radio02">Bloor Branch</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio03" title="">
+							<label for="madal1_radio03">Thornhill Branch</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio04" title="">
+							<label for="madal1_radio04">Mississauga Branch</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio05" title="">
+							<label for="madal1_radio05">Coquitlam Branch</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio06" title="">
+							<label for="madal1_radio06">Surrey Branch</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio-list-wrap">
+							<input type="radio" name="madal1_radio" id="madal1_radio07" title="">
+							<label for="madal1_radio07">Calgary Branch</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+		</div>
+	</div>
+	<!-- //모달레이어 - 슬라이드 -->
+
+
+</body>
+</html>

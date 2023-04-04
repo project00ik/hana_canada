@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g transform="translate(-172 -243)">
+        <circle cx="16" cy="16" r="16" transform="translate(172 243)" style="fill:#daf0f0"/>
+        <path data-name="패스 4313" d="M15.78 11.22a.75.75 0 0 1 0 1.061l-5 5a.75.75 0 0 1-1.061 0l-5-5A.75.75 0 0 1 5.78 11.22l4.47 4.47 4.47-4.47a.75.75 0 0 1 1.06 0z" transform="translate(177.75 245.5)" style="fill-rule:evenodd;fill:#00a5a0"/>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <linearGradient id="gy7h1y6gbc" x1="1" y1="1" x2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff0047"/>
+            <stop offset="1" stop-color="#ff4ea0"/>
+        </linearGradient>
+        <linearGradient id="47eyi0hyhd" x1=".809" y1=".102" x2=".118" y2=".846" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffcedb"/>
+            <stop offset="1" stop-color="#ebd5db"/>
+        </linearGradient>
+        <filter id="q286pbtefb" x="18" y="6" width="116" height="116" filterUnits="userSpaceOnUse">
+            <feOffset dx="5" dy="5"/>
+            <feGaussianBlur stdDeviation="10" result="blur"/>
+            <feFlood flood-color="#ac0036" flood-opacity=".2"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="90d3ym70ee" x="48.663" y="56.983" width="5.09" height="23.869" filterUnits="userSpaceOnUse">
+            <feOffset dx="-.5"/>
+            <feGaussianBlur result="blur-2"/>
+            <feFlood flood-color="#ffcedb"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="q8aeenk0ga">
+            <path transform="translate(13 419.75)" style="opacity:0;fill:#fff" d="M0 0h120v120H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Ico / Info / Error" transform="translate(-13 -419.75)" style="clip-path:url(#q8aeenk0ga)">
+        <g data-name="그룹 15987">
+            <g style="filter:url(#q286pbtefb)">
+                <circle data-name="타원 184" cx="28" cy="28" r="28" transform="translate(56.001 450.751)" style="opacity:.8;fill:url(#gy7h1y6gbc)"/>
+            </g>
+            <g data-name="그룹 16306" transform="translate(2.921 6.711)">
+                <path data-name="타원 75 - 윤곽선" d="M27.5.071A27.429 27.429 0 1 0 54.929 27.5 27.429 27.429 0 0 0 27.5.071m0-.571a28.007 28.007 0 0 1 10.9 53.8A28.007 28.007 0 0 1 16.6 1.7 27.825 27.825 0 0 1 27.5-.5z" transform="translate(33.578 453.539)" style="fill:url(#47eyi0hyhd)"/>
+                <circle data-name="타원 185" cx="27.541" cy="27.541" r="27.541" transform="translate(33.537 453.498)" style="fill:#ffd1de"/>
+                <g style="filter:url(#90d3ym70ee)">
+                    <path data-name="합치기 12" d="M0 21.574a2.3 2.3 0 1 1 2.3 2.3 2.3 2.3 0 0 1-2.3-2.3zm0-7.32V2.272a2.271 2.271 0 1 1 4.542 0v11.982a2.271 2.271 0 0 1-4.542 0z" transform="translate(59.24 470.02)" style="fill:#fff"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <linearGradient id="acn3plllha" x1=".08" y1=".081" x2=".594" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fd8fb5"/>
+            <stop offset="1" stop-color="#f83d9a"/>
+        </linearGradient>
+        <linearGradient id="p077fsbteb" x2="1" y2="1.15" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#fff" stop-opacity=".502"/>
+        </linearGradient>
+    </defs>
+    <g data-name="ico / 20pt / product_search" transform="translate(-986.985)">
+        <path transform="translate(987.581 .596)" style="fill:none" d="M0 0h19.404v19.404H0z"/>
+        <rect data-name="사각형 10648" width="14.459" height="14.459" rx="4" transform="rotate(-14.98 505.982 -3744.33)" style="opacity:.8;fill:url(#acn3plllha)"/>
+        <rect data-name="사각형 10649" width="14.764" height="14.764" rx="4" transform="translate(992.221 5.236)" style="fill:#f8d7f0"/>
+        <path data-name="합치기 15" d="M1.5 6.864.188 5.435a.715.715 0 0 1 .527-1.2h5a.715.715 0 0 1 0 1.429H2.341l.212.231a.714.714 0 1 1-1.053.969zM.714 2.857a.715.715 0 0 1 0-1.429h3.375L3.876 1.2A.714.714 0 1 1 4.928.231L6.241 1.66a.715.715 0 0 1-.526 1.2z" transform="translate(996.03 9.051)" style="fill:url(#p077fsbteb)"/>
+    </g>
+</svg>

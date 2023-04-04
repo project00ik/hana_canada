@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>지점/ATM 안내</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+<div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+        <p class="page-tit">지점/ATM 안내</p>
+        <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container branch-info-wrap">
+                <!-- Tab -->
+                <div class="tab-list-wrap branch--tab" data-element="tab">
+                    <ul class="tab-list" role="tablist">
+                        <li class="tab" data-element="tab__list">
+                            <a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor" onclick="branchTab();"><span>지점 안내</span></a>
+                        </li>                    
+                        <li class="tab" data-element="tab__list">
+                            <a href="javascript:void();" class="text" aria-selected="false" data-element="tab__anchor" onclick="atmInfoTab();"><span>ATM 안내</span></a>
+                        </li>  
+                    </ul>
+
+                    <!-- tab-con -->
+                    <div class="tab-con is-active" data-element="tab__panel">  
+                        <div class="con-box">
+                            <p class="page-tit">ON(Ontario)</p>
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Main Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">103-4950 Yonge Street, Toronto, ON M2N6K1</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Bloor Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">627 Bloor Street W. Toronto, ON M6G1K8</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Thornhill Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">5-7670 Yonge Street, Thornhill, ON L4J1W1</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Mississauga Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">120-90 Burnhamthorpe Rd W, Mississauga, ON L5B3C3</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                            </div>
+                            <!-- // card-wrap -->
+                        </div>
+                        <!-- //con-box -->
+                        <div class="con-box">
+                            <p class="page-tit">BC(British Columbia)</p>
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Coquitlam Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">108-4501 North Road, Burnaby, BC V3N4R7</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Surrey Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">100-10428 153 Street, Surrey, BC V3R1E1</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                            </div>
+                            <!-- // card-wrap -->
+                        </div>
+                        <!-- //con-box -->
+                        <div class="con-box">
+                            <p class="page-tit">AB(Alberta)</p>
+                            <div class="card-wrap card-wrap--active">
+                                <div class="card-type8">                    
+                                    <!-- 카드 내용 -->
+                                    <div class="card-cont">
+                                        <div class="card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="tit">Calgary Branch</p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="txt">108-4501 North Road, Burnaby, BC V3N4R7</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--// 카드 내용 -->
+                                </div>
+                            </div>
+                            <!-- // card-wrap -->
+                        </div>
+                        <!-- //con-box -->
+
+                    </div>
+                    <!-- // tab-con -->
+
+                    <!-- tab-con -->
+                    <div class="tab-con" data-element="tab__panel">   
+                        <div class="map-wrap">
+                            <!-- 지도 영역 -->
+                            <div class="map-area" style="background: #ddd;">
+                                지도 영역
+                            </div>
+                            <!--// 지도 영역 -->
+                            <!-- 마커디자인 예시 -->
+                            <button type="button" class="map-icon-branch" data-element="modal__open" data-target="#modalBranch">
+                                현재 내위치 표시
+                            </button>
+                            <button type="button" class="map-icon-atm" data-element="modal__open" data-target="#modalBranch">
+                                atm 표시
+                            </button>
+                            <!-- <button type="button" data-element="modal__open" data-target="#modalBranch" style="width: 6rem; height: 7.2rem; font-size: 0; background: url(../../images/icon/branch.svg) 50% 50% no-repeat; background-position: 100% auto;">
+                                현재 내위치 표시
+                            </button>
+                            <button type="button" data-element="modal__open" data-target="#modalBranch" style="width: 5rem; height: 5.6rem; font-size: 0; background: url(../../images/icon/atm.svg) 50% 50% no-repeat; background-position: 100% auto;">
+                                atm 표시
+                            </button> -->
+                            <!--// 마커디자인 예시 -->
+                            <!-- 검색 영역 -->
+                            <div class="post-search-wrap">
+                                <button type="button" class="search-btn post-search--btn" aria-label="검색 폼 열기">검색</button>
+                                <div class="input-box-wrap">
+                                    <div class="input input-search">
+                                        <div class="input__inner">
+                                            <input type="text" id="searchInput" class="input__element post-search--cont" title="입력폼" placeholder="우편번호 검색" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                            <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                            <button type="submit" class="btn-search post-search--submit" aria-label="검색">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 검색 영역 -->
+                        </div>
+                    </div>
+                    <!-- // tab-con -->
+
+                </div>                     
+                <!-- // Tab -->
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+</div>
+
+<!-- 공통 script -->
+<script src="../../js/jquery-3.6.1.min.js"></script>
+<script src="../../js/slick.js"></script>
+<script src="../../js/touch-dnd.js"></script>
+<script src="../../js/pualugin.js"></script>
+<script src="../../js/common-ui.js"></script>
+
+<!-- 지점안내 모달 -->
+<div id="modalBranch" class="modal popup-wrap branch-layer-wrap" data-element="modal__element">
+    <div class="modal__container modal__container--interval" data-element="modal__element-container">
+        <div class="modal__contents">
+            <div class="btn-scroll-wrap">
+                <div class="btn-area">
+                    <button type="button" class="btn-ellipse"><i class="mark1"></i>입금가능</button>
+                    <button type="button" class="btn-ellipse"><i class="mark2"></i>Drive Thru ATM</button>
+                    <button type="button" class="btn-ellipse"><i class="mark3"></i>24시간</button>
+                    <button type="button" class="btn-ellipse"><i class="mark4"></i>PIN 변경 가능</button>
+                </div>
+            </div>
+            
+            <div class="branch-info-card-wrap">
+                <!-- 카드 목록 -->
+                <div class="card-wrap">
+                    <!-- 카드 -->
+                    <div class="card-type1 active"><!-- D : 활성화 class=active -->
+                        <!-- 카드 상단 영역 -->
+                        <div class="top-right-area">
+                            <span class="mark-icon">
+                                <i class="mark1" title="입금가능"></i>
+                                <i class="mark2" title="Drive Thru ATM"></i>
+                                <i class="mark3" title="24시간"></i>
+                                <i class="mark4" title="PIN 변경 가능"></i>
+                            </span>
+                        </div>
+                        <!--// 카드 상단 영역 -->
+                        <!-- 카드 내용 -->
+                        <div class="card-cont">
+                            <div class="card-box">
+                                <div class="card-full">
+                                    <dl>
+                                        <dt>
+                                            <p class="tit">Aldergrove Credit Union</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="txt">627 Bloor Street West, Toronto, Ontario, M6G 1K8</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 카드 내용 -->
+                    </div>
+                    <!--// 카드 -->
+                    <!-- 카드 -->
+                    <div class="card-type1">
+                        <!-- 카드 상단 영역 -->
+                        <div class="top-right-area">
+                            <span class="mark-icon">
+                                <i class="mark1" title="입금가능"></i>
+                                <i class="mark2" title="Drive Thru ATM"></i>
+                                <i class="mark3" title="24시간"></i>
+                                <i class="mark4" title="PIN 변경 가능"></i>
+                            </span>
+                        </div>
+                        <!--// 카드 상단 영역 -->
+                        <!-- 카드 내용 -->
+                        <div class="card-cont">
+                            <div class="card-box">
+                                <div class="card-full">
+                                    <dl>
+                                        <dt>
+                                            <p class="tit">Aldergrove Credit Union</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="txt">627 Bloor Street West, Toronto, Ontario, M6G 1K8</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 카드 내용 -->
+                    </div>
+                    <!--// 카드 -->
+                    <!-- 카드 -->
+                    <div class="card-type1">
+                        <!-- 카드 상단 영역 -->
+                        <div class="top-right-area">
+                            <span class="mark-icon">
+                                <i class="mark1" title="입금가능"></i>
+                                <!-- <i class="mark2" title="Drive Thru ATM"></i> -->
+                                <i class="mark3" title="24시간"></i>
+                                <i class="mark4" title="PIN 변경 가능"></i>
+                            </span>
+                        </div>
+                        <!--// 카드 상단 영역 -->
+                        <!-- 카드 내용 -->
+                        <div class="card-cont">
+                            <div class="card-box">
+                                <div class="card-full">
+                                    <dl>
+                                        <dt>
+                                            <p class="tit">Aldergrove Credit Union</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="txt">627 Bloor Street West, Toronto, Ontario, M6G 1K8</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 카드 내용 -->
+                    </div>
+                    <!--// 카드 -->
+                    <!-- 카드 -->
+                    <div class="card-type1">
+                        <!-- 카드 상단 영역 -->
+                        <div class="top-right-area">
+                            <span class="mark-icon">
+                                <i class="mark1" title="입금가능"></i>
+                                <!-- <i class="mark2" title="Drive Thru ATM"></i> -->
+                                <i class="mark3" title="24시간"></i>
+                                <i class="mark4" title="PIN 변경 가능"></i>
+                            </span>
+                        </div>
+                        <!--// 카드 상단 영역 -->
+                        <!-- 카드 내용 -->
+                        <div class="card-cont">
+                            <div class="card-box">
+                                <div class="card-full">
+                                    <dl>
+                                        <dt>
+                                            <p class="tit">Aldergrove Credit Union</p>
+                                        </dt>
+                                        <dd>
+                                            <p class="txt">627 Bloor Street West, Toronto, Ontario, M6G 1K8</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 카드 내용 -->
+                    </div>
+                    <!--// 카드 -->
+                    <div class="no-data-wrap">
+                        <div class="no-data">
+                            <i class="icon-alarm"></i>
+                            <p class="txt">검색 결과가 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <button type="button" class="modal__btn-bar modal__btn--close" data-element="modal__close" title="닫기"></button>
+        <button type="button" class="modal__btn-bar modal__btn--open" data-element="modal__open" data-target="#modalBranch"title="열기"></button>
+    </div>
+</div>
+<!--// 지점안내 모달 -->
+
+</body>
+</html>

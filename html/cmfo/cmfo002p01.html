@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 공통 meta -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>은행검색</title>
+  <!-- 공통 css -->
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+  <div id="wrap" class="wrap"> 
+    <!-- header -->
+    <div id="header" class="app-header">
+      <p class="page-tit">은행검색</p>
+      <button class="btn-close" title="닫기"></button>
+    </div>
+    <!-- //header -->
+    <!-- Content -->
+    <div id="content" class="app-main"> 
+        <div class="app-content">
+            <div class="container">
+                <!-- 컨텐츠 구분 영역 -->
+                <div class="search-con-box">
+                    <!-- input : 검색 -->
+                    <div class="search-area">
+                        <div class="input input-search">
+                            <!--
+                                * 오류시 class="input input--error"
+                                * 비활성화시 class="input input--disabled" input 에 disabled 추가
+                                * 데이터가 초기에 자동으로 입력되어 있을때 class="input input--on"
+                            -->
+                            <div class="input__inner">
+                                <input type="text" id="searchInput" class="input__element input--search" title="입력폼" placeholder="은행명 또는 BIC Code 입력">
+                                <button type="button" class="input__remove-button" aria-label="텍스트삭제"></button>
+                                <button type="submit" class="btn-search" aria-label="검색">검색</button>
+                            </div>
+                            <!-- 에러 메시지 -->
+                            <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                        </div>
+                        <div class="search-layer">
+                            <!-- <button class="search-layer-close" onclick="searchLayerInit(this)">닫기</button> -->
+                            <!-- 검색 결과 없음 (no data) -->
+                            <!-- <div class="no-data">
+                                <i class="icon-alarm"></i>
+                                <p class="txt">검색어 결과가 없습니다.</p>
+                            </div> -->
+                            <!--// 검색 결과 없음 (no data) -->
+                            <!-- 검색 결과 있을 때 목록 -->
+                            <ul class="search-list search-list--active">
+                                <li class="active"><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                                <li><a href="javascript:;">검색어 목록</a></li>
+                            </ul>
+                            <!--// 검색 결과 있을 때 목록 -->
+                        </div>
+                    </div>
+                </div>
+                <!--// 컨텐츠 구분 영역 -->
+                <!-- 컨텐츠 구분 영역 -->
+                <div class="con-box">
+                    <div class="notice-list-wrap">
+                        <div class="notice-top-area">
+                            <p class="tit">한국내 주요 은행</p>
+                            <p class="txt">은행명과 BIC코드 선택 시 자동입력 됩니다.</p>
+                        </div>
+                        <div class="card-wrap card-wrap--active">
+                            <div class="card-type7">
+                                <!-- 카드 내용 -->
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>HANA BANK : 하나은행</dt>
+                                            <dd>KOEXKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>KOOKNIN BANK : 국민은행</dt>
+                                            <dd>CZNBUS33</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>WOORI BANK : 우리은행</dt>
+                                            <dd>HVBKKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>SHINHAN BANK : 신한은행</dt>
+                                            <dd>SHBKKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>INDUSTRIAL BANK OF KOREA : 기업은행</dt>
+                                            <dd>IBKOKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>NONGHYUP BANK : NH농협</dt>
+                                            <dd>NFFCKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <!--// 카드 내용 -->
+                            </div>
+                            <div class="card-type7">
+                                <!-- 카드 내용 -->
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>HANA BANK : 하나은행</dt>
+                                            <dd>KOEXKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>KOOKNIN BANK : 국민은행</dt>
+                                            <dd>CZNBUS33</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>WOORI BANK : 우리은행</dt>
+                                            <dd>HVBKKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>SHINHAN BANK : 신한은행</dt>
+                                            <dd>SHBKKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>INDUSTRIAL BANK OF KOREA : 기업은행</dt>
+                                            <dd>IBKOKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type7">
+                                <div class="card-cont">
+                                    <div class="card-list">
+                                        <dl>
+                                            <dt>NONGHYUP BANK : NH농협</dt>
+                                            <dd>NFFCKRSE</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <!--// 카드 내용 -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //Content -->
+    <!-- footer -->
+    <div class="app-footer">
+        <div class="btn-group-wrap">
+            <button type="button" class="btn gray" aria-label="">닫기</button>
+        </div>
+        <!-- 아이콘 + 버튼형 -->
+        <!-- <div class="btn-group-wrap">
+            <button type="button" class="btn gray btn-icon" aria-label="">
+                <span class="icon_upload"></span>
+            </button>
+            <button type="button" class="btn" aria-label="">Default</button>
+        </div> -->
+    </div>
+    <!-- //footer -->
+	</div>
+	<!-- 공통 script -->
+	<script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+</body>
+</html>

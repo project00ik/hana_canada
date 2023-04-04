@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 공통 meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가입하기</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+</head>
+<body>
+    <div id="wrap" class="wrap"> 
+        <!-- header -->
+        <div id="header" class="app-header">
+            <button class="btn-back" title="이전 화면"></button>
+            <p class="page-tit">가입하기</p>
+            <button class="btn-close" title="닫기"></button>
+        </div>
+        <!-- //header -->
+        <!-- Content -->
+        <div id="content" class="app-main"> 
+            <div class="app-content">    
+                <div class="container">
+                    <div class="con-box">
+                        <div class="progress-bar-wrap">
+                            <span class="bar active"></span>
+                            <span class="bar active"></span>
+                            <span class="bar on"></span>
+                        </div>
+                        
+                        <div class="con-line mt32">
+                            <p class="page-tit">계좌 세부 사항</p>
+                            <div class="form-area">
+                                <div class="input-wrap input--on">
+                                    <div class="input">
+                                        <div class="input__inner">
+                                            <div class="input-item-left">$CAD</div>
+                                            <input type="text" id="inputText08" class="input__element input-price" title="신규 금액 입력" placeholder="0.00">
+                                            <label for="inputText08" class="input__label" aria-hidden="true">신규 금액</label>
+                                            <button type="button" class="input__remove-button" aria-label="텍스트삭제" style="display: none;"></button>
+                                        </div>
+                                        <!-- 에러 메시지 -->
+                                        <p class="input__error" aria-live="assertive">오류메시지</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-area">
+                                <div class="select-wrap">
+                                    <div class="select">
+                                        <div class="select__inner">
+                                            <button type="button" class="button button-select__item" title="출금계좌 선택" data-element="modal__open" data-target="#modalSlide1" aria-controls="#modalSlide1">
+                                                <span>0000000000000000_CAD_$100.00</span>
+                                            </button>
+                                        </div>
+                                        <div class="select-label">출금계좌</div>
+                                    </div>
+                                    <p class="input__error" aria-live="assertive">오류메세지 노출</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con-line">
+                            <p class="page-tit">TFSA 계좌 개설 전 주의 사항</p>
+                            <p class="page-txt mt8">
+                                TFSA 불입 가능 한도 정보는 예금주 본인이 CRA 등을 통해 확인 후 개설하셔야 하며, TFSA 초과 불입 발생 등으로 인한 불이익에 대해 은행은 책임지지 않습니다. 
+                                해당 계좌에 대한 수익자(Beneficiary) 또는 승계자(Successor Holder) 정보 등록은 개설 후 별도 절차를 통해 등록 가능합니다. 
+                                위 내용을 이해하셨고 본인의 불입 한도 내에서 계좌 개설 신청함을 확인하셨으면 아래 ‘확인함’ 버튼을 클릭해 주세요.
+                            </p>
+                            <div class="confirm-area">
+                                <!-- D : '확인함' 버튼 클릭 시 checked + disabled - 관련js 페이지 하단에 'confirmBox(this);'  -->
+                                <div class="checkbox-wrap box bold"><!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                                    <input type="checkbox" name="" id="checkbox-box01" title="확인함" onclick="confirmBox(this);">
+                                    <label for="checkbox-box01">확인함</label>
+                                </div>
+                                <p class="checkbox-error" aria-live="assertive">고객님에게 적절한 상품인지 확인해 주세요.</p>
+                            
+                                <!-- D : '확인함' 버튼 클릭 안했을 때 error 예시 -->
+                                <div class="checkbox-wrap box bold error"><!-- error 시 클래스 추가 class="checkbox-wrap box error" -->
+                                    <input type="checkbox" name="" id="checkbox-box03" title="확인함" onclick="confirmBox(this);">
+                                    <label for="checkbox-box03">확인함</label>
+                                </div>
+                                <p class="checkbox-error" aria-live="assertive">고객님에게 적절한 상품인지 확인해 주세요.</p>
+                                <!--// D : '확인함' 버튼 클릭 안했을 때 error 예시 -->
+                            </div>
+                        </div>
+                        <div class="con-line">
+                            <p class="page-tit">계좌 이용 약관</p>
+                            <p class="page-txt mt8">“예”를 선택하시는 경우, <button type="button" class="txt_underline-b">1Q 정기예금</button>에 동의하는 것으로 간주됩니다.</p>
+                            <div class="mt20">
+                                <div class="tab-radio-wrap">
+                                    <div class="tab-radio">
+                                        <input type="radio" name="radio02" id="radio02_1" title="CAD">
+                                        <label for="radio02_1">예</label>
+                                    </div>
+                                    <div class="tab-radio">
+                                        <input type="radio" name="radio02" id="radio02_2" title="USD">
+                                        <label for="radio02_2">아니요</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // container -->
+            </div>
+        </div>
+        <!-- //Content -->
+        <!-- footer -->
+        <div class="app-footer">
+            <div class="btn-group-wrap">
+                <button type="button" class="btn" aria-label="다음" disabled="disabled ">다음</button><!-- 활성화 시 : disabled 삭제 -->
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- 공통 script -->
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/touch-dnd.js"></script>
+    <script src="../../js/pualugin.js"></script>
+    <script src="../../js/common-ui.js"></script>
+    <script>
+        // 가입하기 확인함
+        function confirmBox(obj){
+            var confirmBox = $(obj);
+            confirmBox.prop('checked', true).prop('disabled', true);
+            confirmBox.next().text('확인완료');
+        }
+    </script>
+
+    <!-- 모달레이어 영역 -->
+    <div id="modalSlide1" class="modal popup-wrap modal--slide" data-element="modal__element">
+        <div class="modal__container modal__container--interval" data-element="modal__element-container">
+            <div class="modal__header">
+                <h1 class="title">출금계좌</h1>
+            </div>
+            <div class="modal__contents btn-none">
+                <ul>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio01" onclick="modalClose(this);">
+                            <label for="madal2_radio01">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio02" onclick="modalClose(this);">
+                            <label for="madal2_radio02">0000000000000000_CAD_$60.00</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio-list-wrap">
+                            <input type="radio" name="madal2_radio" id="madal2_radio03" onclick="modalClose(this);">
+                            <label for="madal2_radio03">0000000000000000_CAD_$100.00</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal__btn--close" type="button" data-element="modal__close" title="닫기"></button>
+        </div>
+    </div>
+    <!--// 모달레이어 영역 -->
+
+</body>
+</html>

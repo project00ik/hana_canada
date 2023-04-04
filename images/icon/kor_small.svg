@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="7310gh4lwa">
+            <rect data-name="사각형 10849" width="32" height="32" rx="16" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="dth1plrkgb">
+            <path data-name="사각형 10848" style="fill:#fff" d="M0 0h44v32H0z"/>
+        </clipPath>
+    </defs>
+    <g style="clip-path:url(#7310gh4lwa)">
+        <g transform="translate(-6)" style="clip-path:url(#dth1plrkgb)" data-name="Ico / flag / kor_small">
+            <rect data-name="사각형 10847" width="44" height="32" rx="2" style="fill:#fff"/>
+            <path data-name="패스 4269" d="M22.274 9.66a7.472 7.472 0 1 1-14.941 0c0-2.434 5.016-3.455 9.238-3.071a5.477 5.477 0 0 1 1.434-.189c2.359 0 4.269 1.46 4.269 3.26z" transform="translate(7.196 6.34)" style="fill-rule:evenodd;fill:#232c80"/>
+            <path data-name="패스 4270" d="M13.737 10.786s1.91-2.173 4.269-2.173 4.269 1.46 4.269 3.26A7.539 7.539 0 0 0 14.8 4.267a7.46 7.46 0 0 0-6.75 4.35 9.379 9.379 0 0 0-.717 3.256 4 4 0 0 0 3.2 1.087 3.17 3.17 0 0 0 2.386-1.087z" transform="translate(7.196 4.127)" style="fill:#f93939;fill-rule:evenodd"/>
+            <path data-name="패스 4271" d="M27.669 7.546h4.269L27.669 3.2h-2.134zm-19.21 0H4.19L8.459 3.2h2.134zm19.21 10.866h4.269l-4.269 4.346h-2.134zm-19.21 0H4.19l4.269 4.346h2.134z" transform="translate(3.936 3.02)" style="fill:#151515;fill-rule:evenodd"/>
+        </g>
+    </g>
+</svg>
