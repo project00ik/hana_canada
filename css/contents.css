@@ -568,8 +568,8 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
     100% { left: 20px; opacity: 1;}
 } */
 
-body {
-  min-height: 100vh;
+.result-wrap {
+  min-height: calc(100vh - 8.8rem);
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
 }
