@@ -952,7 +952,7 @@ var hanaUI = {
 
             function event(){
                 // $obj.stop(true).hide();
-                $obj.css('position','relative');
+                // $obj.css('position','relative');
             }
 
             init();
@@ -973,7 +973,7 @@ var hanaUI = {
 
             function event(){
                 // $obj.stop().fadeIn('50');
-                $obj.css('position','fixed');
+                // $obj.css('position','fixed');
             }
 
             init();
