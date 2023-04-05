@@ -307,8 +307,8 @@ body.scroll--top .search-con-box + .con-box {padding-top: 5.6rem;}
 .select-wrap .select.select-box .select-label {display: none;}
 
 .select-wrap .select-sm {display: inline-block; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_open.svg) 100% 0.3rem no-repeat; background-size: 1.6rem auto;}
-.select-wrap.select--on .select-sm {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_close2.svg); background-position: 100% 0.3rem;}
 .select-wrap.select--active .select-sm {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_open.svg); background-position: 100% 0.3rem;}
+.select-wrap.select--on .select-sm {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_close2.svg); background-position: 100% 0.3rem;}
 .select-wrap .select-sm .button-select__item {padding-right: 1.8rem;}
 .select-wrap .select-sm .button-select__item span {font-size: 1.5rem; color: #7d8585;}
 .select-wrap .select-sm .button-select__item .item {position: relative;}
