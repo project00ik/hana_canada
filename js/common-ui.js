@@ -333,6 +333,7 @@ var hanaUI = {
                                 }
                             }, 1)
                         }
+                        footerFixBtnOff();
                     }
                     
                     setTimeout(function(){
@@ -352,6 +353,7 @@ var hanaUI = {
                         }
                         hanaUI.native.bottomHide();
                         hanaUI.keypad($target, 300);
+                        footerFixBtnOn();
                     }
                 }
             }, '.input__element');
@@ -1288,6 +1290,45 @@ function slickSlideEvent(obj){
     });
     // auto play
     slideObj.slick('slickPlay');
+}
+
+// 키패드 관련 fixed 버튼
+function footerFixBtnOn() {
+    var timeoutID;
+    var onloadHeight = window.innerHeight;
+    
+    var device = getMobileDevice(navigator.userAgent);
+    var id = $(this).attr('id');
+    if (id == 'custNm') {
+        if (device.isiOS) {
+            timeoutID = setTimeout(function () {
+                var rect = document.body.getBoundingClientRect();
+                var max = Math.max(window.innerHeight, onloadHeight);
+                var btValue = max - window.visualViewport.height + rect.y;
+                $('#button').addClass('fixed');
+                $('#button').css('bottom', btValue + 'px');
+                $('.test').text('bottom' + btValue + 'px');
+            }, 1000);
+        } else {
+            timeoutID = undefined;
+            $('#button').addClass('fixed');
+            $('#button').css('bottom', window.innerHeight - window.visualViewport.height + 'px');
+        };
+        $('body').addClass('scrFixed');
+    }
+}
+function footerFixBtnOff() { 
+    var id = $(this).attr('id');
+    if(id == 'custNm') {
+        if(timeoutID !== undefined) {
+            clearTimeout(timeoutID);
+        };
+        setTimeout(function() {
+            $('#button').removeClass('fixed');
+            $('#button').css('bottom', 0);
+        }, 100);
+        $('body').removeClass('scrFixed');
+    }
 }
 
 // 모달 오픈 js
