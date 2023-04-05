@@ -506,7 +506,7 @@ i.icon-equal2-gray {background: url(https://dev.kebhanabank.ca:18443/mbs/resourc
 .card-type4 .card-top-area .label {font-size: 1.4rem; color: #7d8585;}
 .card-type4 .card-top-area .price {font-size: 2.4rem; font-weight: 700; color: #171a1a;}
 .card-type4 .card-top-area .icon-country {width: 2rem; height: 2rem; margin: 0.7rem 0 0 0.4rem; vertical-align: top;}
-.card-type4 .card-top-area .d-day {width: 5rem; height: 2rem; line-height: 2rem; font-size: 1.2rem; border: 0.1rem solid #7d8585; border-radius: 1rem; background: #fff; text-align: center; position: absolute; top: 0; left: 0.7rem; z-index: 1;}
+.card-type4 .card-top-area .d-day {width: 5rem; height: 2rem; line-height: 1.9rem; font-size: 1.2rem; border: 0.1rem solid #7d8585; border-radius: 1rem; background: #fff; text-align: center; position: absolute; top: 0; left: 0.7rem; z-index: 1;}
 .card-type4 .card-top-area .tit {margin-top: 1rem; font-size: 1.8rem; color: #171a1a; font-weight: 600;}
 
 .card-type4 .card-list dl {width: 100%; display: flex;}
