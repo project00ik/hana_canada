@@ -243,7 +243,7 @@ body.scroll--top .search-con-box + .con-box {padding-top: 5.6rem;}
 .input__calendar-button {width: 2rem; height: 2rem; min-width: 2rem; max-width: 2rem; margin:1.1rem 0 0 1.6rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/calendar.svg) 50% 50% no-repeat; background-size: 100% auto;}
 .input-wrap .input .input__inner .input__element {font-size: 1.8rem; line-height: 1.5;}
 .input-item-left {margin: 2rem 1.2rem 0 0; font-size: 1.8rem; font-weight: 600; color: #7d8585; white-space: nowrap;}
-.input-item-right {margin: 2rem 0 0 1.2rem; font-size: 1.8rem; font-weight: 600; color: #7d8585; white-space: nowrap;}
+.input-item-right {margin: 1.4rem 0 0 1.2rem; font-size: 1.8rem; font-weight: 600; color: #7d8585; white-space: nowrap;}
 
 .form-area {margin-top: 1.7rem; position: relative;}
 .form-area .form-label {position: absolute; top: 0; left: 0; z-index: 1; color: #7d8585; font-size: 1.4rem;}
