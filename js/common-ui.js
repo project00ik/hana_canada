@@ -333,7 +333,6 @@ var hanaUI = {
                                 }
                             }, 1)
                         }
-                        footerFixBtnOff();
                     }
                     
                     setTimeout(function(){
@@ -353,7 +352,6 @@ var hanaUI = {
                         }
                         hanaUI.native.bottomHide();
                         hanaUI.keypad($target, 300);
-                        footerFixBtnOn();
                     }
                 }
             }, '.input__element');
@@ -951,8 +949,7 @@ var hanaUI = {
             }
 
             function event(){
-                // $obj.stop(true).hide();
-                // $obj.css('position','relative');
+                $obj.stop(true).hide();
             }
 
             init();
@@ -972,8 +969,7 @@ var hanaUI = {
             }
 
             function event(){
-                // $obj.stop().fadeIn('50');
-                // $obj.css('position','fixed');
+                $obj.stop().fadeIn('50');
             }
 
             init();
