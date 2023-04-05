@@ -195,7 +195,7 @@ body.scroll--top .search-con-box + .con-box {padding-top: 5.6rem;}
 
 /* 인풋 - 검색 */
 .search-area {position: relative;}
-.input.input-search::before {height: 5.4rem; border: 0.1rem solid #dfe6e6; border-radius: 0.8rem;}
+.input.input-search::before {height: 5.4rem; border: 0.1rem solid #dfe6e6; border-radius: 0.8rem; box-sizing: border-box;}
 .input.input-search.input--focus::before {border-color: #30bfba;}
 .input.input-search.input--error::before {border: 0.1rem solid #e31e5a !important;}
 .input.input-search label {display: none;}
