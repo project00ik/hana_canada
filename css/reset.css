@@ -29,7 +29,7 @@ html {height:100%; font-size:62.5%;}
 body {width:100%; height:100%; color:#5e6666; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 ul, ol, li {list-style:none;}
 table {width: 100%; border-collapse:collapse; border-spacing:0;}
-input {-webkit-highlight:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:transparent; color:#5e6666; opacity:1 !important; -webkit-text-fill-color: inherit !important;}
+input {-webkit-highlight:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:transparent; color:#5e6666;}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
 input[type="number"] {-moz-appearance: textfield;}
@@ -47,13 +47,8 @@ img {border:none;}
 a, a:hover, a:focus, a:active {color: inherit; font-weight: inherit; text-decoration:none;-webkit-tap-highlight-color:transparent;}
 legend, hr {font-size:0; height:1px; left:-10000%; line-height:0; overflow:hidden; position:absolute; text-indent:-10000px; top:0; width:1px;}
 .blind, caption {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
+input[disabled] {opacity:1; -webkit-text-fill-color:inherit;}
 
-
-input:disabled, textarea:disabled, input:disabled::placeholder, textarea:disabled::placeholder {
-  color: currentcolor;
-  -webkit-text-fill-color: currentcolor; /* 1. sets text fill to current `color` for safari */
-  opacity: 1; /* 2. correct opacity on iOS */
-}
 /* 
 input::-webkit-input-placeholder, input::placeholder, 
 textarea::-webkit-input-placeholder, textarea::placeholder {color:#c5c7c9;font-weight:normal;font-size:1.8rem;font-family:'OpenSans','NotoSansKR';letter-spacing:-0.03rem;} */
