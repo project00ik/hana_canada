@@ -197,9 +197,8 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .btn.gray.press {background-color: #7d8585;}
 .btn.gray:disabled {background-color: #d0d9d9;}
 
-.btn.line {padding: 0 2rem; width: 100%; line-height: 5.4rem; font-size: 1.6rem; color: #00a5a0; text-align: center; font-weight: 600; background-color: #fff; border: 1px solid #30bfba; border-radius: 0.8rem;}
-.btn.line [class^="icon"] {line-height: 5.4rem;}
-
+.btn.line {padding: 0 2rem; width: 100%; line-height: 5.5rem; font-size: 1.6rem; color: #00a5a0; text-align: center; font-weight: 600; background-color: #fff; border: 1px solid #30bfba; border-radius: 0.8rem;}
+.btn.line [class^="icon"] {line-height: 5.5rem;}
 .btn.line:hover, .btn.line:active, .btn.line:focus {background-color: #f2fafa;}
 .btn.line.press {background-color: #f2fafa;}
 .btn.line:disabled {color: #fff; background-color: #d0d9d9; border: 1px solid #d0d9d9;}
@@ -210,9 +209,10 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .btn.md {height: 4.8rem; line-height: 4.8rem; font-size: 1.6rem; font-weight: 600;}
 .btn.md [class^="icon"] {line-height: 4.8rem;}
 .btn.md.line,
-.btn.md.line [class^="icon"] {line-height: 4.6rem;}
+.btn.md.line [class^="icon"] {line-height: 4.7rem;}
 .btn.sm {padding: 0 1.6rem; width: auto; height: 3.2rem; line-height: 3.2rem; font-size: 1.5rem; font-weight: 600; border-radius: 0.4rem 0.4rem;}
-.btn.sm.line [class^="icon"] {line-height: 4.6rem;}
+.btn.sm.line,
+.btn.sm.line [class^="icon"] {line-height: 3.1rem;}
 .btn.sm.light-gray {height: 4rem; line-height: 4rem; color: #7d8585; font-weight: normal; background-color: #f7fafa;}
 .btn.sm.light-gray:hover, .btn.sm.light-gray:active, .btn.sm.light-gray:focus {background-color: #edf2f2;}
 
