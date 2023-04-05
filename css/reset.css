@@ -48,6 +48,12 @@ a, a:hover, a:focus, a:active {color: inherit; font-weight: inherit; text-decora
 legend, hr {font-size:0; height:1px; left:-10000%; line-height:0; overflow:hidden; position:absolute; text-indent:-10000px; top:0; width:1px;}
 .blind, caption {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 
+
+input:disabled, textarea:disabled, input:disabled::placeholder, textarea:disabled::placeholder {
+  color: currentcolor;
+  -webkit-text-fill-color: currentcolor; /* 1. sets text fill to current `color` for safari */
+  opacity: 1; /* 2. correct opacity on iOS */
+}
 /* 
 input::-webkit-input-placeholder, input::placeholder, 
 textarea::-webkit-input-placeholder, textarea::placeholder {color:#c5c7c9;font-weight:normal;font-size:1.8rem;font-family:'OpenSans','NotoSansKR';letter-spacing:-0.03rem;} */
