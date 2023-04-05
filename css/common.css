@@ -166,7 +166,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 .tab-box-list {display: flex;}
 .tab-box-list .tab-box {flex: 1; text-align: center;}
-.tab-box-list .text {display: inline-block; width: 100%; height: 5.6rem; line-height: 5.4rem; border: 1px solid #dfe6e6; font-weight: 600;}
+.tab-box-list .text {display: inline-block; width: 100%; height: 5.6rem; line-height: 5.5rem; border: 1px solid #dfe6e6; font-weight: 600;}
 .tab-box-list .tab-box:first-child .text {border-radius: 0.8rem 0 0 0.8rem;}
 .tab-box-list .tab-box:last-child .text {border-radius: 0 0.8rem 0.8rem 0;}
 .tab-box-list .tab-box .text.is-active {color: #00a5a0; border: 1px solid #30bfba; position: relative; z-index: 1; background-color: #f2fafa;}
