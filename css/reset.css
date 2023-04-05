@@ -39,6 +39,7 @@ input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {display: none;}
+input:disabled {opacity:1; -webkit-text-fill-color: inherit;}
 button {-webkit-highlight:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:none; cursor: pointer; color:#5e6666;}
 textarea {resize: none;}
 em {font-style:normal;} 
