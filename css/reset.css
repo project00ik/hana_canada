@@ -49,6 +49,12 @@ legend, hr {font-size:0; height:1px; left:-10000%; line-height:0; overflow:hidde
 .blind, caption {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 input[disabled] {opacity:1; -webkit-text-fill-color:inherit;}
 
+input:disabled, textarea:disabled, input:disabled::placeholder, textarea:disabled::placeholder {
+	-webkit-text-fill-color:#7d8585; /* Override iOS / Android font color change */
+	-webkit-opacity:1; /* Override iOS opacity change affecting text & background color */
+	color:#7d8585; /* Override IE font color change */
+  }
+
 /* 
 input::-webkit-input-placeholder, input::placeholder, 
 textarea::-webkit-input-placeholder, textarea::placeholder {color:#c5c7c9;font-weight:normal;font-size:1.8rem;font-family:'OpenSans','NotoSansKR';letter-spacing:-0.03rem;} */
