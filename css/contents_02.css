@@ -46,7 +46,7 @@ body.scroll--top .search-con-box + .con-box {padding-top: 5.6rem;}
 .list-tit {font-size: 1.5rem; font-weight: 700; color: #7d8585;}
 
 /* 리스트 형 - 도트형 */
-.dot-list > li {padding-left: 0.8rem; position: relative; color: #5e6666; font-size: 1.6rem;}
+.dot-list > li {padding-left: 0.8rem; position: relative; color: #5e6666; font-size: 1.6rem; word-break: keep-all; word-wrap: break-word;}
 .dot-list > li::before {content: ''; width: 0.2rem; height: 0.2rem; display: inline-block; position: absolute; top: 0.9rem; left: 0; background: #7d8585; border-radius: 50%;}
 .dot-list > li + li {margin-top: 2.6rem;}
 .dot-list2 > li {padding-left: 0.8rem; position: relative; color: #5e6666; font-size: 1.6rem;}
