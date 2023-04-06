@@ -569,5 +569,5 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
     100% { left: 20px; opacity: 1;}
 } */
 
-
-.card-list1 i[class^="icon-country"] + .txt {vertical-align: top;}
+.card-list1 i[class^="icon-country"] {vertical-align: middle;}
+.card-list1 i[class^="icon-country"] + .txt {vertical-align: middle;}
