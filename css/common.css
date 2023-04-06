@@ -323,7 +323,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .tab-radio-rd input:checked + label::after {content: ''; display: block; position: absolute; left: -1px; top: -1px; width: 100%; height: 5.6rem; border: 1px solid #30bfba; border-radius: 0.8rem 0.8rem; z-index: 1;}
 
 .radio-list-wrap label {display: block; position: relative; padding: 1.7rem 4rem 1.6rem 2rem; font-size: 1.8rem;}
-.radio-list-wrap label i {width: 2.4rem; height: 2.4rem; margin-right: 1.4rem; vertical-align: top;}
+.radio-list-wrap label i {width: 2.4rem; height: 2.4rem; margin-right: 1.4rem; vertical-align: middle;}
 .radio-list-wrap input:checked + label {color: #00a5a0; font-weight: 600; background-color: #f2fafa;}
 .radio-list-wrap input:checked + label::before {content: ''; display: block; position: absolute; right: 2rem; top: 50%; margin-top: -1.2rem; width: 2.4rem; height: 2.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/check.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;} 
 
