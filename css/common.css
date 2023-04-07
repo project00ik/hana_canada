@@ -83,8 +83,7 @@ a.txt_underline-b {text-decoration: underline; color: #171a1a; font-weight: 600;
 .app-main.footer-none {padding-bottom:0;}
 .app-main.footer-sub-btn {padding-bottom: calc(8.8rem + 7.1rem); padding-bottom: calc(8.8rem + 7.1rem); padding-bottom: calc(8.8rem + 7.1rem);}
 
-/* .container {padding: 1.6rem 0 5.6rem 0;} */
-.container {padding: 0 0 5.6rem 0;}
+.container {padding: 1.6rem 0 5.6rem 0;}
 .container.ly-full {padding: 0;}
 .container.ly-full .con-box {padding-bottom: 0;}
 
@@ -119,20 +118,20 @@ i[class^="icon-country"] {width: 2.4rem; height: 2.4rem; display: inline-block; 
 i.icon-country-canada {background-image: url(../images/country/flag-canada.png);}
 i.icon-country-usa {background-image: url(../images/country/flag-usa.png);}
 i.icon-country-korea {background-image: url(../images/country/flag-korea.png);}
-i.icon-country-australia {background-image: url(../images/country/flag-australia.html);}
-i.icon-country-singapore {background-image: url(../images/country/flag-singapore.html);}
+i.icon-country-australia {background-image: url(../images/country/flag-australia.png);}
+i.icon-country-singapore {background-image: url(../images/country/flag-singapore.png);}
 
 /* - 컨텐츠 : 툴팁 (Tooltip) */
 .tooltip-wrap {position: relative; display: flex; align-items: center;}
 .tooltip-title {font-size: 1.4rem; color: #2f3333; font-weight: 600;}
 .tooltip {position: static; margin-left: 0.4rem;}
-.tooltip .btn-open {display: block; width: 2rem; height: 2rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/tooltip.svg) 50% 50% no-repeat; background-size: 2rem 2rem;}
+.tooltip .btn-open {display: block; width: 2rem; height: 2rem; background: url(../images/icon/tooltip.svg) 50% 50% no-repeat; background-size: 2rem 2rem;}
 .tooltip .tooltip-con {display: none; position: absolute; top: 2.3rem; left: auto; z-index: 10; max-width: 33.5rem; border-radius: 8px; background-color: #2f3333;}
 .tooltip .tooltip-con .inbox {padding: 1.3rem 1.6rem; font-size: 1.4rem; color: #fff;}
 .tooltip .tooltip-con .inbox .title {font-size: 1.4rem; font-weight: 600;}
 .tooltip .tooltip-con .inbox .text {padding-right: 2.8rem; font-size: 1.4rem;}
 .tooltip .tooltip-con .inbox .title + .text {margin-top: 1rem;}
-.tooltip .btn-close {position: absolute; right: 1.6rem; top: 1.6rem; display: block; width: 1.6rem; height: 1.6rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_sm.svg) 0 0 no-repeat; background-size: 1.6rem 1.6rem;}
+.tooltip .btn-close {position: absolute; right: 1.6rem; top: 1.6rem; display: block; width: 1.6rem; height: 1.6rem; background: url(../images/icon/close_sm.svg) 0 0 no-repeat; background-size: 1.6rem 1.6rem;}
 
 .input__inner .input-tooltip-wrap {position: absolute; right: 0; top: 0; z-index: 10; width: 100%;}
 .input__inner .input-tooltip-wrap .tooltip-wrap {justify-content: flex-end;}
@@ -140,13 +139,13 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 /* - 컨텐츠 : 카드타입 안 토글(설정) */
 .set-area {width: 2rem; height: 2rem; position: static; display: inline-block; vertical-align: top;}
-.set-area .set {width: 2rem; height: 2rem; font-size: 0; display: inline-block; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/kebab_menu.svg) 50% 50% no-repeat; background-size: 100% auto;}
+.set-area .set {width: 2rem; height: 2rem; font-size: 0; display: inline-block; background: url(../images/icon/kebab_menu.svg) 50% 50% no-repeat; background-size: 100% auto;}
 .set-area .set-layer {width: auto; padding: 1.3rem 1.6rem; display: inline-block; position: absolute; top: 0; right: 2rem; z-index: 2; background: #30bfba; border-radius: 0.8rem; overflow: hidden; color: #fff; text-align: left; box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);}
 .set-area .set-layer .set-list {padding-right: 2.4rem;}
 .set-area .set-layer .set-list button {color: #fff; font-size: 1.5rem; white-space: nowrap;}
 .set-area .set-layer .set-list > li + li {margin-top: 1rem;}
-.set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_w.svg) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: 1.6rem; right: 1.6rem;}
-.detail .set-area .set {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/kebab_menu_middle_4d5980.svg) 50% 50% no-repeat; background-size: 100% auto;}
+.set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; background: url(../images/icon/close_w.svg) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: 1.6rem; right: 1.6rem;}
+.detail .set-area .set {background: url(../images/icon/kebab_menu_middle_4d5980.svg) 50% 50% no-repeat; background-size: 100% auto;}
 
 /* - 컨텐츠 : 탭 (tab) */
 .tab-list-wrap .tab-con {display: none;}
@@ -199,6 +198,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 .btn.line {padding: 0 2rem; width: 100%; line-height: 5.5rem; font-size: 1.6rem; color: #00a5a0; text-align: center; font-weight: 600; background-color: #fff; border: 1px solid #30bfba; border-radius: 0.8rem;}
 .btn.line [class^="icon"] {line-height: 5.5rem;}
+
 .btn.line:hover, .btn.line:active, .btn.line:focus {background-color: #f2fafa;}
 .btn.line.press {background-color: #f2fafa;}
 .btn.line:disabled {color: #fff; background-color: #d0d9d9; border: 1px solid #d0d9d9;}
@@ -231,19 +231,19 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 /* - 컨텐츠 : 버튼 (button) 아이콘형 */ 
 .btn [class^="icon"] {padding-left: 2rem; font-weight: 600; vertical-align: top; line-height: 5.6rem;}
 
-.icon_plus {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/add.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-plus-w {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/add_ffffff.svg) center center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon_upload {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/share.svg) 0 center no-repeat; background-size: 2rem 2rem;}
-.icon-trashcan {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/trash_can.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
-.icon-set {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/setting.svg) 0 50% no-repeat; background-size: 1.6rem auto; position: relative;}
-.btn-plus {width: 3.2rem; height: 3.2rem; display: inline-block; font-size: 0; border: 0.1rem solid #30bfba; border-radius: 0.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/add.svg) 50% 50% no-repeat; background-size: 2rem auto;}
-.btn-minus {width: 3.2rem; height: 3.2rem; display: inline-block; font-size: 0; border: 0.1rem solid #d2d9d2; border-radius: 0.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/minus.svg) 50% 50% no-repeat; background-size: 2rem auto;}
-.icon-map {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/map.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
+.icon_plus {background: url(../images/icon/add.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon-plus-w {background: url(../images/icon/add_ffffff.svg) center center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon_upload {background: url(../images/icon/share.svg) 0 center no-repeat; background-size: 2rem 2rem;}
+.icon-trashcan {background: url(../images/icon/trash_can.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
+.icon-set {background: url(../images/icon/setting.svg) 0 50% no-repeat; background-size: 1.6rem auto; position: relative;}
+.btn-plus {width: 3.2rem; height: 3.2rem; display: inline-block; font-size: 0; border: 0.1rem solid #30bfba; border-radius: 0.4rem; background: url(../images/icon/add.svg) 50% 50% no-repeat; background-size: 2rem auto;}
+.btn-minus {width: 3.2rem; height: 3.2rem; display: inline-block; font-size: 0; border: 0.1rem solid #d2d9d2; border-radius: 0.4rem; background: url(../images/icon/minus.svg) 50% 50% no-repeat; background-size: 2rem auto;}
+.icon-map {background: url(../images/icon/map.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
 
 /* - 컨텐츠 : 버튼 (button) 도움말(arrow) */
-.btn-info {padding-right: 1.8rem; font-size: 1.4rem; color: #2f3333; font-weight: 600; display: inline-block; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/chevron_next2.svg) top 0.2rem right 0 no-repeat; background-size: 1.6rem auto;}
-.btn-info2 {padding-right: 1.8rem; font-size: 1.6rem; color: #5e6666; font-weight: 400; display: inline-block; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/chevron_next2.svg) top 50% right 0 no-repeat; background-size: 1.6rem auto;}
-.btn-info-w {padding-right: 2rem; font-size: 1.8rem; color: #fff; font-weight: 600; display: inline-block; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/arrow_w.svg) top 0.4rem right 0 no-repeat; background-size: 2rem auto;}
+.btn-info {padding-right: 1.8rem; font-size: 1.4rem; color: #2f3333; font-weight: 600; display: inline-block; background: url(../images/icon/chevron_next2.svg) top 0.2rem right 0 no-repeat; background-size: 1.6rem auto;}
+.btn-info2 {padding-right: 1.8rem; font-size: 1.6rem; color: #5e6666; font-weight: 400; display: inline-block; background: url(../images/icon/chevron_next2.svg) top 50% right 0 no-repeat; background-size: 1.6rem auto;}
+.btn-info-w {padding-right: 2rem; font-size: 1.8rem; color: #fff; font-weight: 600; display: inline-block; background: url(../images/icon/arrow_w.svg) top 0.4rem right 0 no-repeat; background-size: 2rem auto;}
 
 /* - 컨텐츠 : 버튼 (button) 도움말 레이아웃 */
 .btn-info-wrap {margin-top: 3.2rem;}
@@ -279,14 +279,14 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 /* -- 폼 (form) : 체크박스 (checkbox) */
 .checkbox-wrap label {display: inline-block; position: relative; padding-left: 3rem;}
-.checkbox-wrap label::before {content: ''; display: block; position: absolute; left: 0; top: 50%; margin-top: -1.1rem; width: 2.2rem; height: 2.2rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ck.svg) 0 0 no-repeat; background-size: 2.2rem 2.2rem;} 
-.checkbox-wrap input:checked + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ck_on.svg);}
-.checkbox-wrap input:disabled + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ck_disabled.svg);}
+.checkbox-wrap label::before {content: ''; display: block; position: absolute; left: 0; top: 50%; margin-top: -1.1rem; width: 2.2rem; height: 2.2rem; background: url(../images/icon/ck.svg) 0 0 no-repeat; background-size: 2.2rem 2.2rem;} 
+.checkbox-wrap input:checked + label::before {background-image: url(../images/icon/ck_on.svg);}
+.checkbox-wrap input:disabled + label::before {background-image: url(../images/icon/ck_disabled.svg);}
 
 .checkbox-wrap.sm label {padding-left: 2.6rem; font-size: 1.5rem;}
-.checkbox-wrap.sm label::before {width: 1.8rem; height: 1.8rem; margin-top: -0.9rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ck_sm.svg) 0 0 no-repeat; background-size: 1.8rem 1.8rem;} 
-.checkbox-wrap.sm input:checked + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ck_sm_on.svg);}
-.checkbox-wrap.sm input:disabled + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ck_sm_disabled.svg);}
+.checkbox-wrap.sm label::before {width: 1.8rem; height: 1.8rem; margin-top: -0.9rem; background: url(../images/icon/ck_sm.svg) 0 0 no-repeat; background-size: 1.8rem 1.8rem;} 
+.checkbox-wrap.sm input:checked + label::before {background-image: url(../images/icon/ck_sm_on.svg);}
+.checkbox-wrap.sm input:disabled + label::before {background-image: url(../images/icon/ck_sm_disabled.svg);}
 
 .checkbox-wrap.box label {padding: 1.3rem 1.6rem 1.3rem 4.6rem; width: 100%; font-size: 1.5rem; color: #7d8585; border: 1px solid #edf2f2; border-radius: 0.8rem; background-color: #f7fafa;}
 .checkbox-wrap.box label::before {left: 1.6rem; top: 1.3rem; margin-top: 0;}
@@ -298,14 +298,14 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 /* -- 폼 (form) : 라디오 (radio) */
 .radio-wrap label {display: inline-block; position: relative; padding-left: 3rem;}
-.radio-wrap label::before {content: ''; display: block; position: absolute; left: 0; top: 50%; margin-top: -1.1rem; width: 2.2rem; height: 2.2rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/radio.svg) 0 0 no-repeat; background-size: 2.2rem 2.2rem;} 
-.radio-wrap input:checked + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/radio_on.svg);}
-.radio-wrap input:disabled + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/radio_disabled.svg);}
+.radio-wrap label::before {content: ''; display: block; position: absolute; left: 0; top: 50%; margin-top: -1.1rem; width: 2.2rem; height: 2.2rem; background: url(../images/icon/radio.svg) 0 0 no-repeat; background-size: 2.2rem 2.2rem;} 
+.radio-wrap input:checked + label::before {background-image: url(../images/icon/radio_on.svg);}
+.radio-wrap input:disabled + label::before {background-image: url(../images/icon/radio_disabled.svg);}
 
 .radio-wrap.sm label {padding-left: 2.6rem; font-size: 1.5rem;}
-.radio-wrap.sm label::before {width: 1.8rem; height: 1.8rem; margin-top: -0.9rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/radio_sm.svg) 0 0 no-repeat; background-size: 1.8rem 1.8rem;} 
-.radio-wrap.sm input:checked + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/radio_sm_on.svg);}
-.radio-wrap.sm input:disabled + label::before {background-image: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/radio_sm_disabled.svg);}
+.radio-wrap.sm label::before {width: 1.8rem; height: 1.8rem; margin-top: -0.9rem; background: url(../images/icon/radio_sm.svg) 0 0 no-repeat; background-size: 1.8rem 1.8rem;} 
+.radio-wrap.sm input:checked + label::before {background-image: url(../images/icon/radio_sm_on.svg);}
+.radio-wrap.sm input:disabled + label::before {background-image: url(../images/icon/radio_sm_disabled.svg);}
 
 .tab-radio-wrap {display: flex;}
 .tab-radio {flex: 1; text-align: center;}
@@ -325,7 +325,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .radio-list-wrap label {display: block; position: relative; padding: 1.7rem 4rem 1.6rem 2rem; font-size: 1.8rem;}
 .radio-list-wrap label i {width: 2.4rem; height: 2.4rem; margin-right: 1.4rem; vertical-align: middle;}
 .radio-list-wrap input:checked + label {color: #00a5a0; font-weight: 600; background-color: #f2fafa;}
-.radio-list-wrap input:checked + label::before {content: ''; display: block; position: absolute; right: 2rem; top: 50%; margin-top: -1.2rem; width: 2.4rem; height: 2.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/check.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;} 
+.radio-list-wrap input:checked + label::before {content: ''; display: block; position: absolute; right: 2rem; top: 50%; margin-top: -1.2rem; width: 2.4rem; height: 2.4rem; background: url(../images/icon/check.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;} 
 
 /* -- 폼 (form) : 인풋 (security code) */ 
 .input-code-wrap {display: flex;}
@@ -338,7 +338,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 /* - 컨텐츠 : 아코디언 (accordion) */
 .accordion-list li + li {border-top: 1px solid #f7fafa;}
 .accordion-list .top {position: relative; padding: 2.6rem 5.6rem 2.6rem 2rem;}
-.accordion-list .top:before {content: ''; display: block; width: 2rem; height: 2rem; position: absolute; right: 2rem; top: 2.6rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_close.svg) right 0 no-repeat; background-size: 2rem 2rem; transform: rotate(180deg);}
+.accordion-list .top:before {content: ''; display: block; width: 2rem; height: 2rem; position: absolute; right: 2rem; top: 2.6rem; background: url(../images/icon/dropdown_close.svg) right 0 no-repeat; background-size: 2rem 2rem; transform: rotate(180deg);}
 .accordion-list .top .title {color: #2f3333;}
 .accordion-list .top.is-active .title {color: #00a5a0; font-weight: 600;}
 .accordion-list .top.is-active:before {transform: rotate(0);}
@@ -350,7 +350,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .con-box + .con-box .accordion-conbox {padding-top: 0;}
 .accordion-conbox .top {padding-bottom: 1.6rem;}
 .accordion-conbox .top .title {position: relative; padding: 0 3.6rem 0 0; font-size: 2rem; font-weight: 700; color: #171a1a;}
-.accordion-conbox .top .title:before {content: ''; display: block; width: 2rem; height: 2rem; position: absolute; right: 0; top: 0.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_close.svg) right 0 no-repeat; background-size: 2rem 2rem; transform: rotate(180deg);}
+.accordion-conbox .top .title:before {content: ''; display: block; width: 2rem; height: 2rem; position: absolute; right: 0; top: 0.4rem; background: url(../images/icon/dropdown_close.svg) right 0 no-repeat; background-size: 2rem 2rem; transform: rotate(180deg);}
 .accordion-conbox .top.is-active .title::before {transform: rotate(0);}
 .accordion-conbox .con {padding-bottom: 3.2rem;}
 .accordion-conbox .top::after {content: ''; width: calc(100% - 2rem); height: 0.1rem; display: inline-block; border-top: 0.1rem solid #edf2f2; position: absolute; bottom: -0.1rem; left: 2rem;}
@@ -412,8 +412,8 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 
 /* - 컨텐츠 : 태그 (tag) */
-.tag-usd {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/usa_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
-.tag-cad {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/cad_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
+.tag-usd {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(../images/icon/usa_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
+.tag-cad {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(../images/icon/cad_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
 .tag-branch {display: inline-block; padding: 0 1.2rem; height: 3rem; line-height: 3rem; color: #00a5a0; font-size: 1.5rem; font-weight: 600; border-radius: 1.5rem; background: #f2fafa; text-align: center;}
 
 /* - 컨텐츠 : 태그 (tag) 아이콘 */
@@ -423,7 +423,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 
 /* - 컨텐츠 : 안내 (info) */
 .info-box-wrap {padding: 2.4rem 2rem; background-color: #f5f6fa; border-radius: 0.8rem 0.8rem;}
-.info-box-wrap .title {padding-left: 2.4rem; color: #3d4766; font-weight: 600; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/ico_info.svg) 0 0.2rem no-repeat; background-size: 2rem 2rem;}
+.info-box-wrap .title {padding-left: 2.4rem; color: #3d4766; font-weight: 600; background: url(../images/icon/ico_info.svg) 0 0.2rem no-repeat; background-size: 2rem 2rem;}
 .info-box-wrap .title + .bullet-wrap {margin-top: 1.2rem;}
 
 .info-box-wrap .bullet-wrap > li {position: relative; padding-left: 0.8rem; font-size: 1.5rem; color: #7d8585;}
@@ -441,7 +441,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 /* - 컨텐츠 : 폼 안내 (form info) */
 .input-info-green {padding: 1.3rem 0; background-color: #f2fafa; border-radius: 0.8rem 0.8rem;}
 .input-info-green .text {text-align: center; font-size: 1.5rem; color: #00a5a0; font-weight: 600;}
-.input-info-green .text .arrow {display: inline-block; padding-right: 1.9rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/arrow_green.svg) right 0.3rem no-repeat; background-size: 1.6rem 1.6rem; font-size: inherit; font-weight: inherit;}
+.input-info-green .text .arrow {display: inline-block; padding-right: 1.9rem; background: url(../images/icon/arrow_green.svg) right 0.3rem no-repeat; background-size: 1.6rem 1.6rem; font-size: inherit; font-weight: inherit;}
 button.input-info-green {display: block; width: 100%;}
 
 /* - 컨텐츠 : 데이터성 안내 (data info) */
@@ -535,7 +535,7 @@ body.modal-open { position: fixed; overflow: hidden; -webkit-overflow-scrolling:
 .modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-btn {width: 100%; height: 8.8rem; padding: 1.6rem 2rem; position: fixed; bottom: 0; left: 0; z-index: 2;}
 
 .modal__btn--close { position: absolute; right: 2rem; top: 2.6rem; width: 2.4rem; height: 2.4rem; border: 0; background: 0;}
-.modal__btn--close:before { content: ''; display: block; width: 2.4rem; height: 2.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close.svg) 0 0 no-repeat; background-size: 100% auto; }
+.modal__btn--close:before { content: ''; display: block; width: 2.4rem; height: 2.4rem; background: url(../images/icon/close.svg) 0 0 no-repeat; background-size: 100% auto; }
 .popup-wrap.modal--slide .modal__header .title {padding: 2.6rem 6rem 1.8rem 2rem; font-size: 2rem; color: #171a1a; font-weight: 700;}
 .popup-wrap.modal--slide .btn-wrap { position: absolute; bottom: 0; width: 100%; z-index: 10; padding: 1.6rem 2rem; padding: 1.6rem 2rem calc(1.6rem + constant(safe-area-inset-bottom)); padding: 2rem 2rem calc(2rem + env(safe-area-inset-bottom)); background-color: #fff;}
 .popup-wrap.modal--slide .tab-list-wrap .tab-list {padding: 0 2rem;}
@@ -565,7 +565,7 @@ body.modal-open { position: fixed; overflow: hidden; -webkit-overflow-scrolling:
 .popup-wrap.full-layer-wrap .modal__container {height: 100%; padding: 2rem; padding-bottom: calc(2rem + constant(safe-area-inset-bottom)); padding-bottom: calc(2rem + env(safe-area-inset-bottom)); top: 0; right: 0; left: 0; background: none;}
 .popup-wrap.full-layer-wrap .modal__contents {height: 100%;  padding: 0; color: #fff;}
 .popup-wrap.full-layer-wrap .modal__btn--close {width: 4.8rem; height: 4.8rem; margin: 4.8rem -2.4rem 0 0; line-height: 4.8rem; display: inline-block; border-radius: 50%; position: absolute; top: unset; bottom: 2.4rem; right: 50%; background: #4d5980; text-align: center;}
-.popup-wrap.full-layer-wrap .modal__btn--close::before {height: 100%; display: inline-block; vertical-align: top; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_w.svg) 50% 50% no-repeat; background-size: 2.4rem auto;}
+.popup-wrap.full-layer-wrap .modal__btn--close::before {height: 100%; display: inline-block; vertical-align: top; background: url(../images/icon/close_w.svg) 50% 50% no-repeat; background-size: 2.4rem auto;}
 
 /* - 빠른이체 */
 .quick-transfer-wrap {width: 100%; height: 100%; position: relative;}
@@ -586,7 +586,7 @@ body.modal-open { position: fixed; overflow: hidden; -webkit-overflow-scrolling:
 .quick-transfer .transfer-btn-wrap .transfer-btn.active .quick-icont {animation-name: lightningMotion; animation-duration: 1s; -webkit-animation-duration: 1s; animation-delay: .5s; -webkit-animation-delay: .5s; animation-iteration-count: infinite; animation-fill-mode: forwards; animation-timing-function: linear alternate; -webkit-animation-timing-function: linear alternate;}
 .quick-transfer .transfer-btn-wrap .transfer-btn .quick-icont::before {content: ''; width: 2.4rem; height: 2.6rem; background: #00a5a0; background-size: 100% auto; position: absolute; top: 0; left:0; z-index: 1;}
 .quick-transfer .transfer-btn-wrap .transfer-btn.active .quick-icont::before {animation-name: lightningColor; animation-duration: 1s; -webkit-animation-duration: 1s; animation-delay: .5s; -webkit-animation-delay: .5s; animation-iteration-count: infinite; animation-fill-mode: forwards; animation-timing-function: linear alternate; -webkit-animation-timing-function: linear alternate;}
-.quick-transfer .transfer-btn-wrap .transfer-btn .quick-icont::after {content: ''; width: 2.4rem; height: 2.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/lightning.svg) 0 0 no-repeat; background-size: 100% auto; position: absolute; top: 0; left:0; z-index: 1;}
+.quick-transfer .transfer-btn-wrap .transfer-btn .quick-icont::after {content: ''; width: 2.4rem; height: 2.4rem; background: url(../images/icon/lightning.svg) 0 0 no-repeat; background-size: 100% auto; position: absolute; top: 0; left:0; z-index: 1;}
 .quick-transfer .transfer-btn-wrap .transfer-btn .price {display: block;}
 
 @keyframes lightningMotion {

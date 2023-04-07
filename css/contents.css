@@ -2,18 +2,19 @@
 
 /* ly-full 중앙정렬 */
 /* .result-wrap {display: flex; align-items: center; flex-direction: column; justify-content: center; min-height: calc(100vh - 8.8rem); margin-top: -5.6rem; overflow-y: auto; padding: 5.6rem 0;} */
-.result-wrap {display: flex; align-items: center; flex-direction: column; justify-content: center; min-height: calc(100vh - 14.4rem); overflow-y: auto; padding: 0 0 5.6rem;}
+/* .result-wrap {display: flex; align-items: center; flex-direction: column; justify-content: center; min-height: calc(100vh - 8.8rem); overflow-y: auto; padding: 0 0 5.6rem;} */
+.result-wrap {display: flex; align-items: center; flex-direction: column; justify-content: center; min-height: calc(100vh - 14.6rem); overflow-y: auto;}
 .footer-none .result-wrap {min-height: 100vh;}
 
 /* 결과 페이지 내 컨텐츠 */
 .result-con {width: 100%; text-align: center;}
-.result-con .title {padding-top: 13.6rem; font-size: 2.4rem; color: #171a1a; text-align: center; font-weight: 700; background: url(../images/error/complete%403x.png) center 0 no-repeat; background-size: 12rem 12rem; word-break: keep-all; word-wrap: break-word;}
-.result-con.waiting .title {background: url(../images/error/notice%403x.png) center 0 no-repeat; background-size: 12rem 12rem;}
+.result-con .title {padding-top: 13.6rem; font-size: 2.4rem; color: #171a1a; text-align: center; font-weight: 700; background: url(../images/error/complete@3x.png) center 0 no-repeat; background-size: 12rem 12rem; word-break: keep-all; word-wrap: break-word;}
+.result-con.waiting .title {background: url(../images/error/notice@3x.png) center 0 no-repeat; background-size: 12rem 12rem;}
 .result-con .title .tpb-green {display: block; font-size: 2.4rem;}
 .result-con .text-sub {margin-top: 1.6rem; color: #7d8585; word-break: keep-all; word-wrap: break-word;}
 .result-con .text-sub + .text-sub {margin-top: 0.4rem;}
 .result-con .btn-wrap {margin-top: 3.2rem;}
-.result-con.error .title {background: url(../images/error/Error%403x.png) center 0 no-repeat; background-size: 12rem 12rem;}
+.result-con.error .title {background: url(../images/error/Error@3x.png) center 0 no-repeat; background-size: 12rem 12rem;}
 
 .result-con .lgreen-box-wrap {margin-top: 3rem; text-align: left;}
 .result-con .id-list-wrap li {color: #00a5a0; font-weight: 600; text-align: center;}
@@ -24,7 +25,7 @@
 .result-accordion-wrap {margin-top: 0.8rem;}
 .result-accordion-wrap + .btn-wrap {margin-top: 1.6rem;}
 
-.result-con.waiting .title {background: url(../images/error/notice%403x.png) center 0 no-repeat; background-size: 12rem 12rem;}
+.result-con.waiting .title {background: url(../images/error/notice@3x.png) center 0 no-repeat; background-size: 12rem 12rem;}
 .result-detail {margin-top: 4.8rem; width: 100%;}
 
 
@@ -37,7 +38,7 @@
 .security-code-wrap .lgreen-box-wrap {text-align: center;}
 .security-code-wrap .lgreen-box-wrap .text {font-size: 1.8rem; color: #7d8585; font-weight: 600;}
 
-.security-code-wrap .email-none {margin-top: 4rem; padding-top: 5.3rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem; text-align: center;}
+.security-code-wrap .email-none {margin-top: 4rem; padding-top: 5.3rem; background: url(../images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem; text-align: center;}
 .security-code-wrap .email-none .title {font-size: 1.8rem; color: #171a1a; font-weight: 700;}
 .security-code-wrap .email-none .text {margin-top: 0.9rem; font-size: 1.5rem; color: #7d8585;}
 
@@ -112,7 +113,7 @@
 .change-amount-wrap {text-align: center;}
 .change-amount-wrap .currency {position: relative; padding: 6.4rem 0;}
 .change-amount-wrap .currency + .currency::before {content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 1px; background-color: #edf2f2;}
-.change-amount-wrap .currency + .currency::after {content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 3.2rem; margin-top: -1.5rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/deco_arrow.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
+.change-amount-wrap .currency + .currency::after {content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 3.2rem; margin-top: -1.5rem; background: url(../images/icon/deco_arrow.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
 .change-amount-wrap .currency .amount {display: block; font-size: 3.6rem; color: #171a1a; font-weight: 600;}
 
 /* - 1일 잔여 한도 안내 팝업 관련 버튼 추가 관련 스타일 */
@@ -124,7 +125,7 @@
 .message-wrap .card-type1 .card dl {max-width: 100%;}
 .message-wrap .btn-wrap {margin-top: 3.2rem;}
 .message-wrap .data-none-wrap {height: calc(100vh - 11.7rem); display: flex; align-items: center; justify-content: center; margin-bottom: -5.6rem;}
-.message-wrap .data-none-wrap .text {margin-top: -6.2rem; padding-top: 4.8rem; font-size: 1.8rem; color: #171a1a; font-weight: 700; text-align: center; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
+.message-wrap .data-none-wrap .text {margin-top: -6.2rem; padding-top: 4.8rem; font-size: 1.8rem; color: #171a1a; font-weight: 700; text-align: center; background: url(../images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
 
 .message-wrap .tab .text i.notification {position: relative; font-size: 0;}
 .message-wrap .tab .text i.notification::before {content: ''; display: block; position: absolute; right: -1rem; top: -1.5rem; width: 0.6rem; height: 0.6rem; border-radius: 50% 50%; background-color: #e31e5a;}
@@ -137,6 +138,11 @@
 .message-wrap.event.container {padding-top: 1.6rem;}
 .message-wrap.event .data-none-wrap {height: calc(100vh - 7.2rem);}
 .message-wrap.event .card-wrap {margin-top: 0;}
+
+/* 알림(알림함/메시지센터) */
+.message-wrap .card-type1 {position: relative;}
+.message-wrap .card-type1 .new {width: 0.6rem; height: 0.6rem; display: inline-block; border-radius: 50%; background: #e31e5a; overflow: hidden; font-size: 0; position: absolute; top: 1.2rem; right: 1.2rem;}
+.message-wrap .card-type1 .card-box .tit {word-break: keep-all; word-wrap: break-word;}
 
 /* 내계좌 */
 .amount-wrap {display: flex; justify-content: space-between; position: relative;}
@@ -232,7 +238,7 @@
 .cheque-view-wrap .slick-active .img-box-sm {opacity: 1; border: 2px solid #60bdba;}
 .cheque-view-wrap .slick-slider {-ms-touch-action: auto; touch-action: auto;}
 
-.btn-close-cheque {width: 5.6rem; height: 5.6rem; font-size: 0; position: absolute; top: 0; right: 0; z-index: 1; background : url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_btn_round.svg) right 1.6rem  top 1.6rem no-repeat;}
+.btn-close-cheque {width: 5.6rem; height: 5.6rem; font-size: 0; position: absolute; top: 0; right: 0; z-index: 1; background : url(../images/icon/close_btn_round.svg) right 1.6rem  top 1.6rem no-repeat;}
 
 
 
@@ -259,7 +265,7 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 /* 설정 */
 .menu-list-wrap .list {position: relative;}
 .menu-list-wrap .list + .list::before {content: ''; display: block; width: calc(100% + 2rem); position: absolute; left: 0; top: 0; border-top: 1px solid #f7fafa;}
-.menu-list-wrap .list a {display: block; padding: 2.5rem 0; font-size: 1.8rem; color: #2f3333; font-weight: 600; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/chevron_next.svg) right center no-repeat; background-size: 2rem 2rem;}
+.menu-list-wrap .list a {display: block; padding: 2.5rem 0; font-size: 1.8rem; color: #2f3333; font-weight: 600; background: url(../images/icon/chevron_next.svg) right center no-repeat; background-size: 2rem 2rem;}
 
 .personal-agree-wrap {margin-top: 3rem; display: flex; justify-content: space-between; align-items: center;}
 .personal-agree-wrap .radio-list {display: flex;}
@@ -327,7 +333,7 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .accordion-check-list li + li {margin-top: 0.8rem;}
 .accordion-check-list .top {display: flex; justify-content: space-between; padding: 1.5rem 2rem; background-color: #f7fafa; border-radius: 0.8rem 0.8rem;}
 .accordion-check-list .top .chk-all +  label {font-weight: 600;}
-.accordion-check-list .icon-arrow {display: inline-block; width: 2rem; height: 2rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_close.svg) 0 0 no-repeat; background-size: 2rem 2rem; transform: rotate(180deg);}
+.accordion-check-list .icon-arrow {display: inline-block; width: 2rem; height: 2rem; background: url(../images/icon/dropdown_close.svg) 0 0 no-repeat; background-size: 2rem 2rem; transform: rotate(180deg);}
 .accordion-check-list .chk-all-area.on .icon-arrow {transform: rotate(0);}
 
 .accordion-check-list .con {padding: 1.6rem 2.2rem 2.4rem; display: none;}
@@ -340,8 +346,8 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .approval-list .status-chk.type01 {background-color: #f7fafa; color: #7d8585; }
 .approval-list .status-chk.type02 {background-color: #fff; color: #00a5a0; border: 1px solid #31bfba;}
 .approval-list .status-chk.type03 {background-color: #fff; border: 1px solid #e0e6e6;}
-.status-chk .icon-chk {display: block; width: 2.4rem; height: 2.4rem; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/check_gray.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;}
-.status-chk.type02 .icon-chk {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/check.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;}
+.status-chk .icon-chk {display: block; width: 2.4rem; height: 2.4rem; background: url(../images/icon/check_gray.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;}
+.status-chk.type02 .icon-chk {background: url(../images/icon/check.svg) 0 0 no-repeat; background-size: 2.4rem 2.4rem;}
 .approval-list .text-wrap {margin-left: 2.4rem; display: flex; justify-content: center; flex-direction: column;}
 .approval-list .text-wrap .name {font-size: 1.8rem; color: #171a1a; font-weight: 600;}
 .approval-list .status-chk.type01 + .text-wrap .name {color: #7d8585;}
@@ -359,6 +365,7 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 
 /* 연락처 */
 .address-wrap .card-type1 {padding-right: 10rem;}
+.address-wrap .card-type1 + .card-type1 {margin-top: 1.2rem;}
 .address-wrap .title {font-size: 1.5rem; color: #00a5a0; font-weight: 600;}
 .address-wrap .text {margin-top: 0.5rem; font-size: 1.8rem; color: #171a1a; font-weight: 600;}
 .address-wrap .text-sub {margin-top: 1.3rem; font-size: 1.4rem; color: #7d8585;}
@@ -366,7 +373,7 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .address-wrap .card-type1:nth-child(2) {background: url(../images/png/address.png) no-repeat right 1.6rem bottom 2.4rem; background-size: 7.2rem 7.2rem;}
 .address-wrap .card-type1:nth-child(3) {background: url(../images/png/location.png) no-repeat right 1.6rem bottom 1.5rem; background-size: 7.2rem 7.2rem;}
 
-.address-wrap .card-type1 .arrow {display: inline-block; margin-top: 1.3rem; padding-right: 2rem; font-size: 1.8rem; color: #171a1a; font-weight: 600; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/chevron_next2.svg) right center no-repeat; background-size: 2rem 2rem;}
+.address-wrap .card-type1 .arrow {display: inline-block; margin-top: 1.3rem; padding-right: 2rem; font-size: 1.8rem; color: #171a1a; font-weight: 600; background: url(../images/icon/chevron_next2.svg) right center no-repeat; background-size: 2rem 2rem;}
 
 /* popup */
 .pop-login-extend .title {padding-top: 10.1rem; font-size: 1.8rem; color: #171a1a; font-weight: 700; text-align: center; background: url(../images/error/complete_logout.png) center 0 no-repeat; background-size: 10.4rem 8.8rem ;}
@@ -374,13 +381,16 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .pop-login-extend .text {margin-top: 1.3rem; color: #7d8585;}
 
 /* interac */
-.no-interac-wrap {padding-top: 4.8rem; text-align: center; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
+.no-interac-wrap {padding-top: 4.8rem; text-align: center; background: url(../images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
 .no-interac-wrap .title {font-size: 1.8rem; color: #171a1a; font-weight: 700;}
 .no-interac-wrap .text-sub {margin-top: 0.9rem; font-size: 1.5rem; color: #7d8585;}
 .no-interac-wrap .btn-wrap {margin-top: 3.2rem;}
 
-
-
+/*  modal__contents--tabscroll */
+.data-none-wrap .icon-alarm {margin-bottom: 1.3rem;}
+.modal__contents--tabscroll .tab-list-wrap .tab-con .data-none-wrap {height: calc(60vh - 9.6rem); min-height: 18.4rem;}
+.modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-wrap.is-btn .data-none-wrap {height: calc(60vh - 16.8rem);}
+.modal__contents--tabscroll .tab-list-wrap .tab-con .btn-nodata {margin-top: 2.9rem;}
 
 
 /* ******************* 공통 ******************* */
@@ -392,7 +402,7 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 /* bg */
 .bg-black {background-color: #000 !important;}
 .bg-black .app-header {background-color: #000;}
-.bg-black .app-header .btn-close {background : url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_w.svg) right 2rem top 50% no-repeat;}
+.bg-black .app-header .btn-close {background : url(../images/icon/close_w.svg) right 2rem top 50% no-repeat;}
 
 /* tag */
 .tag-dgray {display: inline-block; height: 3rem; line-height: 3rem; padding: 0 1.2rem; font-size: 1.5rem; color: #fff; font-weight: 600; border-radius: 1.5rem; background-color: #7d8585;}
@@ -402,16 +412,16 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .accordion-list.w100 {margin-left: -2rem; margin-right: -2rem;}
 
 /* icon */
-.icon_reload {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/reload.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon_usa_samll {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/usa_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon_cad_samll {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/cad_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-notice-green {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/caution_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-cancel {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_16_black.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-cancel-green {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/close_16_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-edit {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/edit.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-setting-gary {width: 2.4rem; height: 2.4rem; font-size: 0;; display: inline-block; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/setting_gray.svg) 50% 50% no-repeat; background-size: 100% auto;}
-.icon-delete-green {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/trash_can_green.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
-.icon-back {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/back.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
+.icon_reload {background: url(../images/icon/reload.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon_usa_samll {background: url(../images/icon/usa_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon_cad_samll {background: url(../images/icon/cad_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon-notice-green {background: url(../images/icon/caution_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon-cancel {background: url(../images/icon/close_16_black.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon-cancel-green {background: url(../images/icon/close_16_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon-edit {background: url(../images/icon/edit.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon-setting-gary {width: 2.4rem; height: 2.4rem; font-size: 0;; display: inline-block; background: url(../images/icon/setting_gray.svg) 50% 50% no-repeat; background-size: 100% auto;}
+.icon-delete-green {background: url(../images/icon/trash_can_green.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
+.icon-back {background: url(../images/icon/back.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
 
 /* select */
 .select-wrap .select-sm.type02 {background-position: 100% 0.5rem;}
@@ -423,9 +433,9 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .select-wrap .select-sm.type02 .button-select__item i[class^="icon-country"] {display: inline-block; width: 2rem; height: 2rem; margin-bottom: -0.4rem;}
 
 .select-wrap.btn-type {display: inline-block; margin-top: 0; width: 13.4rem; height: 3.6rem; line-height: 3.6rem; text-align: center; border: 1px solid #f7fafa; border-radius: 1.8rem 1.8rem; background-color: #fff; box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.1); }
-.select-wrap.btn-type .select-sm.type02 {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_open_green.svg) 100% 0.3rem no-repeat;}
+.select-wrap.btn-type .select-sm.type02 {background: url(../images/icon/dropdown_open_green.svg) 100% 0.3rem no-repeat;}
 .select-wrap.btn-type .select-sm.type02 .button-select__item {padding-right: 1.8rem;}
-.select-wrap.btn-type.select--on .select-sm.type02 {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/dropdown_close_green.svg) 100% 0.3rem no-repeat; }
+.select-wrap.btn-type.select--on .select-sm.type02 {background: url(../images/icon/dropdown_close_green.svg) 100% 0.3rem no-repeat; }
 .select-wrap.btn-type.select--active .select-sm.type02 {background-position: 100% 0.3rem;}
 .select-wrap.btn-type .select-sm.type02 .button span {font-size: 1.5rem; color: #00a5a0; font-weight: normal;}
 
@@ -456,24 +466,21 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 .num-color-list li + li {margin-top: 0.9rem;}
 .num-color-list .text {color: #5e6666; font-weight: normal;}
 
-
-
-
 /* lgreen-box-wrap */
 .lgreen-box-wrap.type03 .text {color: #3abfba; font-weight: 600; text-align: center;}
 .lgreen-box-wrap.type03 [class^="icon-"] {width: 1.6rem; height: 1.6rem; display: inline-block; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100% auto; margin-right: 0.4rem;}
 
 .lgreen-box-wrap.type03 .icon-notice-green {margin-top: -0.3rem;}
 
-.icon-notice-green {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/caution_green.svg); vertical-align: middle;}
+.icon-notice-green {background: url(../images/icon/caution_green.svg); vertical-align: middle;}
 
 .input-info-green .sub {margin-top: 0.5rem; font-size: 1.4rem; color: #7d8585; text-align: center;}
 
 /* 비밀번호 show hide */
 .password-wrap .page-tit {margin-top: 5.9rem; text-align: center;}
 .password-wrap .password-show {margin-top: 3.2rem;}
-.btn-show {width: 2rem; height: 2rem; display: inline-block; font-size: 0; background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/psw_view_outline.svg) 0 0 no-repeat; background-size: 2rem auto; margin: 1.2rem 0 0 1.2rem;}
-.btn-show.is-active {background: url(https://dev.kebhanabank.ca:18443/mbs/resources/mb/publish/images/icon/psw_view_outline_none.svg) 0 0 no-repeat; background-size: 2rem auto;}
+.btn-show {width: 2rem; height: 2rem; display: inline-block; font-size: 0; background: url(../images/icon/psw_view_outline.svg) 0 0 no-repeat; background-size: 2rem auto; margin: 1.2rem 0 0 1.2rem;}
+.btn-show.is-active {background: url(../images/icon/psw_view_outline_none.svg) 0 0 no-repeat; background-size: 2rem auto;}
 
 /* card-date-wrap */
 .card-date-wrap {margin-top: 0.5rem;}
@@ -549,25 +556,3 @@ background: url(../images/png/void_cheque@3x_복사본.png) 0 0 no-repeat; backg
 /* */
 .checkbox-wrap.box .txt_underline-b {display: block; margin-top: 0.8rem; font-size: 1.5rem;}
 .checkbox-wrap.box input:checked + label .txt_underline-b {color: #00a5a0;}
-
-/* test */
-/* .slick-active .text-wrap {position: relative;} */
-.slick-active .text-wrap {
-    position: relative;
-
-
-    animation: test 2s forwards;
-
-}
-@keyframes test {
-    0% { left: 100%; opacity: 0;}
-    100% { left: 0; opacity: 1;}
-}
-
-/* @keyframes test {
-    0% { left: 100%; opacity: 0;}
-    100% { left: 20px; opacity: 1;}
-} */
-
-.card-list1 i[class^="icon-country"] {vertical-align: middle !important;}
-.card-list1 i[class^="icon-country"] + .txt {vertical-align: middle;}
