@@ -815,10 +815,10 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 /* .post-search-wrap .input.input-search::before {width: calc(100% - 0.2rem);} */
 
 /* 레이어 팝업(투명한 지점 팝업) */
-.popup-wrap.branch-layer-wrap {height: 2.8rem; bottom: 0; left: 0; z-index: 100 !important; -webkit-transition: height .3s ease-in-out; transition: height .3s ease-in-out;}
+.popup-wrap.branch-layer-wrap {height: 0; bottom: 0; left: 0; z-index: 100 !important; -webkit-transition: height .3s ease-in-out; transition: height .3s ease-in-out;}
 .popup-wrap.branch-layer-wrap:before {display: none;}
 .popup-wrap.branch-layer-wrap.is-open {height: calc(100vh - 39.8rem);}
-.popup-wrap.branch-layer-wrap .modal__container {height: auto; min-height: 4.4rem; max-height: 100%; padding: 0; padding-bottom: calc(2rem + constant(safe-area-inset-bottom)); padding-bottom: calc(2rem + env(safe-area-inset-bottom)); bottom: 0; right: 0; left: 0; background: #fff; border-radius: 2.4rem 2.4rem 0 0; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03);}
+.popup-wrap.branch-layer-wrap .modal__container {height: auto; min-height: 4.4rem; max-height: 100%; padding: 0; bottom: 0; right: 0; left: 0; background: #fff; border-radius: 2.4rem 2.4rem 0 0; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03);}
 .popup-wrap.branch-layer-wrap .modal__contents {height: 0; padding: 0; color: #171a1a; overflow: hidden;}
 .popup-wrap.branch-layer-wrap.is-open .modal__contents {height: auto; max-height: 100%;}
 .popup-wrap.branch-layer-wrap .modal__btn-bar {width: 100%; height: 4.4rem; line-height: 4.4rem; position: absolute; top: 0; left: 0; z-index: 1; cursor: none;}

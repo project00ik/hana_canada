@@ -24,6 +24,7 @@
     hanaUI.allCheck(); // all checked
     hanaUI.allCheckAccordian(); // all checked Accordian
     hanaUI.passwordShow(); // password show/hide
+    hanaUI.modalBranch(); // 지점안내 모달 fixed 
     
     // 스크롤 방향 체크 (검색 플로팅 관련 js)
     var windowH = $(window).outerHeight() - 56 ;
@@ -1241,8 +1242,18 @@ var hanaUI = {
                 passwordShowBtn.siblings('input').attr('type','text');
             }
         });
-    }
+    },
 
+    modalBranch : function() { 
+        if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+            var topPosition = $('window').height() - 44;
+            if ($(".branch-layer-wrap").hasClass('is-open')) {
+                $(".branch-layer-wrap").css("position", "fixed").css("top", "");
+            } else { 
+                $(".branch-layer-wrap").css("position", "fixed").css("top", topPosition);
+            }
+        };
+    }
 };
 
 // 토글 레이어
@@ -1355,6 +1366,3 @@ function modalClose(target){
         modalClosetarget.closest('.modal').find('[data-element=modal__close]').trigger('click');
     }, 0)
 }
-
-
-
