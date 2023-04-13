@@ -799,8 +799,8 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 .branch-info-wrap .tab-list-wrap .tab-con .con-box:first-child {padding-top: 3.2rem;}
 .branch-info-wrap .tab-list-wrap .tab-con .con-box:last-child {padding-bottom: 4.8rem;}
 
-.map-wrap {height: calc(100vh - 10.2rem); position: relative;}
-.map-wrap.full {height: calc(100vh - 5.6rem); position: relative;}
+.map-wrap {height: calc(100vh - 4.5rem); position: relative;}
+.map-wrap.full {height: 100vh; position: relative;}
 .map-wrap [class^="map-icon"] {position: absolute; z-index:10;}
 .map-wrap .map-icon-branch {width: 6rem; height: 7.2rem; font-size: 0; background: url(../images/icon/branch.svg) 50% 50% no-repeat; background-position: 100% auto; top: 11rem; left: 6.8rem;}
 .map-wrap .map-icon-atm {width: 5rem; height: 5.6rem; font-size: 0; background: url(../images/icon/atm.svg) 50% 50% no-repeat; background-position: 100% auto; top: 8rem; left: 19rem;}
