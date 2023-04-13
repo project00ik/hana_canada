@@ -385,13 +385,12 @@ i.icon-time {background: url(../images/icon/time_gray.svg) 50% 50% no-repeat; ba
 i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no-repeat; background-size: 100% auto;}
 
 /* 카드타입 정렬 */
-.card-wrap {width: 100%; margin-top: 1.6rem;}
+.card-wrap {width: 100%; margin-top: 0.4rem;}
 .card-wrap + .card-wrap {margin-top: 1.2rem;}
-.card-wrap .card-type1 + .card-type1,
-.card-wrap .card-type2 + .card-type2,
-.card-wrap .card-type4 + .card-type4 {margin-top: 1.2rem;}
-.card-wrap .card-type3 + .card-type3 {margin-top: 0.8rem;}
-.card-wrap {width: 100%; margin-top: 1.6rem;}
+.card-wrap .card-type1,
+.card-wrap .card-type2,
+.card-wrap .card-type4 {margin-top: 1.2rem;}
+.card-wrap .card-type3 {margin-top: 0.8rem;}
 .modal__contents .card-wrap {margin-top: 0;}
 
 /* 캐나다 하나은행 내 이체 (타이틀 + 카드목록) */
@@ -800,8 +799,8 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 .branch-info-wrap .tab-list-wrap .tab-con .con-box:first-child {padding-top: 3.2rem;}
 .branch-info-wrap .tab-list-wrap .tab-con .con-box:last-child {padding-bottom: 4.8rem;}
 
-.map-wrap {height: calc(100vh - 4.5rem); position: relative;}
-.map-wrap.full {height: 100vh; position: relative;}
+.map-wrap {height: calc(100vh - 10.2rem); position: relative;}
+.map-wrap.full {height: calc(100vh - 5.6rem); position: relative;}
 .map-wrap [class^="map-icon"] {position: absolute; z-index:10;}
 .map-wrap .map-icon-branch {width: 6rem; height: 7.2rem; font-size: 0; background: url(../images/icon/branch.svg) 50% 50% no-repeat; background-position: 100% auto; top: 11rem; left: 6.8rem;}
 .map-wrap .map-icon-atm {width: 5rem; height: 5.6rem; font-size: 0; background: url(../images/icon/atm.svg) 50% 50% no-repeat; background-position: 100% auto; top: 8rem; left: 19rem;}
@@ -1030,3 +1029,4 @@ i.mark4 {background: #9ca6a6;}
 .bul-num-wrap > li .info-target-amount .text {margin-top: 0;}
 .info-target-amount .icon-equal2-gray {width: 1.6rem; height: 1.6rem; margin: 0.5rem 0 0.3rem; display: inline-block;}
 .info-target-amount .box-gray {padding: 1.2rem 2rem; border-radius: 0.8rem; background: #edf2f2;}
+

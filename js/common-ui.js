@@ -362,7 +362,7 @@ var hanaUI = {
                 $(this).closest('.input').attr('data-native', 'focus');
             })
         };
-
+        
         function util(){
             $clear.on({
                 'touchstart' : function(){
@@ -945,7 +945,7 @@ var hanaUI = {
             var $obj = null;
 
             function init(){
-                $obj = $('.app-footer, .button-fixed');
+                $obj = $('.app-footer, .button-fixed, .btn-floating');
             }
 
             function event(){
@@ -965,7 +965,7 @@ var hanaUI = {
             var $obj = null;
 
             function init(){
-                $obj = $('.app-footer, .button-fixed');
+                $obj = $('.app-footer, .button-fixed, .btn-floating');
             }
 
             function event(){
@@ -1000,11 +1000,13 @@ var hanaUI = {
     code : function(){
         var $inputCode = '.input-code-box .input-code';
         $('body').on('focus', $inputCode, function(){
-            $(this).parent().addClass('focus');            
+            $(this).parent().addClass('focus');    
+            hanaUI.native.bottomHide();      
         });
 
         $('body').on('blur', $inputCode, function(){
             var inputVal = $(this).val();
+            hanaUI.native.bottomShow();
             if (!inputVal) {
                 $(this).parent().removeClass('focus');
             }
@@ -1278,14 +1280,37 @@ function atmInfoTab(){
 // 공통 슬라이드 js
 function slickSlideEvent(obj){
     var slideObj = $(obj);
-    slideObj.slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: true,
-        infinite: true,
-    });
-    // auto play
-    slideObj.slick('slickPlay');
+    // 상품 배너 슬라이드
+    if(obj === '.card-slide-wrap') {
+        slideObj.slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            pauseOnHover: true,
+            infinite: true,
+        });
+        // auto play
+        slideObj.slick('slickPlay');
+    }
+    // 인트로 슬라이드
+    if(obj === '.intro-slide-wrap') {
+        slideObj.slick({
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,
+        });
+        // auto play
+        slideObj.slick('slickPlay');
+        // 마지막 슬라이드에서 자동재생 정지
+        slideObj.on('afterChange', function(event, slick, currentSlide, nextSlide){
+            var lastIndex = slick.slideCount - 1; // 마지막 슬라이드 인덱스
+            if(currentSlide === lastIndex){
+                slideObj.slick('slickPause');
+            } else {
+                slideObj.slick('slickPlay');
+            }
+        });
+    }
 }
 
 // 모달 오픈 js

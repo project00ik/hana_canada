@@ -4,6 +4,7 @@
 @import url(slick.css);
 @import url(contents.css);
 @import url(contents_02.css);
+@import url(intro.css);
 
 /* --- 텍스트 (text) --- */
 /* - 텍스트 : 포인트컬러(point color) */
@@ -23,7 +24,7 @@
 /* - 텍스트 : 타이틀(title) */
 .page-tit {font-size: 2rem; color: #171a1a; font-weight: 700;}
 .page-tit-sub {font-size: 1.6rem; color: #171a1a; font-weight: 600;}
-.page-tit-point {font-size: 1.8rem; color: #00a5a0; font-weight: 600;}
+.page-tit-point {padding-bottom: 0.8rem; font-size: 1.8rem; color: #00a5a0; font-weight: 600;}
 .page-txt {font-size: 1.6rem; color: #5e6666; font-weight: 400;}
 .page-tit + .page-tit-sub {margin-top: 0.8rem;}
 .page-tit + .page-txt {margin-top: 0.2rem;}
@@ -57,7 +58,7 @@ a.txt_underline-b {text-decoration: underline; color: #171a1a; font-weight: 600;
 
 
 /* --- 레이아웃 (layout) --- */
-.wrap {min-height: 100%; vertical-align: top;}
+.wrap {min-height: 100%; vertical-align: top; height: 100%;}
 
 /* - 레이아웃 : 헤더 (header) */
 /* .app-header {width: 100%; height: 5.6rem; height: calc(5.6rem + env(safe-area-inset-top)); height: calc(5.6rem + constant(safe-area-inset-top)); display: flex; align-items: center; justify-content: center;  padding: 0; padding: calc(constant(safe-area-inset-top)) 0 0; padding: calc(env(safe-area-inset-top)) 0 0; position: fixed; top: 0; left: 0; z-index: 20; background: #fff;}
@@ -71,13 +72,13 @@ a.txt_underline-b {text-decoration: underline; color: #171a1a; font-weight: 600;
 /* - 레이아웃 : 푸터 (footer) */
 .app-footer {width:100%; min-height: 8.8rem; min-height: calc(8.8rem + env(safe-area-inset-bottom)); min-height: calc(8.8rem + constant(safe-area-inset-bottom)); position: fixed; bottom: 0; left: 0; z-index: 20;}
 .app-footer .btn-wrap,
-.app-footer .btn-group-wrap {height:100%; padding: 1.6rem 2rem; border-radius: 2.4rem; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03); background: #fff;}
+.app-footer .btn-group-wrap {height:100%; padding: 1.6rem 2rem; border-radius: 2.4rem 2.4rem 0 0; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03); background: #fff;}
 .app-footer .btn-group-sub-wrap {padding-bottom: 2.3rem; text-align: center;}
 .app-footer .btn-group-sub-wrap .rd {box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.05);}
 
 /* - 레이아웃 : 컨텐츠 영역 (contents) */
 /* .app-main {position: relative; padding-top: calc(5.6rem); padding-top: calc(5.6rem + constant(safe-area-inset-top)); padding-top: calc(5.6rem + env(safe-area-inset-top)); padding-bottom: calc(8.8rem); padding-bottom: calc(8.8rem + constant(safe-area-inset-bottom)); padding-bottom: calc(8.8rem  + env(safe-area-inset-bottom));} */
-.app-main {position: relative; padding-top: 0; padding-bottom: 8.8rem;}
+.app-main {position: relative; padding-top: 0; padding-bottom: 8.8rem; min-height: 100%;}
 /* .app-main.footer-none {padding-bottom:0;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom);}
 .app-main.footer-sub-btn {padding-bottom: calc(8.8rem + 7.1rem); padding-bottom: calc(8.8rem + 7.1rem + constant(safe-area-inset-bottom)); padding-bottom: calc(8.8rem + 7.1rem + env(safe-area-inset-bottom));} */
 .app-main.footer-none {padding-bottom:0;}
@@ -362,7 +363,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .accordion-conbox .card-wrap {margin-top: 0rem;}
 
 /* - 컨텐츠 : 테이블 공통 (table) */
-.tbl-scroll {overflow-x: auto; -webkit-overflow-scrolling: auto;}
+.tbl-scroll {overflow-x: auto;}
 .tbl-scroll::-webkit-scrollbar {display: none; width: 0; height: 0; background: transparent; -webkit-appearance: none;}
 .tbl-wrap {border-top: 1px solid #daf0f0; border-bottom: 1px solid #daf0f0;}
 .tbl-wrap table td,
