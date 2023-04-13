@@ -24,7 +24,7 @@
     hanaUI.allCheck(); // all checked
     hanaUI.allCheckAccordian(); // all checked Accordian
     hanaUI.passwordShow(); // password show/hide
-    // hanaUI.modalBranch(); // 지점안내 모달 fixed 
+    hanaUI.modalBranch(); // 지점안내 모달 fixed 
     
     // 스크롤 방향 체크 (검색 플로팅 관련 js)
     var windowH = $(window).outerHeight() - 56 ;
