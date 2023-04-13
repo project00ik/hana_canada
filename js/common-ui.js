@@ -1247,10 +1247,11 @@ var hanaUI = {
     modalBranch : function() { 
         if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
             var topPosition = $('window').height() - 44;
-            if ($(".branch-layer-wrap").hasClass('is-open')) {
-                $(".branch-layer-wrap").css("position", "fixed").css("top", "");
+            var branchPopup = $('.branch-layer-wrap');
+            if (branchPopup.hasClass('is-open')) {
+                branchPopup.css('position', 'fixed').css('top', '');
             } else { 
-                $(".branch-layer-wrap").css("position", "fixed").css("top", topPosition);
+                branchPopup.css('position', 'fixed').css('top', topPosition);
             }
         };
     }
