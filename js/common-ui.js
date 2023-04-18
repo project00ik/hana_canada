@@ -24,79 +24,11 @@
     hanaUI.allCheck(); // all checked
     hanaUI.allCheckAccordian(); // all checked Accordian
     hanaUI.passwordShow(); // password show/hide
-    hanaUI.modalBranch(); // 지점안내 모달 fixed 
+    hanaUI.modalBranch(); // 지점안내 모달 fixed
+    hanaUI.scrollEvent(); // 스크롤 방향 체크 (검색 플로팅 관련 js)
     
-    // 스크롤 방향 체크 (검색 플로팅 관련 js)
-    var windowH = $(window).outerHeight() - 56 ;
-    var containerH = $('.container').outerHeight();
-    
-    if(windowH < containerH){
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 0){
-                nowScrollTop = $(this).scrollTop();
-                
-                $('body').addClass('scroll--down');
-                if(wheelDelta() === 'down'){
-                    $('body').removeClass('scroll--up');
-                    $('body').addClass('scroll--down');
-                }
-                if(wheelDelta() === 'up'){
-                    $('body').removeClass('scroll--down');
-                    $('body').addClass('scroll--up');
-                }
-            }
-            if($(this).scrollTop() === 0) {
-                $('body').addClass('scroll--top');
-            } else {
-                $('body').removeClass('scroll--top');
-            } 
-            // - 초기화
-            prevScrollTop = nowScrollTop;
-    
-            // 스크롤시 차트 active 처리
-            // var ThisScroll = $(this).scrollTop();
-            // var haederH = $('.app-header').outerHeight();
-            // var chartOffset = $('.parallax--point').offset().top;
-            // var parallaxOffset = chartOffset - haederH;
-            // if($('.parallax--point').length = 0){
-            //     return;
-            // } else {
-            //     if(ThisScroll >= parallaxOffset) {
-            //         $('.chart-wrap').addClass('active');
-            //     }
-            // }
-        });
-        // - 스크롤 움직임 감지
-        $.fn.scrollStopped = function(callback){
-            var that = this, $this = $(this);
-            $this.scroll(function(ev){
-                clearTimeout($this.data('scrollTimeout'));
-                $this.data('scrollTimeout', setTimeout(callback.bind(that), 250,ev));
-            });
-        };
-        nowScrollPosition(); // 현재스크롤 위치 기억
-
-    }
 });
 
-// 스크롤 방향 체크
-// - 초기값
-var prevScrollTop = 0;
-var nowScrollTop = 0;
-// - 재스크롤 시
-function wheelDelta(){
-    return prevScrollTop - nowScrollTop > 0 ? 'up' : 'down';
-}
-// 현재 스크롤 위치 기억
-function nowScrollPosition(){
-    window.oriScroll = $(window).scrollTop();
-    return false;
-}
-// 스크롤 위치 되돌림
-function nowScrollReturn(){
-    $(window).scrollTop(window.oriScroll);
-    return false;
-}
 
 
 var hanaUI = {
@@ -104,7 +36,7 @@ var hanaUI = {
     /****************************
         Common UI
     *****************************/
-   
+
     header : function(obj){
         var $el = null;
         var $title = null;
@@ -297,6 +229,7 @@ var hanaUI = {
                 },
                 'blur' : function(e){
                     var $target = $(e.target)
+                    hanaUI.native.bottomShow();
                     if($(this).siblings('input').length || $(this).parent('.native-inner').siblings('.native-inner').length){
                         if($(this).val() == ''){
                             var that = $(this).closest($el).find($input);
@@ -308,10 +241,15 @@ var hanaUI = {
                         }
                     }else{
                         if($(this).val() == ''){
-                            $(this).closest($el).removeClass('input--on');
+                            if($(this).hasClass('input-date')){
+                                $(this).closest($el).addClass('input--on');
+                            } else {
+                                $(this).closest($el).removeClass('input--on');
+                            }
+                            $(this).closest($el).removeClass('input--focus');
                         }
                     }
-                    $(this).closest($el).removeClass('input--focus');
+                    
                     if($(this).prop('readonly') == false){
                         setTimeout(function(){
                             if($('.input--focus:not([data-native=focus])').length == 0){
@@ -338,7 +276,7 @@ var hanaUI = {
                     
                     setTimeout(function(){
                         $target.closest($el).find('.input__remove-button').hide();
-                    },0)
+                    },300)
 
                     $('.search-layer').removeClass('open');
                 },
@@ -1244,18 +1182,92 @@ var hanaUI = {
         });
     },
 
-    modalBranch : function() { 
-        if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+    modalBranch : function(){
+        if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod'){
             var topPosition = $('window').height() - 44;
-            var branchPopup = $('.branch-layer-wrap');
-            if (branchPopup.hasClass('is-open')) {
+            var branchPopup = $('.branch-layer-wrap')
+            if(branchPopup.hasClass('is-open')){
                 branchPopup.css('position', 'fixed').css('top', '');
-            } else { 
+            } else {
                 branchPopup.css('position', 'fixed').css('top', topPosition);
             }
-        };
-    }
+        }
+    },
+
+    scrollEvent : function(obj){
+        // 스크롤 방향 체크 (검색 플로팅 관련 js)
+        var windowH = $(window).outerHeight() - 56 ;
+        var containerH = $('.container').outerHeight();
+        
+        if(windowH < containerH){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 0){
+                    nowScrollTop = $(this).scrollTop();
+                    
+                    $('body').addClass('scroll--down');
+                    if(wheelDelta() === 'down'){
+                        $('body').removeClass('scroll--up');
+                        $('body').addClass('scroll--down');
+                    }
+                    if(wheelDelta() === 'up'){
+                        $('body').removeClass('scroll--down');
+                        $('body').addClass('scroll--up');
+                    }
+                }
+                if($(this).scrollTop() === 0) {
+                    $('body').addClass('scroll--top');
+                } else {
+                    $('body').removeClass('scroll--top');
+                } 
+                // - 초기화
+                prevScrollTop = nowScrollTop;
+        
+                // 스크롤시 차트 active 처리
+                // var ThisScroll = $(this).scrollTop();
+                // var haederH = $('.app-header').outerHeight();
+                // var chartOffset = $('.parallax--point').offset().top;
+                // var parallaxOffset = chartOffset - haederH;
+                // if($('.parallax--point').length = 0){
+                //     return;
+                // } else {
+                //     if(ThisScroll >= parallaxOffset) {
+                //         $('.chart-wrap').addClass('active');
+                //     }
+                // }
+            });
+            // - 스크롤 움직임 감지
+            $.fn.scrollStopped = function(callback){
+                var that = this, $this = $(this);
+                $this.scroll(function(ev){
+                    clearTimeout($this.data('scrollTimeout'));
+                    $this.data('scrollTimeout', setTimeout(callback.bind(that), 250,ev));
+                });
+            };
+            nowScrollPosition(); // 현재스크롤 위치 기억
+
+        }
+    },
+
 };
+
+// 스크롤 방향 체크
+// - 초기값
+var prevScrollTop = 0;
+var nowScrollTop = 0;
+// - 재스크롤 시
+function wheelDelta(){
+    return prevScrollTop - nowScrollTop > 0 ? 'up' : 'down';
+}
+// 현재 스크롤 위치 기억
+function nowScrollPosition(){
+    window.oriScroll = $(window).scrollTop();
+    return false;
+}
+// 스크롤 위치 되돌림
+function nowScrollReturn(){
+    $(window).scrollTop(window.oriScroll);
+    return false;
+}
 
 // 토글 레이어
 function toggleLayer(obj){
@@ -1308,11 +1320,12 @@ function slickSlideEvent(obj){
         slideObj.slick({
             fade: true,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 2800,
             infinite: true,
         });
         // auto play
         slideObj.slick('slickPlay');
+
         // 마지막 슬라이드에서 자동재생 정지
         slideObj.on('afterChange', function(event, slick, currentSlide, nextSlide){
             var lastIndex = slick.slideCount - 1; // 마지막 슬라이드 인덱스
@@ -1367,3 +1380,6 @@ function modalClose(target){
         modalClosetarget.closest('.modal').find('[data-element=modal__close]').trigger('click');
     }, 0)
 }
+
+
+

@@ -193,13 +193,14 @@
 .re-active-wrap .btn-wrap {margin-top: 1.6rem;}
 
 /* 카드 분실 신고/철회 */
-.my-card-box {display: flex; justify-content: center; margin-top: 8.2rem;}
-.my-card-box .inbox {padding: 2rem; width: 26rem; border: 1px solid #60bcb9; border-radius: 1.2rem 1.2rem; box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05);}
+.my-card-box {display: flex; justify-content: center;}
+.my-card-box .inbox {padding: 2.4rem 2rem; width: 26rem; border: 1px solid #60bcb9; border-radius: 1.2rem 1.2rem; box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05);}
 .my-card-box .ly-right {text-align: right;}
-.my-card-box .text-date {margin-top: 7.2rem; font-size: 1.4rem; color: #7d8585;}
-.my-card-box .card-num {margin-top: 2.4rem; font-size: 1.8rem; color: #171a1a; font-weight: 600;}
-.my-card-box .text-date {margin-top: 0.8rem;}
-.my-card-box .logo-wrap {margin-top: 10.8rem; display: flex; justify-content: space-between; align-items: center;}
+.my-card-box .text-date {margin-top: 6.4rem;}
+.my-card-box .text-date .text {display: block; font-size: 1.4rem; color: #7d8585;}
+.my-card-box .text-date .date {display: block; font-size: 1.5rem; color: #2f3333; font-weight: 600;}
+.my-card-box .card-num {margin-top: 3.2rem; font-size: 1.8rem; color: #171a1a; font-weight: 700;}
+.my-card-box .logo-wrap {margin-top: 9rem; display: flex; justify-content: space-between; align-items: center;}
 .my-card-box .logo-wrap .logo-hana{display: inline-block; width: 12rem; height: 1.8rem; vertical-align: middle;}
 .my-card-box .logo-wrap .logo-hana img {display: inline-block; width: 100%; height: auto;}
 .my-card-box .logo-wrap .img-iq-bi {display: inline-block; width: 3.2rem; height: 3.2rem;}
@@ -488,7 +489,7 @@
 .card-type8 .card-cont .card {width: 100%; flex:1;}
 .card-type8 .card-cont .card .tit {font-size: 1.8rem; color: #2f3333; font-weight: 600;}
 .card-type8 .card-cont .card .txt {font-size: 1.4rem; color: #7d8585;}
-.card-type8 + .card-type8  {margin-top: 1.2rem;}
+.card-type8  {margin-top: 1.2rem;}
 
 .card-type5.tag .top-right-area {min-width: 5rem;display: inline-block;text-align: right;position: absolute;top: 2.4rem;right: 2rem;z-index: 1;}
 .card-type5.tag .card-list dl {margin-top: 0.5rem;}
