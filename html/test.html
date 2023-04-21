@@ -54,8 +54,10 @@
         inpFocus();
       });
       function inpFocus(){
-        $('#inputText01').focus();
-        $('#inputText01').trigger('click');
+        setTimeout(function(){
+          $('#inputText01').focus();
+          $('#inputText01').trigger('click');
+        }, 300);
       }
     </script>
 
