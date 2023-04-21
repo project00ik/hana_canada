@@ -1096,10 +1096,7 @@ var hanaUI = {
 
         function event(){
             input();
-            setTimeout(function(){
-                $('.input-amount-alba').focus().click();
-          }, 1000);
-          webview.keyboardDisplayRequiresUserAction = NO;
+            $('.currency-dollar').click();
         };
 
         function input(){
