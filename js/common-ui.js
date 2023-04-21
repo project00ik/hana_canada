@@ -246,7 +246,6 @@ var hanaUI = {
                             } else {
                                 $(this).closest($el).removeClass('input--on');
                             }
-                            $(this).closest($el).removeClass('input--focus');
                         }
                     }
                     
@@ -276,6 +275,7 @@ var hanaUI = {
                     
                     setTimeout(function(){
                         $target.closest($el).find('.input__remove-button').hide();
+                        $target.closest($el).removeClass('input--focus');
                     },300)
 
                     $('.search-layer').removeClass('open');
@@ -316,7 +316,7 @@ var hanaUI = {
                     }
                 },
                 'click' : function(e){
-                    $(this).closest($el).find('.input__element').val('').closest($el).removeClass('input--on')
+                    $(this).closest($el).find('.input__element').val('').closest($el).addClass('input--on');
                     $(this).siblings('.input__element').focus();
                     //$(this).closest($el).removeClass('input--focus');
                     $(this).hide();
@@ -1096,7 +1096,6 @@ var hanaUI = {
 
         function event(){
             input();
-            $('.currency-dollar').trigger('click');
         };
 
         function input(){
@@ -1105,15 +1104,22 @@ var hanaUI = {
                 	$(this).css('width', 0).css('width', $(this).prop('scrollWidth'));                  
                 },
                 'blur.ui-event' : function() {
-                	if($(this).val()==''){
-                		if($(this).parent().hasClass('input-amount')){
-                			$(this).css('width','100%');
 
-                        }else{
-                        	$(this).val('');
-                			$(this).css('width','2.3rem');
-                        }
-                	}
+                    if($(this).val()==''){
+                        
+                        $(this).val('');
+                        $(this).css('width','2.3rem');
+
+                    } else {
+                        var currencyVal = $(this).val();
+
+                        $('.currency-wrap').append('<span class="currency-text"></span>');
+                        $('.currency-text').text(currencyVal);
+
+                        var currencyWidth = $('.currency-text').width();
+                        $(this).css('width', currencyWidth + 'px');
+                        $('.currency-text').remove();                   
+                    }
                 }
             }, $el);
             $('.currency-wrap .input__remove-button').on('click', function(){

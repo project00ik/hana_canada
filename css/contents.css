@@ -88,13 +88,15 @@
 .currency-wrap {margin: 1.2rem 0; color: #d0d9d9; display: flex; justify-content: center;}
 .currency-wrap.input:before {display: none;}
 .currency-wrap.input {display: inline-block;}
-.currency-wrap .input__element {height: 4.3rem; line-height: 4.3rem; padding: 0; font-size: 3.6rem; color:#d0d9d9; font-weight: 600; width:2.3rem; z-index: 0; flex: none;}
+.currency-wrap .input__element {height: 4.3rem; line-height: 4.3rem; padding: 0; font-size: 3.6rem; color:#d0d9d9; font-weight: 600; width:2.3rem; z-index: 0; flex: none; vertical-align: middle;}
 .currency-wrap .input__element::placeholder {color: #d0d9d9; font-weight: 600;}
 
-.currency-dollar {height: 4.3rem; line-height: 4.3rem; font-size: 3.6rem; font-weight: 600; display: inline-block;}
+.currency-dollar {height: 4.3rem; line-height: 4.3rem; font-size: 3.6rem; font-weight: 600; display: inline-block; vertical-align: middle;}
 .input-amount-alba:disabled {border-bottom:2px solid #000 !important;color:#000 !important;background-color:#fff;}
 
-.currency-wrap .input__remove-button {display: inline-block; margin: 1.55rem 0 0 0.8rem;}
+.currency-wrap .input__remove-button {display: inline-block; margin: 0 0 0 0.8rem; vertical-align: middle;}
+
+.currency-wrap .currency-text {display: inline-block; font-size: 3.6rem; font-weight: 600;}
 
 .currency-wrap.input--on {color: #171a1a;}
 .currency-wrap.input--on .input-amount-alba {color: #171a1a;}
@@ -245,7 +247,9 @@
 /* 설정 */
 .menu-list-wrap .list {position: relative;}
 .menu-list-wrap .list + .list::before {content: ''; display: block; width: calc(100% + 2rem); position: absolute; left: 0; top: 0; border-top: 1px solid #f7fafa;}
-.menu-list-wrap .list a {display: block; padding: 2.5rem 0; font-size: 1.8rem; color: #2f3333; font-weight: 600; background: url(../images/icon/chevron_next.svg) right center no-repeat; background-size: 2rem 2rem;}
+.menu-list-wrap .list a {position: relative; display: block; padding: 2.5rem 0; font-size: 1.8rem; color: #2f3333; font-weight: 600; background: url(../images/icon/chevron_next.svg) right center no-repeat; background-size: 2rem 2rem;}
+.menu-list-wrap .text-lang {position: absolute; right: 3.6rem; top: 2.7rem; color: #00a5a0;}
+
 
 .personal-agree-wrap {margin-top: 3rem; display: flex; justify-content: space-between; align-items: center;}
 .personal-agree-wrap .radio-list {display: flex;}
@@ -395,6 +399,7 @@
 .icon_reload {background: url(../images/icon/reload.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
 .icon_usa_samll {background: url(../images/icon/usa_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
 .icon_cad_samll {background: url(../images/icon/cad_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
+.icon_krw_samll {background: url(../images/icon/kor_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
 .icon-notice-green {background: url(../images/icon/caution_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
 .icon-cancel {background: url(../images/icon/close_16_black.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
 .icon-cancel-green {background: url(../images/icon/close_16_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
@@ -573,3 +578,15 @@
 
 .bul-square {position: relative; padding-left: 1.6rem;}
 .bul-square::before {content: ''; width: 1rem; height: 1rem; display: inline-block; position: absolute; top: 0.9rem; left: 0; background: #171a1a; border-radius: 0.2rem 0.2rem;}
+
+
+/* 달력 */
+.input-date-error .input__error {display: block;}
+.input-date-error .input.error:before {border-bottom: 0.1rem solid #e31e5a;}
+.input-date-error .input.error .input__element {color: #e31e5a;}
+
+
+/* card disabled */
+.card-type1.disabled {position: relative;}
+.card-type1.disabled::before {content: ''; display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background-color: #fff; border-radius: 1.2rem; opacity: 0.6;}
+.card-type1.disabled.active {background-color: #fff;}

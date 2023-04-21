@@ -455,7 +455,7 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 .card-list1 .txt {font-size: 1.6rem; font-weight: 600;}
 .card-list1 .sub-txt {margin-left: 0.5rem; font-size: 1.6rem; color: #7d8585;}
 .card-list1 .info-txt {margin-top: 0.3rem; font-size: 1.4rem; color: #7d8585; display: inline-block;}
-.card-list1 i[class^="icon-country"] {width: 1.6rem; height: 1.6rem; margin: 0.3rem 0.4rem;}
+.card-list1 i[class^="icon-country"] {width: 1.6rem; height: 1.6rem; margin: 0 0.4rem; /*margin: 0.3rem 0.4rem;*/}
 .card-list1 .btn-wrap {margin-left: 1.6rem;}
 .card-list1 dl > dd .btn-wrap {margin: 2rem 0 0 0;}
 
@@ -818,7 +818,7 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 /* 레이어 팝업(투명한 지점 팝업) */
 .popup-wrap.branch-layer-wrap {height: 0; bottom: 0; left: 0; z-index: 100 !important; -webkit-transition: height .3s ease-in-out; transition: height .3s ease-in-out;}
 .popup-wrap.branch-layer-wrap:before {display: none;}
-.popup-wrap.branch-layer-wrap.is-open {height: calc(100vh - 34.2rem);}
+.popup-wrap.branch-layer-wrap.is-open {height: calc(100vh - 34.2rem); top: inherit;}
 .popup-wrap.branch-layer-wrap .modal__container {height: auto; min-height: 4.4rem; max-height: 100%; padding: 0; bottom: 0; right: 0; left: 0; background: #fff; border-radius: 2.4rem 2.4rem 0 0; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03);}
 .popup-wrap.branch-layer-wrap .modal__contents {height: 0; padding: 0; color: #171a1a; overflow: hidden;}
 .popup-wrap.branch-layer-wrap.is-open .modal__contents {height: auto; max-height: 100%;}
@@ -833,7 +833,7 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 /* - 지점안내 팝업(가로스크롤 버튼영역) */
 .popup-wrap.branch-layer-wrap .btn-scroll-wrap {margin-top: 4.4rem;}
 .btn-scroll-wrap {width: 100%; overflow-y: hidden; overflow-x: auto;}
-.btn-scroll-wrap::-webkit-scrollbar {width: 0; height: 0; opacity: 0;}
+.btn-scroll-wrap::-webkit-scrollbar {display: none; width: 0; height: 0; opacity: 0;}
 .btn-scroll-wrap .btn-area {white-space: nowrap; padding: 0 2rem; display: inline-block; font-size: 0;}
 .btn-ellipse {height: 3rem; padding: 0 1.2rem 0 2.6rem; background: #f7fafa; border-radius: 1.5rem; font-size: 1.4rem; color: #7d8585; position: relative;}
 .btn-ellipse i {width: 0.8rem; height: 0.8rem; margin-top: -0.4rem; display: inline-block; position: absolute; top: 50%; left: 1rem; border-radius: 50%;}

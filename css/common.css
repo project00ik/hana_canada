@@ -70,9 +70,9 @@ a.txt_underline-b {text-decoration: underline; color: #171a1a; font-weight: 600;
 .app-header {display:none !important;}
 
 /* - 레이아웃 : 푸터 (footer) */
-.app-footer {width:100%; min-height: 8.8rem; min-height: calc(8.8rem + env(safe-area-inset-bottom)); min-height: calc(8.8rem + constant(safe-area-inset-bottom)); position: fixed; bottom: 0; left: 0; z-index: 20;}
+.app-footer {width:100%; min-height: 8.8rem; min-height: calc(8.8rem + env(safe-area-inset-bottom)); min-height: calc(8.8rem + constant(safe-area-inset-bottom)); position: fixed; bottom: 0; left: 0; z-index: 20; display: block;}
 .app-footer .btn-wrap,
-.app-footer .btn-group-wrap {height:100%; padding: 1.6rem 2rem; border-radius: 2.4rem 2.4rem 0 0; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03); background: #fff;}
+.app-footer .btn-group-wrap {height:100%; padding: 1.6rem 2rem; padding-bottom: 1.6rem; padding-bottom: calc(1.6rem + env(safe-area-inset-bottom)); padding-bottom: calc(1.6rem + constant(safe-area-inset-bottom)); border-radius: 2.4rem 2.4rem 0 0; box-shadow: 0 -0.5rem 1rem 0 rgba(0, 0, 0, 0.03); background: #fff;}
 .app-footer .btn-group-sub-wrap {padding-bottom: 2.3rem; text-align: center;} 
 .app-footer .btn-group-sub-wrap .rd {box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.05);}
 
@@ -122,6 +122,10 @@ i.icon-country-korea {background-image: url(../images/country/flag-korea.png);}
 i.icon-country-australia {background-image: url(../images/country/flag-australia.png);}
 i.icon-country-singapore {background-image: url(../images/country/flag-singapore.png);}
 
+i.icon-country-cad {background-image: url(../images/country/flag-canada.png);}
+i.icon-country-usa {background-image: url(../images/country/flag-usa.png);}
+i.icon-country-krw {background-image: url(../images/country/flag-korea.png);}
+
 /* - 컨텐츠 : 툴팁 (Tooltip) */
 .tooltip-wrap {position: relative; display: flex; align-items: center;}
 .tooltip-title {font-size: 1.4rem; color: #2f3333; font-weight: 600;}
@@ -145,7 +149,10 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 .set-area .set-layer .set-list {padding-right: 2.4rem;}
 .set-area .set-layer .set-list button {color: #fff; font-size: 1.5rem; white-space: nowrap;}
 .set-area .set-layer .set-list > li + li {margin-top: 1rem;}
-.set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; background: url(../images/icon/close_w.svg) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: 1.6rem; right: 1.6rem;}
+/* .set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; background: url(../images/icon/close_w.svg) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: 1.6rem; right: 1.6rem;} */
+.set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; position: absolute; top: 1.6rem; right: 1.6rem;}
+.set-area .btn-close::before {content: ''; width: 1.6rem; height: 0.2rem; display: inline-block; background: #fff; transform: rotate(45deg); position: absolute; top: 0.7rem; left: 0;}
+.set-area .btn-close::after {content: ''; width: 1.6rem; height: 0.2rem; display: inline-block; background: #fff; transform: rotate(-45deg); position: absolute; top: 0.7rem; left: 0;}
 .detail .set-area .set {background: url(../images/icon/kebab_menu_middle_4d5980.svg) 50% 50% no-repeat; background-size: 100% auto;}
 
 /* - 컨텐츠 : 탭 (tab) */
@@ -416,6 +423,7 @@ i.icon-country-singapore {background-image: url(../images/country/flag-singapore
 /* - 컨텐츠 : 태그 (tag) */
 .tag-usd {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(../images/icon/usa_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
 .tag-cad {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(../images/icon/cad_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
+.tag-krw {display: inline-block; padding: 0 0 0 3.2rem; width: 7.6rem; height: 3.2rem; line-height: 3.2rem; color: #2f3333; font-weight: 600; border-radius: 1.6rem 1.6rem; background: #f7fafa url(../images/icon/kor_small.svg) 0.8rem center no-repeat; background-size: 2rem 2rem; text-align: left;}
 .tag-branch {display: inline-block; padding: 0 1.2rem; height: 3rem; line-height: 3rem; color: #00a5a0; font-size: 1.5rem; font-weight: 600; border-radius: 1.5rem; background: #f2fafa; text-align: center;}
 
 /* - 컨텐츠 : 태그 (tag) 아이콘 */
@@ -500,11 +508,12 @@ button.input-info-green {display: block; width: 100%;}
 
 /* --- 모달 팝업 (modal) --- */
 /* - 모달 팝업 : 공통 */
-body.modal-open { position: fixed; overflow: hidden; -webkit-overflow-scrolling: auto; }
+body.modal-open {min-height: 100%; position: fixed; overflow: hidden; -webkit-overflow-scrolling: auto; }
+body.modal-open .app-footer {display: none;}
 .modal { display: none; position: absolute; z-index: -1; }
 .modal .container { margin-top: 0; }
 .modal .container + .container { margin-top: 0.875rem; }
-.modal.is-open { display: block; position: absolute; z-index: 100; }
+.modal.is-open { display: block; position: absolute; top: 0; left: 0; z-index: 100; }
 .modal__container { position: absolute; background: #fff; }
 .modal__contents { -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; position: relative; }
 .modal-scroll {max-height: 44.7rem; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch;}
@@ -528,7 +537,7 @@ body.modal-open { position: fixed; overflow: hidden; -webkit-overflow-scrolling:
 .popup-wrap.modal--slide {width: 100%; height: 100%; height: calc(100% + constant(safe-area-inset-bottom)); height: calc(100% + env(safe-area-inset-bottom));}
 .popup-wrap.modal--slide .modal__container { right: 0; left: 0; border-radius: 2.4rem 2.4rem 0 0; padding-bottom: 0;}
 .popup-wrap.modal--slide .modal__contents {  padding-bottom: 8.8rem; padding-bottom: calc(8.8rem + constant(safe-area-inset-bottom)); padding-bottom: calc(8.8rem + env(safe-area-inset-bottom)); max-height: 60vh; overflow-y: auto; overflow-x: hidden;}
-.popup-wrap.modal--slide .modal__contents.btn-none {padding-bottom: 0; padding-bottom: calc(0 + constant(safe-area-inset-bottom)); padding-bottom: calc(0 + env(safe-area-inset-bottom));}
+.popup-wrap.modal--slide .modal__contents.btn-none {padding-bottom: 1rem; padding-bottom: calc(1rem + constant(safe-area-inset-bottom)); padding-bottom: calc(1rem + env(safe-area-inset-bottom));}
 .popup-wrap.modal--slide .modal__contents.modal__contents--tabscroll {min-height: 0; max-height: none; overflow: visible;}
 .popup-wrap.modal--slide .modal__contents.modal__contents--tabscroll .tab-list-wrap .tab-con {max-height: calc(60vh - 4.8rem); overflow-x: hidden; overflow-y: auto;}
 .modal__contents--tabscroll .tab-list-wrap .tab-con {padding: 1.6rem 2rem;}
