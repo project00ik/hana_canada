@@ -1096,7 +1096,7 @@ var hanaUI = {
 
         function event(){
             input();
-            $('.currency-dollar').click();
+            $('.currency-dollar').trigger('click');
         };
 
         function input(){
