@@ -1099,6 +1099,7 @@ var hanaUI = {
             setTimeout(function(){
                 $('.input-amount-alba').focus().click();
           }, 1000);
+          webview.keyboardDisplayRequiresUserAction = NO;
         };
 
         function input(){
