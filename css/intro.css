@@ -467,7 +467,7 @@
 }
 /* - 인트로 : 슬라이드 모션3 */
 .intro-wrap .motion-type3 {margin-left: -10rem; position: absolute; top: 16.9rem; left: 50%; z-index: -1;}
-.intro-wrap .motion-type3 [class^="move-img"] {width: 20rem; height: 5.6rem; position: absolute; left: 0; z-index: 3;}
+.intro-wrap .motion-type3 [class^="move-img"] {width: 19.9rem; height: 5.6rem; position: absolute; left: 0.1rem; z-index: 3;}
 .intro-wrap .motion-type3 .move-img1 {top: 0;}
 .intro-wrap .motion-type3 .move-img2 {top: 5.6rem;}
 .intro-wrap .motion-type3 .move-img2::after {
