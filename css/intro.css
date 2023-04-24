@@ -33,8 +33,7 @@
 .intro-slide .phone-area {width: 20rem; height: 40.6rem; display: inline-block; border-radius: 2.7rem; overflow: hidden;}
 .intro-slide .phone-area .phone-img {width: 40rem; white-space: nowrap; font-size: 0; background: #fff;}
 .intro-slide .phone-area .img-area {width: 20rem; height: 40.6rem; display: inline-block; border-radius: 2.7rem; overflow: hidden;}
-
-.intro-slide .phone-area .img-area img {width: 100%; margin-top: -1.8rem; object-fit: contain;}
+.intro-slide .phone-area .img-area img {width: 100%; margin-top: -1.8rem; object-fit: contain; border-radius: 2.7rem; overflow: hidden;}
 .intro-slide i[class^="intro-bg"] {width: 24rem; height: 24rem; display: inline-block; position: absolute;}
 .intro-slide i.intro-bg-front {bottom: 52px; left: -79px; z-index: -1; background-position: 50% 50%; background-size: 100% auto; background-repeat: no-repeat;}
 .intro-slide i.intro-bg-back {bottom: 204px; right: -61px; z-index: -1; background-position: 50% 50%; background-size: 100% auto; background-repeat: no-repeat;}
