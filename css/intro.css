@@ -5,7 +5,7 @@
 .intro .container {padding: 0;}
 .intro-wrap {height: 100vh; background: #fff; overflow: hidden;}
 .app-footer.intro-footer {height: 12.2rem;}
-.app-footer.intro-footer .btn-group-wrap {padding-bottom: 0rem;}
+.app-footer.intro-footer .btn-group-wrap {height: 7.2rem; padding-bottom: 0rem;}
 .btn-sub-close {width: 100%; height: 5rem; line-height: 5rem; font-size: 1.5rem; color: #7d8585; text-decoration: underline; background: #fff; text-align: center; display: inline-block;}
 
 .intro-slide-wrap {height: 100%; position: relative;}
