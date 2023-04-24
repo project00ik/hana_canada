@@ -1326,22 +1326,22 @@ function slickSlideEvent(obj){
     if(obj === '.intro-slide-wrap') {
         slideObj.slick({
             fade: true,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2800,
             infinite: true,
         });
         // auto play
-        slideObj.slick('slickPlay');
+        // slideObj.slick('slickPlay');
 
         // 마지막 슬라이드에서 자동재생 정지
-        slideObj.on('afterChange', function(event, slick, currentSlide, nextSlide){
-            var lastIndex = slick.slideCount - 1; // 마지막 슬라이드 인덱스
-            if(currentSlide === lastIndex){
-                slideObj.slick('slickPause');
-            } else {
-                slideObj.slick('slickPlay');
-            }
-        });
+        // slideObj.on('afterChange', function(event, slick, currentSlide, nextSlide){
+        //     var lastIndex = slick.slideCount - 1; // 마지막 슬라이드 인덱스
+        //     if(currentSlide === lastIndex){
+        //         slideObj.slick('slickPause');
+        //     } else {
+        //         slideObj.slick('slickPlay');
+        //     }
+        // });
     }
 }
 
