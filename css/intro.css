@@ -28,11 +28,11 @@
 .intro-slide .tit-area .tit {width: 100%; margin-top: 0.4rem; padding: 0 4rem; font-size: 2.4rem; color: #171a1a; font-weight: 700; line-height: 1.4; white-space: normal; word-break: keep-all; word-wrap: break-word;}
 .intro-slide .tit-area .sub-tit {width: 100%; padding: 0 4rem; font-size: 1.8rem; color: #9ca6a6; font-weight: 600; white-space: normal; word-break: keep-all; word-wrap: break-word;}
 
-.intro-slide .phone-wrap {width: 27.2rem; height: 44.8rem; margin-left: -13.6rem; padding-top: 1.4rem; background: url(../images/intro/phone_bg@2x.png) 50% 50% no-repeat; background-size: 27.2rem auto; text-align: center; position: absolute; top: 21.4rem; left: 50%; z-index: 2; opacity: 0;}
+.intro-slide .phone-wrap {width: 27.2rem; height: 44.8rem; margin-left: -13.6rem; padding-top: 1.4rem; background: url(../images/intro/phone_bg@3x.png) 50% 50% no-repeat; background-size: 27.2rem auto; text-align: center; position: absolute; top: 21.4rem; left: 50%; z-index: 2; opacity: 0;}
 .slick-active .intro-slide .phone-wrap {opacity: 1;}
 .intro-slide .phone-area {width: 20rem; height: 40.6rem; display: inline-block; border-radius: 2.7rem; overflow: hidden;}
 .intro-slide .phone-area .phone-img {width: 40rem; white-space: nowrap; font-size: 0; background: #fff;}
-.intro-slide .phone-area .img-area {width: 20rem; height: 40.6rem; display: inline-block;}
+.intro-slide .phone-area .img-area {width: 20rem; height: 40.6rem; display: inline-block; border-radius: 2.7rem; overflow: hidden;}
 
 .intro-slide .phone-area .img-area img {width: 100%; margin-top: -1.8rem; object-fit: contain;}
 .intro-slide i[class^="intro-bg"] {width: 24rem; height: 24rem; display: inline-block; position: absolute;}
@@ -40,17 +40,17 @@
 .intro-slide i.intro-bg-back {bottom: 204px; right: -61px; z-index: -1; background-position: 50% 50%; background-size: 100% auto; background-repeat: no-repeat;}
 .slick-active .intro-slide i.intro-bg-front {z-index: 3;}
 .slick-active .intro-slide i.intro-bg-back {z-index: 1;}
-.intro-slide i.intro-bg-front.color-type1 {background-image: url(../images/intro/obj_front_01@2x.png);}
-.intro-slide i.intro-bg-front.color-type2 {background-image: url(../images/intro/obj_front_02@2x.png);}
-.intro-slide i.intro-bg-front.color-type3 {background-image: url(../images/intro/obj_front_03@2x.png);}
-.intro-slide i.intro-bg-front.color-type4 {background-image: url(../images/intro/obj_front_04@2x.png);}
-.intro-slide i.intro-bg-front.color-type5 {background-image: url(../images/intro/obj_front_05@2x.png);}
+.intro-slide i.intro-bg-front.color-type1 {background-image: url(../images/intro/obj_front_01@3x.png);}
+.intro-slide i.intro-bg-front.color-type2 {background-image: url(../images/intro/obj_front_02@3x.png);}
+.intro-slide i.intro-bg-front.color-type3 {background-image: url(../images/intro/obj_front_03@3x.png);}
+.intro-slide i.intro-bg-front.color-type4 {background-image: url(../images/intro/obj_front_04@3x.png);}
+.intro-slide i.intro-bg-front.color-type5 {background-image: url(../images/intro/obj_front_05@3x.png);}
 
-.intro-slide i.intro-bg-back.color-type1 {background-image: url(../images/intro/obj_back_01@2x.png);}
-.intro-slide i.intro-bg-back.color-type2 {background-image: url(../images/intro/obj_back_02@2x.png);}
-.intro-slide i.intro-bg-back.color-type3 {background-image: url(../images/intro/obj_back_03@2x.png);}
-.intro-slide i.intro-bg-back.color-type4 {background-image: url(../images/intro/obj_back_04@2x.png);}
-.intro-slide i.intro-bg-back.color-type5 {background-image: url(../images/intro/obj_back_05@2x.png);}
+.intro-slide i.intro-bg-back.color-type1 {background-image: url(../images/intro/obj_back_01@3x.png);}
+.intro-slide i.intro-bg-back.color-type2 {background-image: url(../images/intro/obj_back_02@3x.png);}
+.intro-slide i.intro-bg-back.color-type3 {background-image: url(../images/intro/obj_back_03@3x.png);}
+.intro-slide i.intro-bg-back.color-type4 {background-image: url(../images/intro/obj_back_04@3x.png);}
+.intro-slide i.intro-bg-back.color-type5 {background-image: url(../images/intro/obj_back_05@3x.png);}
 
 @media (max-width: 374px) {
     .intro-slide .tit-area {padding-top: 6.4rem;}
@@ -473,7 +473,7 @@
 .intro-wrap .motion-type3 .move-img1 {top: 0;}
 .intro-wrap .motion-type3 .move-img2 {top: 5.6rem;}
 .intro-wrap .motion-type3 .move-img2::after {
-    content: '자주쓰는 메뉴 변경'; opacity: 0; font-size: 0; width: 15rem; height: 3.8rem; display: inline-block; background: url(../images/intro/intro_03_speech@2x.png) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: -2.6rem; right: -4.1rem; z-index: 4;
+    content: '자주쓰는 메뉴 변경'; opacity: 0; font-size: 0; width: 0; height: 0; display: inline-block; background: url(../images/intro/intro_03_speech@3x.png) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: -2.6rem; right: -4.1rem; z-index: 4;
     transition-duration: 0.3s; -moz-transition-duration: 0.3s; transition-delay: 1.6s; -webkit-transition-delay: 1.6s;
     transform: scale(0); -webkit-transform: scale(0);
 }
@@ -519,7 +519,7 @@
     animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
     animation-timing-function: ease-in-out; -webkit-animation-timing-function: ease-in-out;
 }
-.slick-active .intro-slide .motion-type3 .move-img2::after {opacity: 1; transform: scale(1); -webkit-transform: scale(1);}
+.slick-active .intro-slide .motion-type3 .move-img2::after {width: 15rem; height: 3.8rem; opacity: 1; transform: scale(1); -webkit-transform: scale(1);}
 .slick-active .intro-slide .motion-type3 .move-img2 img {border-radius: 0.8rem; overflow: hidden;}
 @keyframes introScaleMove3-2 {
     0% {
