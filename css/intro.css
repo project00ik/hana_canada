@@ -556,6 +556,7 @@
         transform: scale(1);
         -webkit-transform: scale(1);
         box-shadow: none;
+        background-color: #fff;
     }
 }
 .slick-active .intro-slide .motion-type3 .move-img1 {
