@@ -537,6 +537,7 @@
         transform: scale(1);
         -webkit-transform: scale(1);
         box-shadow: none;
+        background-color: #fff;
     }
 }
 @-webkit-keyframes introScaleMove3-2 {
