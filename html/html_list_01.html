@@ -43,15 +43,25 @@
         .tab-list li a {display: block; height: 40px; line-height: 40px; font-size: 14px; color: #fff; text-align: center; background-color: #9ca6a6;}
         .tab-list li a:hover {background-color: #7d8585;}
         .tab-list li + li {border-left: 1px solid #fff;}
-
         .tab-list li a.on {background-color: #2f3333;}
+
+        .title-area {display: flex; align-items: flex-end; justify-content: space-between;}
+        .title-area .right-area {text-align: right;}
     </style>	
 </head>
 <body>
 
 <div class="guide-wrap">
     <div class="top-wrap">
-        <h1>[스뱅] 캐나다 법인 확산  - 퍼블 목록</h1>
+        <div class="title-area">
+            <h1>[스뱅] 캐나다 법인 확산  - 퍼블 목록</h1>
+            <div class="right-area">
+                <span>* 개인 진행율 : </span>
+                <span class="page"></span>
+                <span class="total"></span>
+                <span class="percent"></span>
+            </div>
+        </div>
         <div class="tab-list-wrap">
             <ul class="tab-list">
                 <li><a href="html_list_01.html" class="on">개인</a></li>
@@ -59,7 +69,6 @@
                 <li><a href="html_list_03.html">공통</a></li>
                 <li><a href="../guide/guide.html" target="_blank">Guide</a></li>
                 <li><a href="../guide/modal.html" target="_blank">Modal</a></li>
-                <li><a href="../guide/form.html" target="_blank">form (input/select)</a></li>
                 <li><a href="../html/layout.html" target="_blank">layout</a></li>
             </ul>
         </div>
@@ -96,7 +105,21 @@
                     <th>비고</th>
                 </tr>
             </thead>
-            <tbody>      				                
+            <tbody>     				                
+                <tr class="depth">
+                    <td></td>
+                    <td class="d1">Layout</td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
+                    <td class="d5"></td>
+                    <td class="d6"></td>
+                    <td></td>
+                    <td><a href="../html/layout.html" target="_blank">Layout</a></td>
+                    <td>-</td>
+                    <td><strong>230313</strong></td>
+                    <td>230405 수정 : meta 태그 추가 (ios 자동 전화번호 인식 관련)</td>
+                </tr>      				                
                 <tr class="depth">
                     <td></td>
                     <td class="d1">Account Overview(내계좌)</td>
@@ -109,7 +132,7 @@
                     <td><a href="psdp/psdp001m01.html" target="_blank">psdp001m01</a></td>
                     <td>황혜정</td>
                     <td><strong>230203</strong></td>
-                    <td></td>
+                    <td>230424 수정 : 기획 추가 (no-data 추가)</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -125,7 +148,9 @@
                     <td><strong>230203</strong></td>
                     <td>
                         230221 수정 : 상단 여백 수정요청 반영 관련 class 수정 con-box → top-con-box <br>
-                        230210 수정 : 리스트 날짜<br>230214 수정 : 리스트 날짜
+                        230210 수정 : 리스트 날짜<br>
+                        230214 수정 : 리스트 날짜<br>
+                        230424 수정 : 기획 추가 (no-data 추가)
                     </td>
                 </tr>
                 <tr>
@@ -345,7 +370,7 @@
                     <td><a href="psdp/psdp001m11.html" target="_blank">psdp001m11</a></td>
                     <td>황혜정</td>
                     <td><strong>230203</strong></td>
-                    <td>이미지 교체<br>230221 수정 : 이미지영역 수정완료</td>
+                    <td>이미지 교체<br>230221 수정 : 이미지영역 수정완료<br>230413 수정 : 기획 및 디자인 수정</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -359,7 +384,7 @@
                     <td><a href="psdp/psdp001m11_02.html" target="_blank">psdp001m11_02</a></td>
                     <td>황혜정</td>
                     <td><strong>230203</strong></td>
-                    <td>이미지 교체<br>230221 수정 : 이미지영역 수정완료</td>
+                    <td>이미지 교체<br>230221 수정 : 이미지영역 수정완료<br>230413 수정 : 기획 및 디자인 수정</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -493,6 +518,20 @@
                     <td class="d2"></td>
                     <td class="d3"></td>
                     <td class="d4"></td>
+                    <td class="d5">에러</td>
+                    <td class="d6">Case 3. 해지계좌가 공동계좌 일 경우</td>
+                    <td></td>
+                    <td><a href="psdp/psdp001s31_04.html" target="_blank">psdp001s31_04</a></td>
+                    <td>황혜정</td>                    
+                    <td><strong>230404</strong></td>
+                    <td>230404 추가 : 기획 페이지 추가</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="d1"></td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
                     <td class="d5">정보 확인</td>
                     <td class="d6"></td>
                     <td></td>
@@ -584,7 +623,8 @@
                     <td>황혜정</td>
                     <td><strong>230131</strong></td>
                     <td>이미지 교체 예정<br>
-                        202303 수정 : app-main에 footer-none(class) 삭제(*자세한 내용은 layout.html 참고해주세요.)
+                        202303 수정 : app-main에 footer-none(class) 삭제(*자세한 내용은 layout.html 참고해주세요.)<br>
+                        230420 수정 : 기획 수정 (card type disabled 추가)
                     </td>
                 </tr>
                 <tr>
@@ -697,7 +737,7 @@
                     <td><a href="pstr/pstr004m01.html" target="_blank">pstr004m01</a></td>
                     <td>황혜정</td>
                     <td><strong>230223</strong></td>
-                    <td></td>
+                    <td>230404 수정 : 기획 수정</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -865,7 +905,7 @@
                     <td><a href="pstr/pstr007s01.html" target="_blank">pstr007s01</a></td>
                     <td>황혜정</td>
                     <td><strong>230210</strong></td>
-                    <td>이미지 수급 후 이미지 영역 작업예정</td>
+                    <td>230425 수정 : 이미지 수급 완료 이미지 영역 작업</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -1635,7 +1675,7 @@
                     <td><a href="pstr/pstr018s02.html" target="_blank">pstr018s02</a></td>
                     <td>황혜정</td>
                     <td><strong>230323</strong></td>
-                    <td></td>
+                    <td>230406 수정 : interac text 기울기 수정</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -1649,7 +1689,7 @@
                     <td><a href="pstr/pstr018s02_02.html" target="_blank">pstr018s02_02</a></td>
                     <td>황혜정</td>
                     <td><strong>230323</strong></td>
-                    <td></td>
+                    <td>230406 수정 : interac text 기울기 수정</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -1805,24 +1845,9 @@
                     <td></td>
                     <td><a href="pstr/pstr002p02.html" target="_blank">pstr002p02</a></td>
                     <td>이인경</td>
-                    <td><strong></strong></td>
+                    <td><strong>230315</strong></td>
                     <td>230315 추가 : 이체 한도 추가(화면설계서 v0.96_20230308수정)</td>
                 </tr>	
-                <tr>
-                    <td></td>
-                    <td class="d1"></td>
-                    <td class="d2"></td>
-                    <td class="d3">이체 목적</td>
-                    <td class="d4"></td>
-                    <td class="d5"></td>
-                    <td class="d6"></td>
-                    <td></td>
-                    <td><a href="pstr/.html" target="_blank"></a></td>
-                    <td></td>
-                    <td><strong></strong></td>
-                    <td>삭제</td>
-                </tr>	
-                
                 <tr>
                     <td></td>
                     <td class="d1"></td>
@@ -2091,7 +2116,7 @@
                     <td></td>
                     <td><a href="psrt/psrt002p01_02.html" target="_blank">psrt002p01_02</a></td>
                     <td>이인경</td>
-                    <td><strong></strong></td>
+                    <td><strong>230315</strong></td>
                     <td>230315 추가 : 송금한도 팝업 추가(화면설계서 v0.96_20230308수정)</td>
                 </tr>
                 <tr>
@@ -2195,7 +2220,7 @@
                     <td><a href="psbp/psbp002s01.html" target="_blank">psbp002s01</a></td>
                     <td>이인경</td>
                     <td><strong>230207</strong></td>
-                    <td></td>
+                    <td>230418 수정 : 기획 수정 (disabled 추가)</td>
                 </tr> 
                 <tr>
                     <td></td>
@@ -2209,7 +2234,7 @@
                     <td><a href="psbp/psbp002s01_02.html" target="_blank">psbp002s01_02</a></td>
                     <td>이인경</td>
                     <td><strong>230207</strong></td>
-                    <td></td>
+                    <td>230418 수정 : 기획 수정 (disabled 추가)</td>
                 </tr> 
                 <tr>
                     <td></td>
@@ -2350,21 +2375,7 @@
                     <td>이인경</td>
                     <td><strong>230207</strong></td>
                     <td></td>
-                </tr>			                
-                <tr class="depth">
-                    <td></td>
-                    <td class="d1">Cheque(수표 주문/정지)</td>
-                    <td class="d2"></td>
-                    <td class="d3"></td>
-                    <td class="d4"></td>
-                    <td class="d5"></td>
-                    <td class="d6"></td>
-                    <td></td>
-                    <td><a href="" target="_blank">N</a></td>
-                    <td></td>
-                    <td><strong></strong></td>
-                    <td></td>
-                </tr> 		                
+                </tr>			                		                
                 <tr class="depth">
                     <td></td>
                     <td class="d1">General 설정</td>
@@ -2377,7 +2388,9 @@
                     <td><a href="psst/psst001m01.html" target="_blank">psst001m01</a></td>
                     <td>황혜정</td>
                     <td><strong>230208</strong></td>
-                    <td>230313 수정 : 기획 수정 </td>
+                    <td>230313 수정 : 기획 수정<br>
+                        230419 수정 : 기획 수정 (언어 설정 추가)
+                    </td>
                 </tr> 
                 <tr>
                     <td></td>
@@ -2436,7 +2449,7 @@
                     <td><a href="psst/psst003s02.html" target="_blank">psst003s02</a></td>
                     <td>황혜정</td>
                     <td><strong>230208</strong></td>
-                    <td></td>
+                    <td>230419 수정 : 기획 수정(데이터 없음)</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -2464,7 +2477,7 @@
                     <td><a href="psst/psst004s01.html" target="_blank">psst004s01</a></td>
                     <td>황헤정</td>
                     <td><strong>230313</strong></td>
-                    <td>230313 추가</td>
+                    <td>230421 수정 : switch(checkbox) 마크업수정</td>
                 </tr> 
                 <tr>
                     <td></td>
@@ -2475,10 +2488,10 @@
                     <td class="d5"></td>
                     <td class="d6"></td>
                     <td></td>
-                    <td><a href="psst/psst004p01.html" target="_blank"></a></td>
+                    <td><a href="psst/psst004p01.html" target="_blank">psst004p01</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230411</strong></td>
                     <td></td>
-                    <td><strong></strong></td>
-                    <td>약관 수급 후 예정</td>
                 </tr>  
                 <tr>
                     <td></td>
@@ -2506,7 +2519,7 @@
                     <td><a href="psst/psst006s01.html" target="_blank">psst006s01</a></td>
                     <td>황혜정</td>
                     <td><strong>230313</strong></td>
-                    <td>230313 추가</td>
+                    <td>230421 수정 : switch(checkbox) 마크업수정</td>
                 </tr> 			                
                 <tr class="depth">
                     <td></td>
@@ -2577,6 +2590,21 @@
 	$('table tbody td:nth-child(1)').each(function() {
 		$(this).text($(this).parent('tr').index()+1);
 	});
+    $('table tr').each(function(){
+        if ($(this).find('td').eq(10).text() == '') {
+            $(this).removeClass('finish');
+        } else {
+            $(this).addClass('finish');
+        }
+        
+    });
+    var total = $('table tbody tr').length;
+    var page = $('tr.finish').length;
+    var percent = page / total * 100;
+    var percentCalc = percent.toFixed(1);
+    $('.total').text(total + '(page)');
+    $('.page').text(page + ' /');
+    $('.percent').text('('+ percentCalc + '%)');
 </script>
 
 </body>

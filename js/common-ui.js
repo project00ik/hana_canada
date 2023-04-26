@@ -1330,10 +1330,10 @@ function slickSlideEvent(obj){
             autoplaySpeed: 2800,
             infinite: true,
         });
-        // auto play
+        // // auto play
         // slideObj.slick('slickPlay');
 
-        // 마지막 슬라이드에서 자동재생 정지
+        // // 마지막 슬라이드에서 자동재생 정지
         // slideObj.on('afterChange', function(event, slick, currentSlide, nextSlide){
         //     var lastIndex = slick.slideCount - 1; // 마지막 슬라이드 인덱스
         //     if(currentSlide === lastIndex){

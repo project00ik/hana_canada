@@ -6,6 +6,7 @@
 .result-wrap {display: flex; align-items: center; flex-direction: column; justify-content: center; min-height: calc(100vh - 14.6rem); overflow-y: auto;}
 .footer-none .result-wrap {min-height: 100vh;}
 
+
 /* 결과 페이지 내 컨텐츠 */
 .result-con {width: 100%; text-align: center;}
 .result-con .title {padding-top: 13.6rem; font-size: 2.4rem; color: #171a1a; text-align: center; font-weight: 700; background: url(../images/error/complete@3x.png) center 0 no-repeat; background-size: 12rem 12rem; word-break: keep-all; word-wrap: break-word;}
@@ -29,7 +30,6 @@
 .result-detail {margin-top: 4.8rem; width: 100%;}
 
 
-
 /* security code */
 .security-code-wrap {padding-top: 6.4rem;}
 .security-title {font-size: 1.8rem; color: #171a1a; font-weight: 700; text-align: center;}
@@ -49,14 +49,17 @@
 .security-time-wrap .security-time {color: #00a5a0;}
 .security-time-wrap .btn-reload {margin-top: 1.4rem;}
 
+
 /* btn floating */
 .btn-floating-wrap {position: relative;}
-.btn-floating {position: fixed; left: 0; bottom: 11.1rem; width: 100%; text-align: center;}
+.btn-floating {position: fixed; left: 0; bottom: 11.1rem; bottom: calc(11.1rem + env(safe-area-inset-bottom)); bottom: calc(11.1rem + constant(safe-area-inset-bottom)); z-index: 2; width: 100%; text-align: center;}
 .btn-floating-wrap .progress-bar-wrap {padding-top: 1.6rem;}
 .btn-floating .btn.rd {box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.05);}
 
+
 /* 아이디 찾기 */
 .idpw-wrap .info-box-wrap {margin-top: 2.8rem;}
+
 
 /* 시스템 공통 */
 .lgreen-box-wrap.system .text {color: #7d8585;}
@@ -72,8 +75,8 @@
 .system-unit-list li:nth-child(2) a {background: #f7fafa url(../images/icon_menu/online_p.png) 1.6rem 0.8rem no-repeat; background-size: 3.2rem 3.2rem;}
 .system-unit-list li:nth-child(3) a {background: #f7fafa url(../images/icon_menu/stop_cheque.png) 1.6rem 0.8rem no-repeat; background-size: 3.2rem 3.2rem;}
 
-/* 이체 */                   
 
+/* 이체 */
 /* 내 계좌간 이체 */
 .price-wrap {margin-top: 6.4rem; text-align: center;}
 .price-wrap .text-error {display: none;}
@@ -121,6 +124,7 @@
 /* - 1일 잔여 한도 안내 팝업 관련 버튼 추가 관련 스타일 */
 .change-amount-wrap .currency + .currency {padding-bottom: 1.2rem;}
 
+
 /* 메세지센터 */
 .message-wrap.container {padding-top: 0;}
 .message-wrap .card-wrap {margin-top: 3.2rem;}
@@ -141,10 +145,12 @@
 .message-wrap.event .data-none-wrap {height: calc(100vh - 7.2rem);}
 .message-wrap.event .card-wrap {margin-top: 0;}
 
+
 /* 알림(알림함/메시지센터) */
 .message-wrap .card-type1 {position: relative;}
 .message-wrap .card-type1 .new {width: 0.6rem; height: 0.6rem; display: inline-block; border-radius: 50%; background: #e31e5a; overflow: hidden; font-size: 0; position: absolute; top: 1.2rem; right: 1.2rem;}
 .message-wrap .card-type1 .card-box .tit {word-break: keep-all; word-wrap: break-word;}
+
 
 /* 내계좌 */
 .amount-wrap {display: flex; justify-content: space-between; position: relative;}
@@ -170,7 +176,6 @@
 .account-detail-wrap .bottom {margin-top: 3.2rem; padding-top: 3.2rem; border-top: 1px solid #edf2f2;}
 .account-detail-wrap .input-info-green {margin-top: 1.6rem;}
 
-
 .img-cheque-wrap {margin-top: 1.6rem;}
 .img-cheque-box {position: relative;}
 .img-cheque-box .img-box {width: 100%; height: 18rem; border-radius: 1.2rem 1.2rem; display: flex; justify-content: center; align-items: center; overflow: hidden; background-color: #000}
@@ -194,6 +199,7 @@
 .re-active-wrap .text {font-size: 1.5rem; color: #00a5a0; font-weight: 600;}
 .re-active-wrap .btn-wrap {margin-top: 1.6rem;}
 
+
 /* 카드 분실 신고/철회 */
 .my-card-box {display: flex; justify-content: center;}
 .my-card-box .inbox {padding: 2.4rem 2rem; width: 26rem; border: 1px solid #60bcb9; border-radius: 1.2rem 1.2rem; box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05);}
@@ -208,6 +214,7 @@
 .my-card-box .logo-wrap .img-iq-bi {display: inline-block; width: 3.2rem; height: 3.2rem;}
 .my-card-box .logo-wrap .img-iq-bi img {display: inline-block; width: 100%; height: auto;}
 
+
 /* 카드 활성화 */
 .my-card-box.type02 {margin-top: 3.2rem;}
 .my-card-box.type02 .inbox {width: auto; max-width: 33.5rem; padding: 2.4rem 2rem; background: url(../images/png/bi.png) 94% 1.6rem no-repeat; background-size: 3.2rem 3.2rem;}
@@ -219,10 +226,12 @@
 .my-card-box.type02 .card-num .num + .num {margin-left: 2.05rem;}
 .my-card-box.type02 + .info-box-wrap {margin-top: 3.2rem;}
 
+
 /* 계좌 해지 */
 .account-cancel-wrap .form-area {margin-top: 3.2rem;}
 .account-cancel-wrap .tab-con .form-area {margin-top: 2.4rem;}
 .account-cancel-wrap .info-box-wrap {margin-top: 3.2rem;}
+
 
 /* 수표보기 */
 .cheque-view-wrap .slider { width: 100%;}
@@ -249,7 +258,6 @@
 .menu-list-wrap .list + .list::before {content: ''; display: block; width: calc(100% + 2rem); position: absolute; left: 0; top: 0; border-top: 1px solid #f7fafa;}
 .menu-list-wrap .list a {position: relative; display: block; padding: 2.5rem 0; font-size: 1.8rem; color: #2f3333; font-weight: 600; background: url(../images/icon/chevron_next.svg) right center no-repeat; background-size: 2rem 2rem;}
 .menu-list-wrap .text-lang {position: absolute; right: 3.6rem; top: 2.7rem; color: #00a5a0;}
-
 
 .personal-agree-wrap {margin-top: 3rem; display: flex; justify-content: space-between; align-items: center;}
 .personal-agree-wrap .radio-list {display: flex;}
@@ -309,6 +317,7 @@
 .another-bank-wrap .sample-img + .dot-list.type02 {margin-top: 3.2rem;}
 .another-bank-wrap .sample-img + .num-color-list {margin-top: 3.2rem;}
 
+
 /* 결재/승인 */
 .approval-check-wrap .tab-con {padding-top: 3.2rem;}
 .approval-check-wrap .result-con {margin-top: 4.2rem;}
@@ -339,6 +348,7 @@
 .approval-list .text-wrap .date {margin-top: 0.9rem; font-size: 1.5rem; color: #7d8585;}
 .approval-list .text-wrap .date + .date {margin-top: 0.5rem;}
 
+
 /* 공지사항 FAQ */
 .mg-select {margin: -2rem 0 1.6rem 0;}
 .notice-view-wrap .title {font-size: 2.4rem; color: #171a1a; font-weight: 700;}
@@ -346,6 +356,7 @@
 .notice-view-wrap .con {margin-top: 3.2rem; padding-top: 3.2rem; border-top: 1px solid #edf2f2;}
 .notice-view-wrap .con {font-size: 1.5rem; color: #7d8585;}
 .notice-view-wrap .con .text + .text {margin-top: 2.4rem;}
+
 
 /* 연락처 */
 .address-wrap .card-type1 {padding-right: 10rem;}
@@ -359,189 +370,12 @@
 
 .address-wrap .card-type1 .arrow {display: inline-block; margin-top: 1.3rem; padding-right: 2rem; font-size: 1.8rem; color: #171a1a; font-weight: 600; background: url(../images/icon/chevron_next2.svg) right center no-repeat; background-size: 2rem 2rem;}
 
-/* popup */
-.pop-login-extend .title {padding-top: 10.1rem; font-size: 1.8rem; color: #171a1a; font-weight: 700; text-align: center; background: url(../images/error/complete_logout.png) center 0 no-repeat; background-size: 10.4rem 8.8rem ;}
-.pop-login-extend .time {display: inline-block; margin-top: 0.9rem; font-size: 3.6rem; color: #00a5a0; font-weight: 700;}
-.pop-login-extend .text {margin-top: 1.3rem; color: #7d8585;}
-
-/* interac */
-.no-interac-wrap {padding-top: 4.8rem; text-align: center; background: url(../images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
-.no-interac-wrap .title {font-size: 1.8rem; color: #171a1a; font-weight: 700;}
-.no-interac-wrap .text-sub {margin-top: 0.9rem; font-size: 1.5rem; color: #7d8585;}
-.no-interac-wrap .btn-wrap {margin-top: 3.2rem;}
-
-/*  modal__contents--tabscroll */
-.data-none-wrap .icon-alarm {margin-bottom: 1.3rem;}
-.modal__contents--tabscroll .tab-list-wrap .tab-con .data-none-wrap {height: calc(60vh - 9.6rem); min-height: 18.4rem;}
-.modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-wrap.is-btn .data-none-wrap {height: calc(60vh - 16.8rem);}
-.modal__contents--tabscroll .tab-list-wrap .tab-con .btn-nodata {margin-top: 2.9rem;}
-
-
-/* ******************* 공통 ******************* */
-/* text */
-.page-tit + .page-txt.type02 {margin-top: 1.3rem;}
-.page-txt.type02 {font-size: 1.5rem;}
-.italic {font-size: inherit; font-style: italic; font-weight: inherit;}
-
-/* bg */
-.bg-black {background-color: #000 !important;}
-.bg-black .app-header {background-color: #000;}
-.bg-black .app-header .btn-close {background : url(../images/icon/close_w.svg) right 2rem top 50% no-repeat;}
-
-/* tag */
-.tag-dgray {display: inline-block; height: 3rem; line-height: 3rem; padding: 0 1.2rem; font-size: 1.5rem; color: #fff; font-weight: 600; border-radius: 1.5rem; background-color: #7d8585;}
-
-
-/* accordion-list */
-.accordion-list.w100 {margin-left: -2rem; margin-right: -2rem;}
-
-/* icon */
-.icon_reload {background: url(../images/icon/reload.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon_usa_samll {background: url(../images/icon/usa_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon_cad_samll {background: url(../images/icon/cad_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon_krw_samll {background: url(../images/icon/kor_small.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-notice-green {background: url(../images/icon/caution_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-cancel {background: url(../images/icon/close_16_black.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-cancel-green {background: url(../images/icon/close_16_green.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-edit {background: url(../images/icon/edit.svg) 0 center no-repeat; background-size: 1.6rem 1.6rem;}
-.icon-setting-gary {width: 2.4rem; height: 2.4rem; font-size: 0;; display: inline-block; background: url(../images/icon/setting_gray.svg) 50% 50% no-repeat; background-size: 100% auto;}
-.icon-delete-green {background: url(../images/icon/trash_can_green.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
-.icon-back {background: url(../images/icon/back.svg) 0 50% no-repeat; background-size: 1.6rem auto;}
-
-/* select */
-.select-wrap .select-sm.type02 {background-position: 100% 0.5rem;}
-.select-wrap .select-sm.type02 .button-select__item {padding-right: 2.8rem;}
-.select-wrap.select--on .select-sm.type02 {background-position: 100% 0.5rem}
-.select-wrap.select--active .select-sm.type02 {background-position: 100% 0.5rem}
-
-.select-wrap .select-sm.type02 .button-select__item span {font-size: 1.8rem; color: #7d8585; font-weight: 600;}
-.select-wrap .select-sm.type02 .button-select__item i[class^="icon-country"] {display: inline-block; width: 2rem; height: 2rem; margin-bottom: -0.4rem;}
-
-.select-wrap.btn-type {display: inline-block; margin-top: 0; width: 13.4rem; height: 3.6rem; line-height: 3.6rem; text-align: center; border: 1px solid #f7fafa; border-radius: 1.8rem 1.8rem; background-color: #fff; box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.1); }
-.select-wrap.btn-type .select-sm.type02 {background: url(../images/icon/dropdown_open_green.svg) 100% 0.3rem no-repeat;}
-.select-wrap.btn-type .select-sm.type02 .button-select__item {padding-right: 1.8rem;}
-.select-wrap.btn-type.select--on .select-sm.type02 {background: url(../images/icon/dropdown_close_green.svg) 100% 0.3rem no-repeat; }
-.select-wrap.btn-type.select--active .select-sm.type02 {background-position: 100% 0.3rem;}
-.select-wrap.btn-type .select-sm.type02 .button span {font-size: 1.5rem; color: #00a5a0; font-weight: normal;}
-
-.select-list-wrap .select-wrap {display: inline-block;}
-.select-list-wrap .select-wrap + .select-wrap {margin-left: 1.6rem;}
-
-/* bullet */
-.bul-num-wrap > li {list-style: decimal; margin-left: 2rem; font-size: 1.8rem; color: #171a1a; font-weight: 600;}
-.bul-num-wrap > li + li {margin-top: 3.2rem;}
-.bul-num-wrap > li .title {font-size: 1.8rem; color: #171a1a; font-weight: 600; word-break: keep-all; word-wrap: break-word;}
-.bul-num-wrap > li .text {margin-top: 10px; font-size: 1.6rem; color: #5e6666; line-height: 1.6;}
-
-.bul-num-wrap.line {margin-top: 4.8rem;}
-.bul-num-wrap.line > li {padding: 0;}
-.bul-num-wrap.line > li + li {margin-top: 4.8rem; padding-top: 4.8rem; position: relative;}
-.bul-num-wrap.line > li + li::before {content: ''; width: calc(100% + 2rem); height: 0.1rem; display: inline-block; border-top: 0.1rem solid #edf2f2; position: absolute; top: 0; left: 0;}
-
-.bul-num-wrap .dot-list {margin-top: 1.3rem;}
-.bul-num-wrap .dot-list > li + li {margin-top: 2.1rem;}
-.dot-list > li.star {padding-left: 1rem;}
-.dot-list > li.star::before {content: '*'; background: none; top: 0;}
-.dot-list.type02 > li + li {margin-top: 0.9rem;}
-.dot-list.type03 > li + li {margin-top: 2.1rem;}
-
-.bar-list.sm > li {font-size: 1.4rem; color: #9ca6a6;}
-.bar-list.sm > li + li {margin-top: 0.6rem;}
-
-.num-color-list li {list-style: decimal; margin-left: 2rem; color: #00a5a0; font-weight: 600;}
-.num-color-list li + li {margin-top: 0.9rem;}
-.num-color-list .text {color: #5e6666; font-weight: normal;}
-
-/* lgreen-box-wrap */
-.lgreen-box-wrap.type03 .text {color: #3abfba; font-weight: 600; text-align: center;}
-.lgreen-box-wrap.type03 [class^="icon-"] {width: 1.6rem; height: 1.6rem; display: inline-block; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100% auto; margin-right: 0.4rem;}
-
-.lgreen-box-wrap.type03 .icon-notice-green {margin-top: -0.3rem;}
-
-.icon-notice-green {background: url(../images/icon/caution_green.svg); vertical-align: middle;}
-
-.input-info-green .sub {margin-top: 0.5rem; font-size: 1.4rem; color: #7d8585; text-align: center;}
 
 /* 비밀번호 show hide */
 .password-wrap .page-tit {margin-top: 5.9rem; text-align: center;}
 .password-wrap .password-show {margin-top: 3.2rem;}
 .btn-show {width: 2rem; height: 2rem; display: inline-block; font-size: 0; background: url(../images/icon/psw_view_outline.svg) 0 0 no-repeat; background-size: 2rem auto; margin: 1.2rem 0 0 1.2rem;}
 .btn-show.is-active {background: url(../images/icon/psw_view_outline_none.svg) 0 0 no-repeat; background-size: 2rem auto;}
-
-/* card-date-wrap */
-.card-date-wrap {margin-top: 0.5rem;}
-.card-date-wrap + .card-date-wrap {margin-top: 4.8rem;}
-.card-date-wrap .date {font-size: 1.5rem; font-weight: 600; color: #7d8585;}
-.card-date-wrap .date + .card-wrap {position: relative;}
-.card-date-wrap .date + .card-wrap::before {content: '';width: calc(100% + 2rem);height: 0.1rem;background: #f7fafa;display: inline-block;position: absolute;top: 0;right: 0; margin-right: -2rem;}
-
-/* 카드 타입 : 공통 버튼 */
-.badge-type02 {display: inline-block; padding: 0 1.2rem; height: 3rem; line-height: 3rem; font-size: 1.5rem; font-weight: 600; border-radius: 1.5rem 1.5rem;}
-.badge-type02.type-value1 {background: #f7fafa; color: #5e6666;}
-.badge-type02.type-value2 {background: #f2faf2; color: #00a5a0;}
-.badge-type02.type-value3 {background: #f7fafa; color: #9ca6a6;}
-.badge-type02.type-value4 {background: #faf7f8; color: #e31e5a;}
-.badge-type02.type-disabled {background: #7d8585; color: #fff;}
-
-/* card-list03 */
-.btn-card-list {margin-top: 2.4rem;}
-
-/* card-type */
-.card-type8 {width: 100%; padding: 2.4rem 2rem; border-radius: 1.2rem; box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05); background: #fff; position: relative;}
-.card-type8.active {background: #edf2f2;}
-.card-type8 .card-cont {display: flex; align-items: center; justify-content: space-between;}
-.card-type8 .card-cont i {width: 2.4rem; height: 2.4rem; margin-right: 1.2rem; align-self: flex-start;}
-.card-type8 .card-cont .card {width: 100%; flex:1;}
-.card-type8 .card-cont .card .tit {font-size: 1.8rem; color: #2f3333; font-weight: 600;}
-.card-type8 .card-cont .card .txt {font-size: 1.4rem; color: #7d8585;}
-.card-type8  {margin-top: 1.2rem;}
-
-.card-type5.tag .top-right-area {min-width: 5rem;display: inline-block;text-align: right;position: absolute;top: 2.4rem;right: 2rem;z-index: 1;}
-.card-type5.tag .card-list dl {margin-top: 0.5rem;}
-
-.card-type2 .tooltip-wrap {justify-content: flex-end;}
-.card-type2 .tooltip .tooltip-con .inbox .title {text-align: left;}
-.card-type2 .tooltip-title.tpsb-dpink {margin-left: 0.4rem;}
-
-.card-type11 {width: calc(100% + 4rem); padding: 2.8rem 2rem; margin: 0 -2rem; position: relative;}
-.card-type11::after {content: ''; width: calc(100% - 2rem); height: 0.1rem; background: #f7fafa; display: inline-block; position: absolute; bottom: 0; right: 0;}
-.card-type11:first-child:before {content: ''; width: calc(100% - 2rem); height: 0.1rem; background: #f7fafa; display: inline-block; position: absolute; top: 0; right: 0;}
-.card-type11.active {background: #f7fafa;}
-.card-type11 .card-list .top {font-size: 1.5rem; color: #2f3333; font-weight: 600;}
-.card-type11 .card-list .con {width: 100%; display: flex; justify-content: space-between;}
-.card-type11 .card-list .con .text-sub {font-size: 1.4rem; color: #7d8585; text-align: left; min-width: 8rem; margin-top: 0.2rem;}
-.card-type11 .card-list .con .num {font-size: 1.8rem; color: #171a1a; font-weight: 700; text-align: right;}
-
-.card-type5 .card-list dl {width: 100%; display: flex; align-items: center; }
-.card-type5 .card-list dl + dl {margin-top: 0.1rem;}
-.card-type5 .card-list dl > dt {flex: 1; font-size: 1.4rem; color: #7d8585;}
-.card-type5 .card-list dl > dd {flex: 1; font-size: 1.4rem; color: #7d8585; text-align: right;}
-.card-type5 .card-list dl > dd i {width: 2rem; height: 2rem; margin-left: 0.1rem;}
-.card-type5 .card-list .txt-date {font-size: 1.2rem; color: #9ca6a6;}
-.card-type5 .card-list .tit {font-size: 1.5rem; font-weight: 600; color: #2f3333;}
-.card-type5 .card-list .price {font-size: 1.8rem; font-weight: 600; color: #171a1a;}
-.card-type5 .card-list .sub-price {font-size: 1.4rem;}
-.card-type5 .card-list .txt-line {font-size: 1.4rem; color: #2f3333; text-decoration: underline;}
-
-.card-line-bottom {position: relative;}
-.card-line-bottom::before {content: ''; width: calc(100% + 2rem); height: 0.1rem; background: #f7fafa; display: inline-block; position: absolute; bottom: 0; left: 0;}
-
-
-/* */
-.detail-list .page-tit + .card-wrap {margin-top: 1.6rem;}
-.detail-card .btn-group-flex {margin-top: 3.2rem;}
-
-.detail-card .card-bottom + .memo-wrap {margin-top: 0.8rem;}
-.detail-card .memo-wrap + .btn-wrap {margin-top: 1.6rem;}
-
-.memo-wrap {position: relative; padding-top: 1.6rem;}
-.memo-wrap::before {content: ''; width: 0; height: 0; display: inline-block; border: 0.8rem solid transparent; border-bottom: 0.8rem solid #f5f6fa; position: absolute; top: 0; left: 1.6rem; overflow: hidden;}
-.memo-wrap .text {padding: 1.2rem 1.6rem; background-color: #f5f6fa; border-radius: 0.8rem 0.8rem; font-size: 1.4rem; color: #7d8585;}
-
-
-/* */
-.checkbox-wrap.box .txt_underline-b {display: block; margin-top: 0.8rem; font-size: 1.5rem;}
-.checkbox-wrap.box input:checked + label .txt_underline-b {color: #00a5a0;}
 
 
 /* 약관, 법적안내 */
@@ -575,18 +409,29 @@
 .img-cdic-wrap {margin: 5.6rem 0; text-align: center;}
 .img-cdic-wrap img {display: inline-block; width: 18.2rem; height: 6.6rem;}
 
-
 .bul-square {position: relative; padding-left: 1.6rem;}
 .bul-square::before {content: ''; width: 1rem; height: 1rem; display: inline-block; position: absolute; top: 0.9rem; left: 0; background: #171a1a; border-radius: 0.2rem 0.2rem;}
 
 
-/* 달력 */
-.input-date-error .input__error {display: block;}
-.input-date-error .input.error:before {border-bottom: 0.1rem solid #e31e5a;}
-.input-date-error .input.error .input__element {color: #e31e5a;}
+/* interac */
+.no-interac-wrap {padding-top: 4.8rem; text-align: center; background: url(../images/icon/caution.svg) center 0 no-repeat; background-size: 3.2rem 3.2rem;}
+.no-interac-wrap .title {font-size: 1.8rem; color: #171a1a; font-weight: 700;}
+.no-interac-wrap .text-sub {margin-top: 0.9rem; font-size: 1.5rem; color: #7d8585;}
+.no-interac-wrap .btn-wrap {margin-top: 3.2rem;}
 
 
-/* card disabled */
-.card-type1.disabled {position: relative;}
-.card-type1.disabled::before {content: ''; display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background-color: #fff; border-radius: 1.2rem; opacity: 0.6;}
-.card-type1.disabled.active {background-color: #fff;}
+
+/* ******************* 공통 ******************* */
+
+/* 
+.card-type5 .card-list dl {width: 100%; display: flex; align-items: center; }
+.card-type5 .card-list dl + dl {margin-top: 0.1rem;}
+.card-type5 .card-list dl > dt {flex: 1; font-size: 1.4rem; color: #7d8585;}
+.card-type5 .card-list dl > dd {flex: 1; font-size: 1.4rem; color: #7d8585; text-align: right;}
+.card-type5 .card-list dl > dd i {width: 2rem; height: 2rem; margin-left: 0.1rem;}
+.card-type5 .card-list .txt-date {font-size: 1.2rem; color: #9ca6a6;}
+.card-type5 .card-list .tit {font-size: 1.5rem; font-weight: 600; color: #2f3333;}
+.card-type5 .card-list .price {font-size: 1.8rem; font-weight: 600; color: #171a1a;}
+.card-type5 .card-list .sub-price {font-size: 1.4rem;}
+.card-type5 .card-list .txt-line {font-size: 1.4rem; color: #2f3333; text-decoration: underline;} */
+

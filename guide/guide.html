@@ -39,6 +39,8 @@
 		.guide-flex-cont {flex: 1 2 50%; max-width: 50%; text-align: center;}
 		.guide-flex-cont .guide-title-sub {font-size: 1.2rem; margin: 0.3rem 0 4rem;}
 		.guide-flex-cont i[class^="icon"] {width: 5.6rem; height: 5.6rem; display: inline-block; border-radius: 50%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 4.8rem auto;}
+		.guide-flex-wrap2 {width:100%; display: flex; justify-content: space-between;}
+		.guide-flex {flex: 1;}
 
 	</style>
 </head>
@@ -472,54 +474,111 @@
 						
 						<p class="guide-title-sub">input + 달력(native)</p>
 						<!-- input 달력 -->
-						<div class="form-area">
-							<div class="input input--on">
+						<div class="form-area"> <!--  error 시 class = input-date-error 추가 -->
+							<div class="input input--on"> <!-- error 시 class = error 추가 -->
 								<div class="input__inner">
-									<input type="text" id="inputText05" class="input__element input-date" title="시작일" placeholder="YYYY.MM.DD" disabled="disabled">
+									<input type="text" id="inputText05" class="input__element input-date" title="시작일" placeholder="YYYY.MM.DD" readonly>
 									<label for="inputText05" class="input__label" aria-hidden="true">시작일</label>
 									<button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
 								</div>
 							</div>
+							<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+						</div>
+						<!--// input 달력 -->
+						
+						<!-- input 달력 -->
+						<div class="form-area input-date-error"> <!--  error 시 class = input-date-error 추가 -->
+							<div class="input input--on error"> <!-- error 시 class = error 추가 -->
+								<div class="input__inner">
+									<input type="text" id="inputText05" class="input__element input-date" title="시작일" value="2023.04.20" placeholder="YYYY.MM.DD" readonly>
+									<label for="inputText05" class="input__label" aria-hidden="true">시작일</label>
+									<button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+								</div>
+							</div>
+							<p class="input__error" aria-live="assertive">오류메세지 노출</p>
 						</div>
 						<!--// input 달력 -->
 		
 						<!-- input 달력 : 시작일 - 종료일 -->
-						<div class="form-area">
+						<div class="form-area"> <!--  error 시 class = input-date-error 추가 -->
 							<div class="input-wrap">
-								<div class="input input--on">
+								<div class="input input--on">		<!-- error 시 class = error 추가 -->
 									<div class="input__inner">
-										<input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" disabled="disabled">
+										<input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" readonly>
 										<label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
 										<button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
 									</div>
 								</div>
-								<div class="input input--on">
+								<div class="input input--on"> <!-- error 시 class = error 추가 -->
 									<div class="input__inner">
-										<input type="text" id="inputText07" class="input__element input-date" title="종료일" value="" disabled="disabled">
+										<input type="text" id="inputText07" class="input__element input-date" title="종료일" placeholder="YYYY.MM.DD" readonly>
 										<label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
 										<button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
 									</div>
 								</div>
 							</div>
+							<p class="input__error" aria-live="assertive">오류메세지 노출</p>
 						</div>
-						<!-- D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
-						<div class="form-area">
+
+						<div class="form-area input-date-error"> <!--  error 시 class = input-date-error 추가 -->
 							<div class="input-wrap">
-								<div class="input input--on">
+								<div class="input input--on error"> <!-- error 시 class = error 추가 -->
 									<div class="input__inner">
-										<input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" disabled="disabled">
+										<input type="text" id="inputText06" class="input__element input-date" title="시작일" placeholder="YYYY.MM.DD" value="2303.03.01" readonly>
 										<label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
 										<button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
 									</div>
 								</div>
-								<div class="input date-disabled">
+								<div class="input input--on"> <!-- error 시 class = error 추가 -->
 									<div class="input__inner">
-										<input type="text" id="inputText07" class="input__element input-date" title="종료일" disabled="disabled">
+										<input type="text" id="inputText07" class="input__element input-date" title="종료일" placeholder="YYYY.MM.DD" readonly>
 										<label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
 										<button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
 									</div>
 								</div>
 							</div>
+							<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+						</div>
+						
+						<div class="form-area input-date-error"> <!--  error 시 class = input-date-error 추가 -->
+							<div class="input-wrap">
+								<div class="input input--on"> <!-- error 시 class = error 추가 -->
+									<div class="input__inner">
+										<input type="text" id="inputText06" class="input__element input-date" title="시작일" placeholder="YYYY.MM.DD" value="2303.03.01" readonly>
+										<label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+										<button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+									</div>
+								</div>
+								<div class="input input--on error"> <!-- error 시 class = error 추가 -->
+									<div class="input__inner">
+										<input type="text" id="inputText07" class="input__element input-date" title="종료일" placeholder="YYYY.MM.DD" value="2303.03.01" readonly>
+										<label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+										<button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+									</div>
+								</div>
+							</div>
+							<p class="input__error" aria-live="assertive">오류메세지 노출</p>
+						</div>
+
+						<!-- D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
+						<div class="form-area "> <!--  error 시 class = input-date-error 추가 -->
+							<div class="input-wrap">
+								<div class="input input--on"> <!-- error 시 class = error 추가 -->
+									<div class="input__inner">
+										<input type="text" id="inputText06" class="input__element input-date" title="시작일" value="2023.08.08" readonly>
+										<label for="inputText06" class="input__label" aria-hidden="true">시작일</label>
+										<button type="button" class="input__calendar-button" aria-label="시작일 선택"></button>
+									</div>
+								</div>
+								<div class="input input--disabled"> <!-- error 시 class = error 추가 -->
+									<div class="input__inner">
+										<input type="text" id="inputText07" class="input__element input-date" title="종료일" value="YYYY.MM.DD" disabled="disabled">
+										<label for="inputText07" class="input__label" aria-hidden="true">종료일</label>
+										<button type="button" class="input__calendar-button" aria-label="종료일 선택"></button>
+									</div>
+								</div>
+							</div>
+							<p class="input__error" aria-live="assertive">오류메세지 노출</p>
 						</div>
 						<!--// D : 주기 선택으로 종료일이 비활성화 된 경우 예시 -->
 						<!-- input 달력 : 시작일 - 종료일 -->
@@ -1401,6 +1460,27 @@
 
 						<!-- Tab -->
 						<div class="tab-box-wrap" data-element="tab">
+							<ul class="tab-box-list" role="tablist">                 
+								<li class="tab-box" data-element="tab__list">
+									<a href="javascript:void();" class="text disabled" aria-selected="false" data-element="tab__anchor">E-mail</a>
+								</li>  
+								<li class="tab-box" data-element="tab__list" >
+									<a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">SMS</a>
+								</li>                    
+								<li class="tab-box" data-element="tab__list">
+									<a href="javascript:void();" class="text disabled" aria-selected="false" data-element="tab__anchor">E-mail</a>
+								</li>  
+							</ul>
+							<div class="tab-con" data-element="tab__panel">con1</div>
+							<div class="tab-con is-active" data-element="tab__panel">con2</div>
+							<div class="tab-con" data-element="tab__panel">con2</div>
+						</div>                     
+						<!-- // Tab -->
+
+						<br />
+
+						<!-- Tab -->
+						<div class="tab-box-wrap" data-element="tab">
 							<ul class="tab-rd-box-list" role="tablist">
 								<li class="tab-box" data-element="tab__list" >
 									<a href="javascript:void();" class="text is-active" aria-selected="true" data-element="tab__anchor">SMS</a>
@@ -1895,6 +1975,7 @@
 
 						<span class="tag-usd">USD</span>
 						<span class="tag-cad">CAD</span>
+						<span class="tag-krw">KRW</span>
 						<br><br>
 						<span class="tag-branch">ON(Ontario)</span>
 						<br><br>
@@ -1910,17 +1991,35 @@
 
 					<h2 class="guide-title">switch</h2>
 					<div class="guide-box">
-
-						<div class="asswitch-wrap">
-							<input class="btn-switch" type="checkbox" id="" name="">
+						<div class="guide-flex-wrap2">
+							<div class="guide-flex">
+								<p class="guide-title-sub">switch : checkbox형</p>
+								<!-- 스위치 예시 -->
+								<label class="asswitch-wrap">
+									<input class="chk-switch" type="checkbox" name="asswitch">
+									<span></span>
+								</label>
+								<label class="asswitch-wrap">
+									<input class="chk-switch" type="checkbox" name="asswitch" checked="checked">
+									<span></span>
+								</label>
+								<!--// 스위치 예시 -->
+							</div>
+							<div class="guide-flex">
+								<p class="guide-title-sub">switch : asSwitch.js</p>
+								<!-- 스위치 예시 -->
+								<div class="asswitch-wrap">
+									<input class="btn-switch" type="checkbox" id="" name="">
+								</div>
+								
+								<script>
+									$(function(){
+										$('.btn-switch').asSwitch();
+									});
+								</script>
+								<!--// 스위치 예시 -->
+							</div>
 						</div>
-						
-						<script>
-							$(function(){
-								$('.btn-switch').asSwitch();
-							});
-						</script>
-		
 					</div>
 					<!-- // guide-box -->
 
@@ -3816,8 +3915,24 @@
 						<div class="guide-box">
 							<p class="guide-title-sub">공통 아이콘</p>
 							<p class="guide-title-sub">국가별아이콘(../images/country/이미지.png)</p>
-							<div class="guide-flex-wrap">
-								
+
+							<div class="guide-flex-wrap">				
+								<div class="guide-flex-cont">
+									<i class="icon-country-cad"></i>
+									<p class="guide-title-sub">캐나다(.icon-country-cad)</p>
+								</div>
+								<div class="guide-flex-cont">
+									<i class="icon-country-usa"></i>
+									<p class="guide-title-sub">미국(.icon-country-usa)</p>
+								</div>
+								<div class="guide-flex-cont">
+									<i class="icon-country-krw"></i>
+									<p class="guide-title-sub">한국(.icon-country-krw)</p>
+								</div>
+							</div>
+
+							<p>inline style</p>
+							<div class="guide-flex-wrap">								
 								<div class="guide-flex-cont">
 									<i class="icon-country" style="background-image: url(../images/country/flag-canada.png);"></i>
 									<p class="guide-title-sub">캐나다(flag-canada.png)</p>

@@ -44,15 +44,25 @@
         .tab-list li a {display: block; height: 40px; line-height: 40px; font-size: 14px; color: #fff; text-align: center; background-color: #9ca6a6;}
         .tab-list li a:hover {background-color: #7d8585;}
         .tab-list li + li {border-left: 1px solid #fff;}
-
         .tab-list li a.on {background-color: #2f3333;}
+
+        .title-area {display: flex; align-items: flex-end; justify-content: space-between;}
+        .title-area .right-area {text-align: right;}
     </style>	
 </head>
 <body>
 
 <div class="guide-wrap">
     <div class="top-wrap">
-        <h1>[스뱅] 캐나다 법인 확산  - 퍼블 목록</h1>
+        <div class="title-area">
+            <h1>[스뱅] 캐나다 법인 확산  - 퍼블 목록</h1>
+            <div class="right-area">
+                <span>* 기업 진행율 : </span>
+                <span class="page"></span>
+                <span class="total"></span>
+                <span class="percent"></span>
+            </div>
+        </div>
         <div class="tab-list-wrap">
             <ul class="tab-list">
                 <li><a href="html_list_01.html">개인</a></li>
@@ -60,7 +70,6 @@
                 <li><a href="html_list_03.html">공통</a></li>
                 <li><a href="../guide/guide.html" target="_blank">Guide</a></li>
                 <li><a href="../guide/modal.html" target="_blank">Modal</a></li>
-                <li><a href="../guide/form.html" target="_blank">form (input/select)</a></li>
                 <li><a href="../html/layout.html" target="_blank">layout</a></li>
             </ul>
         </div>
@@ -180,7 +189,7 @@
                     <td><a href="cmfo/cmfo001p02.html" target="_blank">cmfo001p02</a></td>
                     <td>황혜정</td>
                     <td><strong>230223</strong></td>
-                    <td></td>
+                    <td>230405 수정 : 디자인 수정</td>
                 </tr> 
                 <tr>
                     <td></td>
@@ -252,20 +261,6 @@
                     <td><strong>230223</strong></td>
                     <td></td>
                 </tr>  
-                <tr>
-                    <td></td>
-                    <td class="d1"></td>
-                    <td class="d2">Statements(거래내역서 조회)</td>
-                    <td class="d3">삭제여부 검토중</td>
-                    <td class="d4"></td>
-                    <td class="d5"></td>
-                    <td class="d6"></td>
-                    <td></td>
-                    <td><a href="csdp/csdp003m01.html" target="_blank"></a></td>
-                    <td></td>
-                    <td><strong></strong></td>
-                    <td></td>
-                </tr> 
                 <tr class="depth">
                     <td></td>
                     <td class="d1">이체</td>
@@ -280,7 +275,8 @@
                     <td><strong>230216</strong></td>
                     <td>
                         230315 수정 : 1일 잔여 이체 한도 추가(화면설계서 v0.93_20230309수정)<br>
-                        230227 수정 : select팝업예시 default항목 삭제(select공통 : 선택이 안된 상태로)
+                        230227 수정 : select팝업예시 default항목 삭제(select공통 : 선택이 안된 상태로)<br>
+                        230419 수정 : 기획 수정
                     </td>
                 </tr>
                 <tr class="">
@@ -294,7 +290,7 @@
                     <td></td>
                     <td><a href="cstr/cstr001p04.html" target="_blank">cstr001p04</a></td>
                     <td>이인경</td>
-                    <td><strong></strong></td>
+                    <td><strong>230315</strong></td>
                     <td>230315 추가 : 화면설계서 v0.93_20230309수정</td>
                 </tr>
                 <tr>
@@ -309,7 +305,23 @@
                     <td><a href="cstr/cstr001p01.html" target="_blank">cstr001p01</a></td>
                     <td>이인경</td>
                     <td><strong>230216</strong></td>
-                    <td>230315 수정 : 1일 잔여 이체 한도 추가(화면설계서 v0.93_20230309수정)</td>
+                    <td>230315 수정 : 1일 잔여 이체 한도 추가(화면설계서 v0.93_20230309수정)<br>
+                        230405 수정 : 기획 수정
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="d1"></td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
+                    <td class="d5"></td>
+                    <td class="d6">계좌 없을 시</td>
+                    <td></td>
+                    <td><a href="cstr/cstr001p01_02.html" target="_blank">cstr001p01_02</a></td>
+                    <td>이인경</td>
+                    <td><strong>230405</strong></td>
+                    <td>230405 수정 : 기획 수정</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -475,11 +487,11 @@
                     <td class="d5"></td>
                     <td class="d6"></td>
                     <td></td>
-                    <td><a href="/.html" target="_blank"></a></td>
-                    <td></td>
-                    <td><strong></strong></td>
+                    <td><a href="pstr/pstr011s01.html" target="_blank">pstr011s01</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230321</strong></td>
                     <td>개인화면 동일 사용</td>
-                </tr>
+                </tr>	
                 <tr>
                     <td></td>
                     <td class="d1"></td>
@@ -600,13 +612,41 @@
                     <td class="d2"></td>
                     <td class="d3"></td>
                     <td class="d4">상세정보(싱글유져)</td>
-                    <td class="d5"></td>
+                    <td class="d5">Case 1. 기업 싱글 유저_ 예약이체 일 경우</td>
                     <td class="d6"></td>
                     <td></td>
                     <td><a href="cstr/cstr004s01.html" target="_blank">cstr004s01</a></td>
                     <td>황혜정</td>
                     <td><strong>230313</strong></td>
+                    <td>230405 수정 : 기획 수정</td>
+                </tr>
+                <tr>
                     <td></td>
+                    <td class="d1"></td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
+                    <td class="d5">Case 1. 기업 싱글 유저_정기이체 일 경우</td>
+                    <td class="d6"></td>
+                    <td></td>
+                    <td><a href="cstr/cstr004s01_02.html" target="_blank">cstr004s01_02</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230405</strong></td>
+                    <td>230405 추가 : 기획 추가</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="d1"></td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
+                    <td class="d5"></td>
+                    <td class="d6">내역없음</td>
+                    <td></td>
+                    <td><a href="cstr/cstr004s01_03.html" target="_blank">cstr004s01_03</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230405</strong></td>
+                    <td>230405 추가 : 기획 추가</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -614,13 +654,41 @@
                     <td class="d2"></td>
                     <td class="d3"></td>
                     <td class="d4">상세정보(멀티_결재자)</td>
-                    <td class="d5"></td>
+                    <td class="d5">Case 2. 기업_멀티 결재자/승인자_예약이체 일 경우</td>
                     <td class="d6"></td>
                     <td></td>
                     <td><a href="cstr/cstr004s02.html" target="_blank">cstr004s02</a></td>
                     <td>황혜정</td>
                     <td><strong>230313</strong></td>
+                    <td>230405 수정 : 기획 수정</td>
+                </tr>
+                <tr>
                     <td></td>
+                    <td class="d1"></td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
+                    <td class="d5">Case 2. 기업_멀티 결재자/승인자_ 정기이체 일 경우</td>
+                    <td class="d6"></td>
+                    <td>230405</td>
+                    <td><a href="cstr/cstr004s02_02.html" target="_blank">cstr004s02_02</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230405</strong></td>
+                    <td>230405 추가 : 기획 추가</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="d1"></td>
+                    <td class="d2"></td>
+                    <td class="d3"></td>
+                    <td class="d4"></td>
+                    <td class="d5"></td>
+                    <td class="d6">내역없음</td>
+                    <td></td>
+                    <td><a href="cstr/cstr004s02_03.html" target="_blank">cstr004s02_03</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230405</strong></td>
+                    <td>230405 추가 : 기획 추가</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -1287,7 +1355,7 @@
                     <td></td>
                     <td><a href="psrt/psrt002p01_03.html" target="_blank">psrt002p01_03</a></td>
                     <td>이인경</td>
-                    <td><strong></strong></td>
+                    <td><strong>230315</strong></td>
                     <td>230315 추가 : 송금한도 팝업 추가(화면설계서 v0.95_20230308수정)</td>
                 </tr>
                 <tr>
@@ -1653,21 +1721,7 @@
                     <td>황혜정</td>
                     <td><strong>230224</strong></td>
                     <td>230224 수정 : 기획 추가 및 수정</td>
-                </tr> 
-                <tr class="depth">
-                    <td></td>
-                    <td class="d1">Loan(대출) - 내계좌로 이동</td>
-                    <td class="d2"></td>
-                    <td class="d3"></td>
-                    <td class="d4"></td>
-                    <td class="d5"></td>
-                    <td class="d6"></td>
-                    <td></td>
-                    <td><a href="/.html" target="_blank"></a></td>
-                    <td></td>
-                    <td><strong></strong></td>
-                    <td></td>
-                </tr> 			                
+                </tr> 		                
                 <tr class="depth">
                     <td></td>
                     <td class="d1">Confirm.Approve(Company)<br />결재/승인(기업)</td>
@@ -1960,7 +2014,7 @@
                     <td><a href="cset/cset003s01.html" target="_blank">cset003s01</a></td>
                     <td>황혜정</td>
                     <td><strong>230313</strong></td>
-                    <td>230313 추가</td>
+                    <td>230421 수정 : switch(checkbox) 마크업수정</td>
                 </tr>  
                 <tr>
                     <td></td>
@@ -1971,10 +2025,10 @@
                     <td class="d5"></td>
                     <td class="d6"></td>
                     <td></td>
-                    <td><a href="cset/cset003p01.html" target="_blank"></a></td>
+                    <td><a href="cset/cset003p01.html" target="_blank">cset003p01</a></td>
+                    <td>황혜정</td>
+                    <td><strong>230411</strong></td>
                     <td></td>
-                    <td><strong></strong></td>
-                    <td>약관 확정 시 작업</td>
                 </tr>  
                 <tr>
                     <td></td>
@@ -2030,7 +2084,7 @@
                     <td><a href="cset/cset007s01.html" target="_blank">cset007s01</a></td>
                     <td>황혜정</td>
                     <td><strong>230313</strong></td>
-                    <td>230313 추가</td>
+                    <td>230421 수정 : switch(checkbox) 마크업수정</td>
                 </tr>  
                 <tr class="depth">
                     <td></td>
@@ -2071,6 +2125,21 @@
 	$('table tbody td:nth-child(1)').each(function() {
 		$(this).text($(this).parent('tr').index()+1);
 	});
+    $('table tr').each(function(){
+        if ($(this).find('td').eq(10).text() == '') {
+            $(this).removeClass('finish');
+        } else {
+            $(this).addClass('finish');
+        }
+        
+    });
+    var total = $('table tbody tr').length;
+    var page = $('tr.finish').length;
+    var percent = page / total * 100;
+    var percentCalc = percent.toFixed(1);
+    $('.total').text(total + '(page)');
+    $('.page').text(page + ' /');
+    $('.percent').text('('+ percentCalc + '%)');
 </script>
 
 </body>
