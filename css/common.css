@@ -166,9 +166,9 @@ i.icon-country-krw {background-image: url(../images/country/flag-korea.png);}
 .set-area .set-layer .set-list > li + li {margin-top: 1rem;}
 /* .set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; background: url(../images/icon/close_w.svg) 50% 50% no-repeat; background-size: 100% auto; position: absolute; top: 1.6rem; right: 1.6rem;} */
 .set-area .btn-close {width: 1.6rem; height: 1.6rem; display: inline-block; font-size: 0; position: absolute; top: 1.6rem; right: 1.6rem;}
-.set-area .btn-close::before {content: ''; width: 1.6rem; height: 0.2rem; display: inline-block; background: #fff; transform: rotate(45deg); position: absolute; top: 0.7rem; left: 0;}
-.set-area .btn-close::after {content: ''; width: 1.6rem; height: 0.2rem; display: inline-block; background: #fff; transform: rotate(-45deg); position: absolute; top: 0.7rem; left: 0;}
-.detail .set-area .set {background: url(../images/icon/kebab_menu_middle_4d5980.svg) 50% 50% no-repeat; background-size: 100% auto;}
+.set-area .btn-close::before {content: ''; width: 1.5rem; height: 0.2rem; display: inline-block; background: #fff; transform: rotate(45deg); position: absolute; top: 7px; left: 1px;}
+.set-area .btn-close::after {content: ''; width: 1.5rem; height: 0.2rem; display: inline-block; background: #fff; transform: rotate(-45deg); position: absolute; top: 7px; left: 1px;}
+.detail .set-area .set {background: url(../images/icon/kebab_menu_middle_9ca6a6.svg) 50% 50% no-repeat; background-size: 100% auto;}
 
 /* - 컨텐츠 : 탭 (tab) */
 .tab-list-wrap .tab-con {display: none;}
@@ -536,14 +536,14 @@ button.input-info-green {display: block; width: 100%;}
 .asSwitch.asSwitch_text .asSwitch-off {width:2.7rem;height:2.2rem;overflow:hidden;line-height:2.2rem;white-space:nowrap;font-size: 0;}
 .asSwitch.asSwitch_text .asSwitch-handle {z-index:10;top:0;width:2.2rem;height:2.2rem;background-color:#fff;border-radius:1.4rem;-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.1);box-shadow:0 4px 8px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.1);}
 .asSwitch.asSwitch_text::before {content:'';position:absolute;top:-0.3rem;right:-0.3rem;bottom:-0.3rem;left:-0.3rem;border-radius:3.2rem;z-index:0;transition:all 0.1s ease 0s;}
-.asSwitch_text.asSwitch_on::before {background-color:#00cad5;}
+.asSwitch_text.asSwitch_on::before {background-color:#30bfba;}
 .asSwitch_off::before {background-color:#e2e2e8;}
 
 /* - 컨텐츠 : 스위치 (Switch) checkbox */
 label.asswitch-wrap {width: 4.4rem; height: 2.8rem; padding:0; display: inline-block; position: relative;}
 label.asswitch-wrap input.chk-switch {opacity: 0; position: absolute; top: 0; left:0}
 label.asswitch-wrap > span {width: 100%; height: 100%; overflow:hidden; line-height:2.2rem; white-space:nowrap; font-size: 0; display: inline-block; border-radius: 3.2rem; background-color:#e2e2e8; transition: all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s;}
-label.asswitch-wrap input:checked + span {background-color:#00cad5;}
+label.asswitch-wrap input:checked + span {background-color:#30bfba;}
 label.asswitch-wrap > span::after {content:''; width:2.2rem; height:2.2rem; background-color:#fff; border-radius:1.4rem; box-shadow:0 4px 8px 0 rgba(0,0,0,0.1); position: absolute; z-index:1; top: 0.3rem; left: 0.3rem; transition: all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s;}
 label.asswitch-wrap input:checked + span::after {content:''; left: 1.9rem;}
 
@@ -576,15 +576,15 @@ body.modal-open .app-footer {display: none;}
 
 /* - 모달 팝업 : 슬라이드 팝업 (slide) */
 .popup-wrap.modal--slide {width: 100%; height: 100%; height: calc(100% + constant(safe-area-inset-bottom)); height: calc(100% + env(safe-area-inset-bottom));}
-.popup-wrap.modal--slide .modal__container { right: 0; left: 0; border-radius: 2.4rem 2.4rem 0 0; padding-bottom: 0;}
+.popup-wrap.modal--slide .modal__container { right: 0; left: 0; border-radius: 2.4rem 2.4rem 0 0; padding-bottom: 0.1rem; padding-bottom: calc(0.1rem + constant(safe-area-inset-bottom)); padding-bottom: calc(0.1rem + env(safe-area-inset-bottom));}
 .popup-wrap.modal--slide .modal__contents {  padding-bottom: 8.8rem; padding-bottom: calc(8.8rem + constant(safe-area-inset-bottom)); padding-bottom: calc(8.8rem + env(safe-area-inset-bottom)); max-height: 60vh; overflow-y: auto; overflow-x: hidden;}
-.popup-wrap.modal--slide .modal__contents.btn-none {padding-bottom: 1rem; padding-bottom: calc(1rem + constant(safe-area-inset-bottom)); padding-bottom: calc(1rem + env(safe-area-inset-bottom));}
+.popup-wrap.modal--slide .modal__contents.btn-none {padding-bottom: 0.1rem; padding-bottom: calc(0.1rem + constant(safe-area-inset-bottom)); padding-bottom: calc(0.1rem + env(safe-area-inset-bottom));}
 .popup-wrap.modal--slide .modal__contents.modal__contents--tabscroll {min-height: 0; max-height: none; overflow: visible;}
 .popup-wrap.modal--slide .modal__contents.modal__contents--tabscroll .tab-list-wrap .tab-con {max-height: calc(60vh - 4.8rem); overflow-x: hidden; overflow-y: auto;}
 .modal__contents--tabscroll .tab-list-wrap .tab-con {padding: 1.6rem 2rem;}
 .modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-wrap {position: relative; padding-bottom: 1.6rem;}
 .modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-wrap.is-btn {padding-bottom: 8.8rem;}
-.modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-btn {width: 100%; height: 8.8rem; padding: 1.6rem 2rem; position: fixed; bottom: 0; left: 0; z-index: 2;}
+.modal__contents--tabscroll .tab-list-wrap .tab-con .pop-tab-btn {width: 100%; height: 8.8rem; padding: 1.6rem 2rem; padding-bottom: 1.6rem; padding-bottom: calc(1.6rem + constant(safe-area-inset-bottom)); padding-bottom: calc(1.6rem + env(safe-area-inset-bottom)); position: fixed; bottom: 0; bottom: calc(0rem + constant(safe-area-inset-bottom)); bottom: calc(0rem + env(safe-area-inset-bottom)); left: 0; z-index: 2;}
 
 .modal__btn--close { position: absolute; right: 2rem; top: 2.6rem; width: 2.4rem; height: 2.4rem; border: 0; background: 0;}
 .modal__btn--close:before { content: ''; display: block; width: 2.4rem; height: 2.4rem; background: url(../images/icon/close.svg) 0 0 no-repeat; background-size: 100% auto; }
@@ -599,10 +599,11 @@ body.modal-open .app-footer {display: none;}
 
 /* - 모달 팝업 : 일자선택 */
 .modal-date-wrap {padding: 0 1.7rem 2.8rem;}
-.modal-date-wrap .date-list {display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+.modal-date-wrap .date-list {display: flex; flex-wrap: wrap; align-items: center;}
 .modal-date-wrap .date-list > li {width: 20%; padding: 0.4rem 0; text-align: center;}
 .modal-date-wrap .date-list .btn-date {width: 4.8rem; height: 4.8rem; text-align: center; display: inline-block; font-size: 1.8rem; border-radius: 0.8rem;}
 .modal-date-wrap .date-list .btn-date.active {background: #f2fafa; color:#00a5a0; font-weight: 600;}
+.modal-date-wrap .date-list .last {margin-left: auto;}
 
 /* - 모달 팝업 : 기간선택 */
 .modal-term-wrap {padding: 0 1.7rem 2.8rem;}
@@ -648,7 +649,7 @@ body.modal-open .app-footer {display: none;}
 .select-wrap .select {width: 100%; min-height:7rem; position: relative;}
 .select-wrap .select::before {content: ''; width: 100%; height: 6.9rem; border-bottom: 0.1rem solid #edf2f2; background: #fff; position: absolute; top: 0; left:0;}
 .form-flex-wrap .select::before {top: 1px;}
-.select-wrap .select::after {content: ''; width: 2rem; height: 2rem; margin-top: -0.7rem; display: inline-block; background: url(../images/icon/dropdown_open.svg) 0 0 no-repeat; background-size: 100% auto; position: absolute; top: 50%; right: 0.8rem;}
+.select-wrap .select::after {content: ''; width: 2rem; height: 2rem; margin-top: -0.4rem; display: inline-block; background: url(../images/icon/dropdown_open.svg) 0 0 no-repeat; background-size: 100% auto; position: absolute; top: 50%; right: 0.8rem;}
 .select-wrap.select--on .select::before {border-color: #30bfba;}
 .select-wrap .input__error {display: none; font-size: 1.4rem; color: #e31e5a;}
 .select-wrap.select--error .input__error {display: block;}
@@ -658,6 +659,7 @@ body.modal-open .app-footer {display: none;}
 .select-wrap .select .button-select__item {width: 100%; height: 6.8rem; padding: 2.8rem 4rem 1.8rem 0; font-size: 1.8rem; font-weight: 600; color: #2f3333; text-align: left; position: relative; z-index: 1; opacity: 0;}
 .select-wrap .select .button-select__item span {max-width: 100%; display: inline-block; line-height: 1.2; vertical-align: top; font-size: 1.8rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .select-wrap .select .button-select__item span a {font-size: inherit;}
+.form-flex-wrap .select-wrap .select .button-select__item span {vertical-align: bottom;}
 .select-wrap .select .select-label {font-size: 1.8rem; font-weight: 600; color: #d0d9d9; position: absolute; left: 0; top: 4rem; z-index: 0; transform: translateY(-50%); -webkit-transform: translateY(-50%); transition: all 0.3s ease; -webkit-transition: all 0.3s ease;}
 .select-wrap i[class^="icon-country"] {display: none; width: 2.4rem; height: 2.4rem; margin-right: 0.8rem;}
 .select-wrap.select--on .select-label,

@@ -90,7 +90,7 @@ body.scroll--top .search-con-box + .con-box {padding-top: 5.6rem;}
 .input__element.input__no-label::placeholder,
 .input__element.input-price::placeholder {color: #d0d9d9; font-size: 1.8rem; font-weight: 600;}
 
-.input__remove-button {display: none; max-width: 2rem; width: 2rem; height: 2rem; margin: 1.2rem 0 0 1.2rem; background: url(../images/icon/del.svg) 50% 50% no-repeat; background-size: 100% auto; font-size: 0; line-height: 1.2;}
+.input__remove-button {display: none; max-width: 2rem; width: 2rem; height: 2rem; margin: 1.4rem 0 0 1.2rem; background: url(../images/icon/del.svg) 50% 50% no-repeat; background-size: 100% auto; font-size: 0; line-height: 1.2;}
 
 .input--disabled:before {border-color: #dddee4 !important; background: #f3f4f5; color: #7d8585 !important; font-weight: 400; box-shadow: none !important;}
 .input--disabled .input__element, .input--disabled .input__optional {color: #7d8585 !important; opacity: 1 !important;}
@@ -282,9 +282,9 @@ i.icon-menu-online_p {background-image: url(../images/icon_menu/online_p.png);}
 .icon-global-withdraw {background-image: url(../images/icon_product/global_withdraw.png);}
 
 /* - 아이콘(svg) */
-i.icon-tel {background: url(../images/icon/tel_gray.svg) 50% 50% no-repeat; background-size: 100% auto;}
-i.icon-fax {background: url(../images/icon/print_gray.svg) 50% 50% no-repeat; background-size: 100% auto;}
-i.icon-time {background: url(../images/icon/time_gray.svg) 50% 50% no-repeat; background-size: 100% auto;}
+i.icon-tel {background: url(../images/icon/tel_gray.svg) 50% 56% no-repeat; background-size: 100% auto;}
+i.icon-fax {background: url(../images/icon/print_gray.svg) 50% 56% no-repeat; background-size: 100% auto;}
+i.icon-time {background: url(../images/icon/time_gray.svg) 50% 56% no-repeat; background-size: 100% auto;}
 i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no-repeat; background-size: 100% auto;}
 
 /* 카드타입 정렬 */
@@ -643,7 +643,7 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 .card-banner + .card-banner {margin-top: 1.2rem;}
 .card-banner .card-cont {color: #fff; font-size: 1.8rem;}
 .card-banner .card dl > dt {margin-bottom: 0.6rem; font-size: 1.4rem; font-weight: 600; word-break: keep-all; word-wrap: break-word;}
-.card-banner .card dl > dd {font-weight: 700; word-break: keep-all; word-wrap: break-word;}
+.card-banner .card dl > dd {font-size: 1.8rem; font-weight: 700; word-break: keep-all; word-wrap: break-word;}
 .card-banner.color-type1 {background: url(../images/png/ico_banner_01.png) top 1.6rem right 2rem no-repeat #30bfba; background-size: 8rem auto;}
 .card-banner.color-type2 {background: url(../images/png/ico_banner_02.png) top 1.6rem right 2rem no-repeat #4d5980; background-size: 8rem auto;}
 .card-banner.color-type1 .card dl > dt {color: #daf0f0;}
@@ -764,8 +764,10 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 .map-wrap {height: calc(100vh - 4.5rem); position: relative;}
 .map-wrap.full {height: 100vh; position: relative;}
 .map-wrap [class^="map-icon"] {position: absolute; z-index:10;}
-.map-wrap .map-icon-branch {width: 6rem; height: 7.2rem; font-size: 0; background: url(../images/icon/branch.svg) 50% 50% no-repeat; background-position: 100% auto; top: 11rem; left: 6.8rem;}
-.map-wrap .map-icon-atm {width: 5rem; height: 5.6rem; font-size: 0; background: url(../images/icon/atm.svg) 50% 50% no-repeat; background-position: 100% auto; top: 8rem; left: 19rem;}
+.map-wrap [class^="map-icon"] img {width: 100%; height: auto;}
+.map-wrap .map-icon-branch {font-size: 0; top: 11rem; left: 6.8rem;}
+.map-wrap .map-icon-atm {font-size: 0; top: 8rem; left: 19rem;}
+.map-wrap .map-icon-atm_pick {font-size: 0; top: 8rem; left: 29rem;}
 .map-wrap .map-area {width: 100%; height: 100%;}
 .map-wrap .post-search-wrap {display: inline-block; position: absolute; top: 1.6rem; right: 2rem; z-index: 90; text-align: right;}
 .post-search-wrap {position: relative;}
@@ -796,7 +798,7 @@ i.icon-equal2-gray {background: url(../images/icon/equal2_9ca6a6.svg) 50% 50% no
 .btn-scroll-wrap {width: 100%; overflow-y: hidden; overflow-x: auto;}
 .btn-scroll-wrap::-webkit-scrollbar {display: none; width: 0; height: 0; opacity: 0;}
 .btn-scroll-wrap .btn-area {white-space: nowrap; padding: 0 2rem; display: inline-block; font-size: 0;}
-.btn-ellipse {height: 3rem; padding: 0 1.2rem 0 2.6rem; background: #f7fafa; border-radius: 1.5rem; font-size: 1.4rem; color: #7d8585; position: relative;}
+.btn-ellipse {height: 3rem; line-height: 3rem; padding: 0 1.2rem 0 2.6rem; background: #f7fafa; border-radius: 1.5rem; font-size: 1.4rem; color: #7d8585; position: relative; display: inline-block;}
 .btn-ellipse i {width: 0.8rem; height: 0.8rem; margin-top: -0.4rem; display: inline-block; position: absolute; top: 50%; left: 1rem; border-radius: 50%;}
 i.mark1 {background: #30bfba;}
 i.mark2 {background: #4d5980;}
@@ -808,6 +810,7 @@ i.mark4 {background: #9ca6a6;}
 [class^="card-type"] .mark-icon i {width: 0.6rem; height: 0.6rem; display: inline-block; border-radius: 50%;}
 [class^="card-type"] .mark-icon i + i {margin-left: 0.6rem;}
 .branch-info-card-wrap {height: calc(100vh - 49.6rem); margin-top: 2.4rem; overflow-x: hidden; overflow-y: auto;}
+.branch-info-card-wrap .tit {padding-right: 5.5rem;}
 .branch-info-card-wrap .card-wrap {margin-top: -1.2rem; padding: 0 2rem 2.4rem; display: inline-block;}
 .branch-info-card-wrap [class^="card-type"].active {background: #fff; position: relative;}
 .branch-info-card-wrap [class^="card-type"].active::before {content: ''; width: 100%; height: 100%; display: block; border: 0.1rem solid #30bfba; border-radius: 1.2rem; position: absolute; top: 0; left: 0;}
@@ -817,7 +820,8 @@ i.mark4 {background: #9ca6a6;}
 .branch-info-detail-wrap .tit {margin-bottom: 0.4rem; font-size: 2.4rem; font-weight: 700; color: #171a1a;}
 .branch-info-detail-wrap .txt {font-size: 1.5rem; color: #7d8585;}
 .branch-info-detail-wrap .detail-info-list {margin-top: 2.6rem; font-size: 1.5rem; font-weight: 600; color: #7d8585;}
-.branch-info-detail-wrap .detail-info-list > li > i {width: 1.6rem; height: 2.2rem; margin-right: 0.8rem; display: inline-block; vertical-align: top;}
+.branch-info-detail-wrap .detail-info-list > li {line-height: 2.4rem;}
+.branch-info-detail-wrap .detail-info-list > li > i {width: 1.6rem; height: 2.4rem; margin-right: 0.8rem; display: inline-block; vertical-align: top;}
 .branch-info-detail-wrap .detail-info-list > li + li {margin-top: 1rem;}
 
 /* 가입하기 */
